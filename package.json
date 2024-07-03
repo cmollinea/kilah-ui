@@ -1,0 +1,32 @@
+{
+  "name": "kilah-ui",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "next": "14.2.4",
+    "next-nprogress-bar": "^2.3.12",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.4",
+    "postcss": "^8",
+    "prettier": "^3.3.2",
+    "prettier-plugin-organize-imports": "^4.0.0",
+    "prettier-plugin-tailwindcss": "^0.6.5",
+    "shiki": "^1.10.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
