@@ -3,7 +3,7 @@ export const categories = [
     section: "application-ui",
     title: "Navbars",
     slug: "navbar",
-    container: "300px",
+    container: "15rem",
     components: [
       {
         title: "Centered minimal navbar",
@@ -48,6 +48,26 @@ export const categories = [
       {
         title: "Centered text with cta",
         fileName: "centered-text-with-cta",
+      },
+    ],
+  },
+  {
+    section: "application-ui",
+    title: "Banners",
+    slug: "banners",
+    container: "15rem",
+    components: [
+      {
+        title: "Top with cta",
+        fileName: "top-with-cta",
+      },
+      {
+        title: "Top with centered text",
+        fileName: "top-centered-text",
+      },
+      {
+        title: "Bottom with centered text",
+        fileName: "bottom-centered-text",
       },
     ],
   },
