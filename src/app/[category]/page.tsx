@@ -17,6 +17,7 @@ async function Category({ params }: Props) {
           fileName={component.fileName}
           filePath={routeComponents.slug}
           key={component.fileName}
+          container={routeComponents.container}
         />
       ))}
     </main>

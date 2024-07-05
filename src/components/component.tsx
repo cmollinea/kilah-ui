@@ -5,9 +5,11 @@ import { componentPreviewJsx } from "@/lib/transformer";
 export const Component = async ({
   fileName,
   filePath,
+  container,
 }: {
   fileName: string;
   filePath: string;
+  container: string;
 }) => {
   const url = `http://localhost:3000//components/${filePath}/${fileName}.html`;
   const res = await fetch(url, {
@@ -27,6 +29,7 @@ export const Component = async ({
           code={code}
           highlightedHtml={highligthedHtml}
           highlightedJsx={highlightedJsx}
+          container={container}
         />
       </div>
     </>

@@ -1,6 +1,6 @@
 export function componentPreviewHtml(
   componentHtml: string,
-  componentContainer = 'relative'
+  componentContainer = "relative",
 ) {
   return `
   <html class="dark"">
@@ -36,15 +36,21 @@ export function componentPreviewHtml(
                       sans: ['Inter'],
                   },
                   colors: {
-                      primary: '#FFD43B'
+                      primary: '#ffd43b',
+                      foreground: "#fafafa",
                   }
               }
           }
       }
   </script>
+  <style>
+  :root {
+    --foreground: 0, 43%, 97%;
+    --background: 0 5% 12%;
+  }</style>
   </head>
   
-  <body class="${componentContainer} font-sans antialiased">
+  <body class="${componentContainer} font-sans antialiased min-h-screen">
       ${componentHtml}
   </body>
   
@@ -55,22 +61,22 @@ export function componentPreviewHtml(
 export function componentPreviewJsx(componentHtml: string) {
   let clonedHtml = componentHtml;
 
-  clonedHtml = clonedHtml.replace(/class=/g, 'className=');
-  clonedHtml = clonedHtml.replace(/for=/g, 'htmlFor=');
-  clonedHtml = clonedHtml.replace(/viewBox=/g, 'viewBox=');
-  clonedHtml = clonedHtml.replace(/fill-rule=/g, 'fillRule=');
-  clonedHtml = clonedHtml.replace(/fill-opacity=/g, 'fillOpacity=');
-  clonedHtml = clonedHtml.replace(/clip-rule=/g, 'clipRule=');
-  clonedHtml = clonedHtml.replace(/stroke-linecap=/g, 'strokeLinecap=');
-  clonedHtml = clonedHtml.replace(/stroke-linejoin=/g, 'strokeLinejoin=');
-  clonedHtml = clonedHtml.replace(/stroke-width=/g, 'strokeWidth=');
-  clonedHtml = clonedHtml.replace(/stroke-dasharray=/g, 'strokeDasharray=');
-  clonedHtml = clonedHtml.replace(/stroke-dashoffset=/g, 'strokeDashoffset=');
-  clonedHtml = clonedHtml.replace(/stroke-miterlimit=/g, 'strokeMiterlimit=');
-  clonedHtml = clonedHtml.replace(/stroke-opacity=/g, 'strokeOpacity=');
-  clonedHtml = clonedHtml.replace(/tabindex=/g, 'tabIndex=');
-  clonedHtml = clonedHtml.replace(/<!--/g, '{/*');
-  clonedHtml = clonedHtml.replace(/-->/g, '*/}');
+  clonedHtml = clonedHtml.replace(/class=/g, "className=");
+  clonedHtml = clonedHtml.replace(/for=/g, "htmlFor=");
+  clonedHtml = clonedHtml.replace(/viewBox=/g, "viewBox=");
+  clonedHtml = clonedHtml.replace(/fill-rule=/g, "fillRule=");
+  clonedHtml = clonedHtml.replace(/fill-opacity=/g, "fillOpacity=");
+  clonedHtml = clonedHtml.replace(/clip-rule=/g, "clipRule=");
+  clonedHtml = clonedHtml.replace(/stroke-linecap=/g, "strokeLinecap=");
+  clonedHtml = clonedHtml.replace(/stroke-linejoin=/g, "strokeLinejoin=");
+  clonedHtml = clonedHtml.replace(/stroke-width=/g, "strokeWidth=");
+  clonedHtml = clonedHtml.replace(/stroke-dasharray=/g, "strokeDasharray=");
+  clonedHtml = clonedHtml.replace(/stroke-dashoffset=/g, "strokeDashoffset=");
+  clonedHtml = clonedHtml.replace(/stroke-miterlimit=/g, "strokeMiterlimit=");
+  clonedHtml = clonedHtml.replace(/stroke-opacity=/g, "strokeOpacity=");
+  clonedHtml = clonedHtml.replace(/tabindex=/g, "tabIndex=");
+  clonedHtml = clonedHtml.replace(/<!--/g, "{/*");
+  clonedHtml = clonedHtml.replace(/-->/g, "*/}");
 
   return clonedHtml;
 }
