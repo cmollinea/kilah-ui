@@ -1,6 +1,5 @@
 "use client";
 import { componentPreviewHtml, componentPreviewJsx } from "@/lib/transformer";
-import { cn } from "@/utils/cn";
 import { useState } from "react";
 import { Clipboard } from "./clipboard";
 import { Code } from "./code";
@@ -56,49 +55,70 @@ export const ClientPlaygroundContainer = ({
   };
 
   return (
-    <div className="flex w-full max-w-[1280px] flex-col text-foreground">
+    <section className="flex w-full max-w-[1280px] flex-col text-foreground">
       <div className="mb-4 flex w-full justify-between space-x-4 font-medium">
         <div className="flex items-center space-x-4 max-lg:hidden">
           <button
+            aria-label={`Set Breakpoint to ${breakPoint}`}
+            aria-disabled={componentToShow === "codeBlock"}
             disabled={componentToShow === "codeBlock"}
-            className={`flex place-content-center items-center rounded-md border border-foreground/10 px-2 py-1 transition-all ease-out active:scale-[96%] disabled:cursor-not-allowed disabled:bg-primary/70 ${componentToShow !== "codeBlock" && breakPoint === "400px" ? "bg-primary/60 shadow-inner shadow-black" : "border-transparent bg-primary"}`}
+            className={`flex place-content-center items-center rounded-md border border-foreground/10 px-2 py-1 transition-all ease-out active:scale-[96%] disabled:cursor-not-allowed disabled:bg-gray-800 disabled:opacity-50 ${componentToShow !== "codeBlock" && breakPoint === "400px" ? "bg-primary/60 shadow-inner shadow-black" : "border-transparent bg-primary"}`}
             onClick={() => setBreakPoint("400px")}
           >
             <Phone />
           </button>
           <button
+            aria-label={`Set Breakpoint to ${breakPoint}`}
+            aria-disabled={componentToShow === "codeBlock"}
             disabled={componentToShow === "codeBlock"}
-            className={`flex place-content-center items-center rounded-md border border-foreground/10 px-2 py-1 transition-all ease-out active:scale-[96%] disabled:cursor-not-allowed disabled:bg-primary/70 ${componentToShow !== "codeBlock" && breakPoint === "684px" ? "bg-primary/60 shadow-inner shadow-black" : "border-transparent bg-primary"}`}
+            className={`flex place-content-center items-center rounded-md border border-foreground/10 px-2 py-1 transition-all ease-out active:scale-[96%] disabled:cursor-not-allowed disabled:bg-gray-800 disabled:opacity-50 ${componentToShow !== "codeBlock" && breakPoint === "684px" ? "bg-primary/60 shadow-inner shadow-black" : "border-transparent bg-primary"}`}
             onClick={() => setBreakPoint("684px")}
           >
             <Tablet />
           </button>
           <button
+            aria-label={`Set Breakpoint to ${breakPoint}`}
+            aria-disabled={componentToShow === "codeBlock"}
             disabled={componentToShow === "codeBlock"}
-            className={`flex place-content-center items-center rounded-md border border-foreground/10 px-2 py-1 transition-all ease-out active:scale-[96%] disabled:cursor-not-allowed disabled:bg-primary/70 ${componentToShow !== "codeBlock" && breakPoint === "748px" ? "bg-primary/60 shadow-inner shadow-black" : "border-transparent bg-primary"}`}
+            className={`flex place-content-center items-center rounded-md border border-foreground/10 px-2 py-1 transition-all ease-out active:scale-[96%] disabled:cursor-not-allowed disabled:bg-gray-800 disabled:opacity-50 ${componentToShow !== "codeBlock" && breakPoint === "748px" ? "bg-primary/60 shadow-inner shadow-black" : "border-transparent bg-primary"}`}
             onClick={() => setBreakPoint("748px")}
           >
             <Laptop />
           </button>
           <button
+            aria-label={`Set Breakpoint to ${breakPoint}`}
+            aria-disabled={componentToShow === "codeBlock"}
             disabled={componentToShow === "codeBlock"}
-            className={`flex place-content-center items-center rounded-md border border-foreground/10 px-2 py-1 transition-all ease-out active:scale-[96%] disabled:cursor-not-allowed disabled:bg-primary/70 ${componentToShow !== "codeBlock" && breakPoint === "1024px" ? "bg-primary/60 shadow-inner shadow-black" : "border-transparent bg-primary"}`}
+            className={`flex place-content-center items-center rounded-md border border-foreground/10 px-2 py-1 transition-all ease-out active:scale-[96%] disabled:cursor-not-allowed disabled:bg-gray-800 disabled:opacity-50 ${componentToShow !== "codeBlock" && breakPoint === "1024px" ? "bg-primary/60 shadow-inner shadow-black" : "border-transparent bg-primary"}`}
             onClick={() => setBreakPoint("1024px")}
           >
             <Desktop />
           </button>
           <button
+            aria-label={`Set Breakpoint to ${breakPoint}`}
+            aria-disabled={componentToShow === "codeBlock"}
             disabled={componentToShow === "codeBlock"}
-            className={`flex place-content-center items-center rounded-md border border-foreground/10 px-2 py-1 transition-all ease-out active:scale-[96%] disabled:cursor-not-allowed disabled:bg-primary/70 ${componentToShow !== "codeBlock" && breakPoint === "1280px" ? "bg-primary/60 shadow-inner shadow-black" : "border-transparent bg-primary"}`}
+            className={`flex place-content-center items-center rounded-md border border-foreground/10 px-2 py-1 transition-all ease-out active:scale-[96%] disabled:cursor-not-allowed disabled:bg-gray-800 disabled:opacity-50 ${componentToShow !== "codeBlock" && breakPoint === "1280px" ? "bg-primary/60 shadow-inner shadow-black" : "border-transparent bg-primary"}`}
             onClick={() => setBreakPoint("1280px")}
           >
             <Full />
           </button>
         </div>
         <div className="flex items-center space-x-4">
+          {componentToShow === "codeBlock" && (
+            <Clipboard
+              text={
+                selectedLang === "html"
+                  ? code
+                  : componentPreviewJsx(htmlToRender)
+              }
+            />
+          )}
           <button
+            aria-disabled={componentToShow === "playground"}
+            aria-label={`Set code to show to ${selectedLang}`}
             disabled={componentToShow === "playground"}
-            className="flex w-24 place-content-center items-center space-x-1 rounded-md bg-primary px-2 py-1 transition-colors ease-in-out hover:bg-primary/80 disabled:cursor-not-allowed disabled:bg-primary/70"
+            className="flex w-24 place-content-center items-center space-x-1 rounded-md bg-primary px-2 py-1 transition-colors ease-in-out hover:bg-primary/80 disabled:cursor-not-allowed disabled:bg-gray-800 disabled:opacity-50"
             onClick={handleLang}
           >
             {selectedLang === "html" ? (
@@ -112,6 +132,7 @@ export const ClientPlaygroundContainer = ({
             )}
           </button>
           <button
+            aria-label={`Set component to show to ${componentToShow}`}
             className="flex w-24 place-content-center items-center space-x-1 rounded-md bg-primary px-2 py-1 transition-colors ease-in-out hover:bg-primary/80"
             onClick={handleComponent}
           >
@@ -128,36 +149,34 @@ export const ClientPlaygroundContainer = ({
         </div>
       </div>
 
-      {/* TODO create a cn function with clxs to merge clases */}
-
-      <section
-        style={{
-          maxWidth: componentToShow === "playground" ? breakPoint : "1280px",
-          height: container,
-        }}
-        className={cn(
-          "relative w-full overflow-hidden rounded-md border border-foreground/20 transition-all ease-in-out",
-          container,
-        )}
-      >
-        {componentToShow === "playground" ? (
-          <iframe
-            className="h-full w-full overflow-y-auto"
-            srcDoc={htmlToRender}
-          />
-        ) : (
-          <Code
-            code={selectedLang === "html" ? highlightedHtml : highlightedJsx}
-          />
-        )}
-        {componentToShow === "codeBlock" && (
-          <Clipboard
-            text={
-              selectedLang === "html" ? code : componentPreviewJsx(htmlToRender)
-            }
-          />
-        )}
-      </section>
-    </div>
+      {componentToShow === "playground" ? (
+        <>
+          <section
+            style={{
+              maxWidth: breakPoint,
+              height: container,
+            }}
+            key={"playground"}
+            className="relative h-full w-full overflow-hidden rounded-md border border-foreground/20 transition-all ease-in-out"
+          >
+            <iframe
+              className="h-full w-full overflow-y-auto"
+              srcDoc={htmlToRender}
+            />
+          </section>
+        </>
+      ) : (
+        <>
+          <section
+            key={"codeblock"}
+            className="relative h-[400px] w-full overflow-hidden rounded-md border border-foreground/20 transition-all ease-in-out md:h-[600px]"
+          >
+            <Code
+              code={selectedLang === "html" ? highlightedHtml : highlightedJsx}
+            />
+          </section>
+        </>
+      )}
+    </section>
   );
 };

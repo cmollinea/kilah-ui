@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useState } from "react";
+import { Copy, Done } from "./icons";
 
 export const Clipboard = ({ text }: { text: string }) => {
   const [copied, setCopied] = useState(false);
@@ -24,10 +25,10 @@ export const Clipboard = ({ text }: { text: string }) => {
   }, []);
   return (
     <button
-      className="absolute right-4 top-2"
+      className={`animate-fade-in flex place-content-center items-center rounded-md border px-2 py-1 opacity-0 transition-all duration-300 ease-out disabled:cursor-not-allowed disabled:bg-gray-800 disabled:opacity-50 ${copied ? "border-green-400 bg-green-400/10 text-green-400" : "border-foreground/20"}`}
       onClick={() => copyToClipboard(text)}
     >
-      {copied ? <>Copied</> : <>Copy code</>}
+      {copied ? <Done /> : <Copy />}
     </button>
   );
 };

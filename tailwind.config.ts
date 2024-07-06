@@ -14,6 +14,15 @@ const config: Config = {
         },
         foreground: "#efefef",
       },
+      animation: {
+        "fade-in": "fade 0.1s ease-in forwards",
+      },
+      keyframes: {
+        fade: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+      },
     },
   },
   plugins: [],
