@@ -1,13 +1,32 @@
-export function componentPreviewHtml(
-  componentHtml: string,
-  componentContainer = "relative",
-) {
+import { clsx, type ClassValue } from "clsx";
+import { twMerge } from "tailwind-merge";
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
+
+const defaultConfig = ` tailwind.config = {
+    darkMode: 'class',
+    theme: {
+        extend: {
+            fontFamily: {
+                sans: ['Inter'],
+            },
+            colors: {
+                primary: '#ffd43b',
+                foreground: "#fafafa",
+            }
+        }
+    }
+}`;
+
+export function createIframe(componentHtml: string, tailwindConfig?: string) {
   return `
   <html class="dark"">
   <head>
-    <link rel=" preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
   
   <script>
       document.addEventListener('DOMContentLoaded', function () {
@@ -27,30 +46,11 @@ export function componentPreviewHtml(
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
   
   <script>
-  
-      tailwind.config = {
-          darkMode: 'class',
-          theme: {
-              extend: {
-                  fontFamily: {
-                      sans: ['Inter'],
-                  },
-                  colors: {
-                      primary: '#ffd43b',
-                      foreground: "#fafafa",
-                  }
-              }
-          }
-      }
+  ${tailwindConfig ? tailwindConfig : defaultConfig}
   </script>
-  <style>
-  :root {
-    --foreground: 0, 43%, 97%;
-    --background: 0 5% 12%;
-  }</style>
   </head>
   
-  <body class="${componentContainer} font-sans antialiased min-h-screen">
+  <body class="relative font-sans antialiased min-h-screen">
       ${componentHtml}
   </body>
   
@@ -58,8 +58,8 @@ export function componentPreviewHtml(
     `;
 }
 
-export function componentPreviewJsx(componentHtml: string) {
-  let clonedHtml = componentHtml;
+export function translateToJsx(html: string) {
+  let clonedHtml = html;
 
   clonedHtml = clonedHtml.replace(/class=/g, "className=");
   clonedHtml = clonedHtml.replace(/for=/g, "htmlFor=");
