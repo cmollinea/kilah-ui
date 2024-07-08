@@ -50,7 +50,7 @@ export function createIframe(componentHtml: string, tailwindConfig?: string) {
   </script>
   </head>
   
-  <body class="relative font-sans antialiased min-h-screen">
+  <body class="relative font-sans antialiased min-h-screen bg-background text-foreground">
       ${componentHtml}
   </body>
   

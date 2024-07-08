@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useState } from "react";
-import { Copy, Done } from "./icons";
+import { Copy, Done } from "../icons";
 
 export const Clipboard = ({ text }: { text: string }) => {
   const [copied, setCopied] = useState(false);

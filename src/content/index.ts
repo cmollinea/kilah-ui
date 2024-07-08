@@ -1,6 +1,110 @@
 export const categories = [
   {
     section: "application-ui",
+    title: "Features Section",
+    slug: "features-section",
+    container: "40rem",
+    components: [
+      {
+        title: "Centered grid",
+        fileName: "centered-grid",
+        tailwindConfig: `tailwind.config = {
+      darkMode: "class",
+      theme: {
+          extend: {
+              fontFamily: {
+                  sans: ["Lato"],
+              },
+              colors: {
+                  primary: "#eb5e28",
+                  foreground: "#fafafa",
+                  background: "#202020"
+              }
+          }
+      }
+  }`,
+      },
+      {
+        title: "Basic Centered",
+        fileName: "basic-centered",
+        tailwindConfig: `tailwind.config = {
+      darkMode: "class",
+      theme: {
+          extend: {
+              fontFamily: {
+                  sans: ["Lato"],
+              },
+              colors: {
+                  primary: "#f9092e",
+                  foreground: "#fafafa",
+                  background: "#0d0d0d"
+              }
+          }
+      }
+  }`,
+      },
+      {
+        title: "With left indicator and image",
+        fileName: "with-left-indicator-and-image",
+        tailwindConfig: `tailwind.config = {
+      darkMode: "class",
+      theme: {
+          extend: {
+              fontFamily: {
+                  sans: ["Lato"],
+              },
+              colors: {
+                  primary: "#7C41F5",
+                  foreground: "#fafafa",
+                  background: "#3c3c3c"
+              }
+          }
+      }
+  }`,
+      },
+      {
+        title: "Check icons on left image to right",
+        fileName: "check-icons-on-left-image-to-right",
+        tailwindConfig: `tailwind.config = {
+     darkMode: "class",
+        theme: {
+            extend: {
+                fontFamily: {
+                    sans: ["Lato"],
+                },
+                colors: {
+                    primary: "#04C7FD",
+                    foreground: "#fafafa",
+                    background: "#3f3f3f"
+                }
+            }
+        }
+  }`,
+      },
+      {
+        title: "Grid to the left and image",
+        fileName: "grid-to-the-left-and-image",
+        tailwindConfig: `tailwind.config = {
+      darkMode: "class",
+      theme: {
+          extend: {
+              fontFamily: {
+                  sans: ["Lato"],
+              },
+              colors: {
+                  primary: "#258164",
+                  foreground: "#fafafa",
+                  background: "#1b1b1b"
+
+              }
+          }
+      }
+  }`,
+      },
+    ],
+  },
+  {
+    section: "application-ui",
     title: "Navbars",
     slug: "navbar",
     container: "15rem",
@@ -9,14 +113,14 @@ export const categories = [
         title: "Centered minimal navbar",
         fileName: "centered-minimal-navbar",
         tailwindConfig: `tailwind.config = {
-          darkMode: 'class',
+          darkMode: "class",
           theme: {
               extend: {
                   fontFamily: {
-                      sans: ['Lato'],
+                      sans: ["Lato"],
                   },
                   colors: {
-                      primary: '#222f72',
+                      primary: "#eb5e28",
                       foreground: "#fafafa",
                   }
               }
@@ -27,14 +131,14 @@ export const categories = [
         title: "Simple navbar with nav on left",
         fileName: "simple-navbar-with-nav-on-left",
         tailwindConfig: `tailwind.config = {
-          darkMode: 'class',
+          darkMode: "class",
           theme: {
               extend: {
                   fontFamily: {
-                      sans: ['Lato'],
+                      sans: ["Lato"],
                   },
                   colors: {
-                      primary: '#222f72',
+                      primary: "#eb5e28",
                       foreground: "#fafafa",
                   }
               }
@@ -45,14 +149,14 @@ export const categories = [
         title: "Navbar with external links",
         fileName: "navbar-with-external-links",
         tailwindConfig: `tailwind.config = {
-          darkMode: 'class',
+          darkMode: "class",
           theme: {
               extend: {
                   fontFamily: {
-                      sans: ['Lato'],
+                      sans: ["Lato"],
                   },
                   colors: {
-                      primary: '#222f72',
+                      primary: "#eb5e28",
                       foreground: "#fafafa",
                   }
               }
@@ -63,14 +167,14 @@ export const categories = [
         title: "Navbar with centered logo",
         fileName: "navbar-with-centered-logo",
         tailwindConfig: `tailwind.config = {
-          darkMode: 'class',
+          darkMode: "class",
           theme: {
               extend: {
                   fontFamily: {
-                      sans: ['Lato'],
+                      sans: ["Lato"],
                   },
                   colors: {
-                      primary: '#222f72',
+                      primary: "#eb5e28",
                       foreground: "#fafafa",
                   }
               }

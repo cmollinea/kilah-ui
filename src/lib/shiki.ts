@@ -1,13 +1,13 @@
-import { codeToHtml } from 'shiki';
-import monokai from 'shiki/themes/monokai.mjs';
+import { BundledLanguage, codeToHtml } from "shiki";
+import dark from "shiki/themes/min-dark.mjs";
 
-export async function highlight(code: string) {
+export async function highlight(code: string, lang?: BundledLanguage) {
   const html = codeToHtml(code, {
     theme: {
-      ...monokai,
-      bg: 'transparent'
+      ...dark,
+      bg: "transparent",
     },
-    lang: 'tsx'
+    lang: lang ?? "js",
   });
 
   return html;

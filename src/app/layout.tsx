@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Lato } from "next/font/google";
+import { Ubuntu_Sans } from "next/font/google";
 import "./globals.css";
 
-const condensed = Lato({
-  weight: ["400", "700", "900"],
+const ubuntu = Ubuntu_Sans({
+  weight: ["400", "500", "600", "700", "800"],
   subsets: ["latin"],
 });
 
@@ -19,7 +19,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={condensed.className + " text-gray-50"}>{children}</body>
+      <body
+        style={{ backgroundImage: "url('/assets/nnnoise.svg')" }}
+        className={ubuntu.className + " text-gray-50"}
+      >
+        {children}
+      </body>
     </html>
   );
 }

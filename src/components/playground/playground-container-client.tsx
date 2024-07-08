@@ -1,9 +1,9 @@
 "use client";
 import { usePlayground } from "@/hooks/use-playground";
 import { translateToJsx } from "@/lib/utils";
-import { Clipboard } from "../clipboard";
-import { Code } from "../code";
 import { BreakPointsButtons } from "./breakpoint-buttons";
+import { Clipboard } from "./clipboard";
+import { Code } from "./code";
 import { Switchers } from "./switchers";
 
 type Props = {
@@ -57,7 +57,7 @@ export const ClientPlaygroundContainer = ({
           {componentToShow === "codeBlock" && (
             <Clipboard
               text={
-                tailwind.code
+                showConfig && tailwind.code
                   ? tailwind.code
                   : selectedLang === "html"
                     ? html.code

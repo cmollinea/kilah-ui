@@ -11,7 +11,7 @@ async function Category({ params }: Props) {
   const category = params.category;
   const routeComponents = categories.find((item) => item.slug === category);
   return (
-    <main className="flex w-full flex-col items-center">
+    <main className="animate-translate-up flex w-full flex-col items-center opacity-0">
       {routeComponents?.components.map((component) => (
         <Component
           fileName={component.fileName}

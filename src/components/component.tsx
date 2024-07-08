@@ -21,14 +21,14 @@ export const Component = async ({
   const html = await res.text();
 
   const jsx = translateToJsx(html);
-  const highligthedHtml = await highlight(html);
-  const highlightedJsx = await highlight(jsx);
+  const highligthedHtml = await highlight(html, "html");
+  const highlightedJsx = await highlight(jsx, "jsx");
   const htmlToRender = createIframe(html, tailwindConfig);
 
   let highlightedConfig;
 
   if (tailwindConfig) {
-    highlightedConfig = await highlight(tailwindConfig);
+    highlightedConfig = await highlight(tailwindConfig, "json");
   }
 
   return (
