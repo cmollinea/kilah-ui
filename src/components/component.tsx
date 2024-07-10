@@ -11,7 +11,7 @@ export const Component = async ({
   fileName: string;
   filePath: string;
   container: string;
-  tailwindConfig?: string;
+  tailwindConfig: string;
 }) => {
   const url = `http://localhost:3000//components/${filePath}/${fileName}.html`;
   const res = await fetch(url, {
@@ -25,11 +25,7 @@ export const Component = async ({
   const highlightedJsx = await highlight(jsx, "jsx");
   const htmlToRender = createIframe(html, tailwindConfig);
 
-  let highlightedConfig;
-
-  if (tailwindConfig) {
-    highlightedConfig = await highlight(tailwindConfig, "json");
-  }
+  const highlightedConfig = await highlight(tailwindConfig, "json");
 
   return (
     <>

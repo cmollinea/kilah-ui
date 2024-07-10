@@ -1,6 +1,6 @@
-import { Ubuntu_Mono } from "next/font/google";
+import { Roboto_Mono } from "next/font/google";
 
-const mono = Ubuntu_Mono({
+const mono = Roboto_Mono({
   weight: ["400", "700"],
   subsets: ["latin"],
 });

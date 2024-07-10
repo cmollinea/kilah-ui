@@ -25,13 +25,13 @@ export const Clipboard = ({ text }: { text: string }) => {
   }, []);
   return (
     <button
-      className={`relative flex animate-fade-in place-content-center items-center rounded-md bg-primary px-2 py-1 opacity-0 transition-all duration-300 ease-out disabled:cursor-not-allowed disabled:bg-gray-800 disabled:opacity-50 lg:order-first ${copied ? "text-green-400" : ""}`}
+      className={`relative flex animate-fade-in place-content-center items-center rounded-md bg-primary px-2 py-1 opacity-0 transition-all duration-300 ease-out disabled:cursor-not-allowed disabled:bg-gray-800 disabled:opacity-50 lg:order-first`}
       onClick={() => copyToClipboard(text)}
     >
       {copied ? (
         <>
           <Done />{" "}
-          <span className="absolute -top-5 animate-fade-in rounded-md bg-primary px-0.5 text-xs opacity-0">
+          <span className="absolute -top-5 animate-fade-in rounded-md bg-primary px-0.5 text-xs opacity-0 duration-500">
             copied!
           </span>
         </>

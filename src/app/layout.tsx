@@ -1,9 +1,9 @@
 import { Banner } from "@/components/home/banner";
 import type { Metadata } from "next";
-import { Ubuntu_Sans } from "next/font/google";
+import { Roboto_Condensed } from "next/font/google";
 import "./globals.css";
 
-const ubuntu = Ubuntu_Sans({
+const roboto = Roboto_Condensed({
   weight: ["400", "500", "600", "700", "800"],
   subsets: ["latin"],
 });
@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         style={{ backgroundImage: "url('/assets/nnnoise.svg')" }}
-        className={ubuntu.className + " bg-background text-foreground"}
+        className={roboto.className + " bg-background text-foreground"}
       >
         <Banner />
         {children}

@@ -1,3 +1,4 @@
+import { defaultConfig } from "@/constants";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 
@@ -5,28 +6,13 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-const defaultConfig = ` tailwind.config = {
-    darkMode: 'class',
-    theme: {
-        extend: {
-            fontFamily: {
-                sans: ['Inter'],
-            },
-            colors: {
-                primary: '#ffd43b',
-                foreground: "#fafafa",
-            }
-        }
-    }
-}`;
-
 export function createIframe(componentHtml: string, tailwindConfig?: string) {
   return `
   <html class="dark"">
   <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   
   <script>
       document.addEventListener('DOMContentLoaded', function () {
@@ -46,7 +32,7 @@ export function createIframe(componentHtml: string, tailwindConfig?: string) {
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
   
   <script>
-  ${tailwindConfig ? tailwindConfig : defaultConfig}
+    tailwind.config = ${tailwindConfig ? tailwindConfig : defaultConfig}
   </script>
   </head>
   

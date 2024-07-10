@@ -1,6 +1,160 @@
 export const categories = [
   {
     section: "application-ui",
+    title: "Cards",
+    slug: "cards",
+    container: "40rem",
+    components: [
+      {
+        title: "Grayscale cards with hover effect",
+        fileName: "grayscale-cards",
+      },
+      {
+        title: "Colorful cards with hover effect",
+        fileName: "colorful-cards",
+      },
+      {
+        title: "Grid with hover effect",
+        fileName: "air-bnb-card",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            extend: {
+              fontFamily: {
+                sans: ["Roboto Condensed"],
+              },
+              colors: {
+                primary: "#3d68f4",
+                foreground: "#fafafa",
+                background: "#111111",
+                "card-background": "#1d1d1d",
+              },
+
+              animation: {
+                "bnb-first": "bnb-first 10s ease-in infinite",
+                "bnb-second": "bnb-second 10s ease-in infinite",
+                "bnb-third": "bnb-third 10s ease-in infinite",
+              },
+
+              keyframes: {
+                "bnb-first": {
+                  "0%": {
+                    opacity: 0,
+                  },
+
+                  "2%": {
+                    transform: "scale(1)",
+                    opacity: 0,
+                  },
+
+                  "3%": {
+                    transform: "scale(1)",
+                    opacity: 1,
+                  },
+
+                  "30%": {
+                    transform: "scale(1.5)",
+                    opacity: 1,
+                  },
+
+                  "35%": {
+                    transform: "scale(1.5)",
+                    opacity: 0,
+                  },
+                },
+
+                "bnb-second": {
+                  "36%": {
+                    transform: "scale(1)",
+                    opacity: 0,
+                  },
+
+                  "40%": {
+                    transform: "scale(1)",
+                    opacity: 1,
+                  },
+
+                  "60%": {
+                    transform: "scale(1.5)",
+                    opacity: 1,
+                  },
+
+                  "65%": {
+                    transform: "scale(1.5)",
+                    opacity: 0,
+                  },
+                },
+
+                "bnb-third": {
+                  "66%": {
+                    transform: "scale(1)",
+                    opacity: 0,
+                  },
+
+                  "70%": {
+                    transform: "scale(1)",
+                    opacity: 1,
+                  },
+
+                  "95%": {
+                    transform: "scale(1.5)",
+                    opacity: 1,
+                  },
+
+                  "100%": {
+                    transform: "scale(1.5)",
+                    opacity: 0,
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+      {
+        title: "Grid with hover effect",
+        fileName: "grid-with-hover-effect",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            extend: {
+              fontFamily: {
+                sans: ["Roboto Condensed"],
+              },
+              colors: {
+                primary: "#3d68f4",
+                foreground: "#fafafa",
+                background: "#111111",
+                "card-background": "#1d1d1d",
+              },
+            },
+          },
+        },
+      },
+      {
+        title: "Simple Card",
+        fileName: "simple-card",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            extend: {
+              fontFamily: {
+                sans: ["Roboto Condensed"],
+              },
+              colors: {
+                primary: "#eb5e28",
+                foreground: "#fafafa",
+                background: "#111111",
+                "card-background": "#1d1d1d",
+              },
+            },
+          },
+        },
+      },
+    ],
+  },
+  {
+    section: "application-ui",
     title: "Features Section",
     slug: "features-section",
     container: "40rem",
@@ -8,98 +162,97 @@ export const categories = [
       {
         title: "Centered grid",
         fileName: "centered-grid",
-        tailwindConfig: `tailwind.config = {
-      darkMode: "class",
-      theme: {
-          extend: {
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            extend: {
               fontFamily: {
-                  sans: ["Lato"],
+                sans: ["Roboto Condensed"],
               },
               colors: {
-                  primary: "#eb5e28",
-                  foreground: "#fafafa",
-                  background: "#202020"
-              }
-          }
-      }
-  }`,
+                primary: "#eb5e28",
+                foreground: "#fafafa",
+                background: "#202020",
+              },
+            },
+          },
+        },
       },
       {
         title: "Basic Centered",
         fileName: "basic-centered",
-        tailwindConfig: `tailwind.config = {
-      darkMode: "class",
-      theme: {
-          extend: {
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            extend: {
               fontFamily: {
-                  sans: ["Lato"],
+                sans: ["Roboto Condensed"],
               },
               colors: {
-                  primary: "#f9092e",
-                  foreground: "#fafafa",
-                  background: "#0d0d0d"
-              }
-          }
-      }
-  }`,
+                primary: "#f9092e",
+                foreground: "#fafafa",
+                background: "#0d0d0d",
+              },
+            },
+          },
+        },
       },
       {
         title: "With left indicator and image",
         fileName: "with-left-indicator-and-image",
-        tailwindConfig: `tailwind.config = {
-      darkMode: "class",
-      theme: {
-          extend: {
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            extend: {
               fontFamily: {
-                  sans: ["Lato"],
+                sans: ["Roboto Condensed"],
               },
               colors: {
-                  primary: "#7C41F5",
-                  foreground: "#fafafa",
-                  background: "#3c3c3c"
-              }
-          }
-      }
-  }`,
+                primary: "#7C41F5",
+                foreground: "#fafafa",
+                background: "#3c3c3c",
+              },
+            },
+          },
+        },
       },
       {
         title: "Check icons on left image to right",
         fileName: "check-icons-on-left-image-to-right",
-        tailwindConfig: `tailwind.config = {
-     darkMode: "class",
-        theme: {
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
             extend: {
-                fontFamily: {
-                    sans: ["Lato"],
-                },
-                colors: {
-                    primary: "#04C7FD",
-                    foreground: "#fafafa",
-                    background: "#3f3f3f"
-                }
-            }
-        }
-  }`,
+              fontFamily: {
+                sans: ["Roboto Condensed"],
+              },
+              colors: {
+                primary: "#04C7FD",
+                foreground: "#fafafa",
+                background: "#3f3f3f",
+              },
+            },
+          },
+        },
       },
       {
         title: "Grid to the left and image",
         fileName: "grid-to-the-left-and-image",
-        tailwindConfig: `tailwind.config = {
-      darkMode: "class",
-      theme: {
-          extend: {
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            extend: {
               fontFamily: {
-                  sans: ["Lato"],
+                sans: ["Roboto Condensed"],
               },
               colors: {
-                  primary: "#258164",
-                  foreground: "#fafafa",
-                  background: "#1b1b1b"
-
-              }
-          }
-      }
-  }`,
+                primary: "#258164",
+                foreground: "#fafafa",
+                background: "#1b1b1b",
+              },
+            },
+          },
+        },
       },
     ],
   },
@@ -112,74 +265,74 @@ export const categories = [
       {
         title: "Centered minimal navbar",
         fileName: "centered-minimal-navbar",
-        tailwindConfig: `tailwind.config = {
+        tailwindConfig: {
           darkMode: "class",
           theme: {
-              extend: {
-                  fontFamily: {
-                      sans: ["Lato"],
-                  },
-                  colors: {
-                      primary: "#eb5e28",
-                      foreground: "#fafafa",
-                  }
-              }
-          }
-      }`,
+            extend: {
+              fontFamily: {
+                sans: ["Roboto Condensed"],
+              },
+              colors: {
+                primary: "#eb5e28",
+                foreground: "#fafafa",
+              },
+            },
+          },
+        },
       },
       {
         title: "Simple navbar with nav on left",
         fileName: "simple-navbar-with-nav-on-left",
-        tailwindConfig: `tailwind.config = {
+        tailwindConfig: {
           darkMode: "class",
           theme: {
-              extend: {
-                  fontFamily: {
-                      sans: ["Lato"],
-                  },
-                  colors: {
-                      primary: "#eb5e28",
-                      foreground: "#fafafa",
-                  }
-              }
-          }
-      }`,
+            extend: {
+              fontFamily: {
+                sans: ["Roboto Condensed"],
+              },
+              colors: {
+                primary: "#eb5e28",
+                foreground: "#fafafa",
+              },
+            },
+          },
+        },
       },
       {
         title: "Navbar with external links",
         fileName: "navbar-with-external-links",
-        tailwindConfig: `tailwind.config = {
+        tailwindConfig: {
           darkMode: "class",
           theme: {
-              extend: {
-                  fontFamily: {
-                      sans: ["Lato"],
-                  },
-                  colors: {
-                      primary: "#eb5e28",
-                      foreground: "#fafafa",
-                  }
-              }
-          }
-      }`,
+            extend: {
+              fontFamily: {
+                sans: ["Roboto Condensed"],
+              },
+              colors: {
+                primary: "#eb5e28",
+                foreground: "#fafafa",
+              },
+            },
+          },
+        },
       },
       {
         title: "Navbar with centered logo",
         fileName: "navbar-with-centered-logo",
-        tailwindConfig: `tailwind.config = {
+        tailwindConfig: {
           darkMode: "class",
           theme: {
-              extend: {
-                  fontFamily: {
-                      sans: ["Lato"],
-                  },
-                  colors: {
-                      primary: "#eb5e28",
-                      foreground: "#fafafa",
-                  }
-              }
-          }
-      }`,
+            extend: {
+              fontFamily: {
+                sans: ["Roboto Condensed"],
+              },
+              colors: {
+                primary: "#eb5e28",
+                foreground: "#fafafa",
+              },
+            },
+          },
+        },
       },
     ],
   },

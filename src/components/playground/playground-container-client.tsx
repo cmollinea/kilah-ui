@@ -15,8 +15,8 @@ type Props = {
   highlightedJsx: string;
   container: string;
   tailwind: {
-    code?: string;
-    highlighted?: string;
+    code: string;
+    highlighted: string;
   };
 };
 
@@ -69,21 +69,21 @@ export const ClientPlaygroundContainer = ({
       </div>
 
       {componentToShow === "playground" ? (
-        <>
+        <div className="relative w-full lg:outline-dashed lg:outline-2 lg:outline-foreground/20">
           <section
             style={{
               maxWidth: breakPoint,
               height: container,
             }}
             key={"playground"}
-            className="duration-00 relative h-full w-full animate-fade-in overflow-hidden rounded-md border border-foreground/20 opacity-0 transition-all ease-in-out"
+            className="relative h-full w-full animate-fade-in overflow-hidden rounded-md opacity-0 transition-all duration-300 ease-in-out max-lg:border max-lg:border-foreground/20"
           >
             <iframe
               className="h-full w-full overflow-y-auto"
               srcDoc={html.render}
             />
           </section>
-        </>
+        </div>
       ) : (
         <>
           <section
