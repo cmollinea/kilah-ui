@@ -1,8 +1,8 @@
 "use client";
 
+import { BreakPoint, ComponentToShow } from "@/hooks/use-playground";
 import { Dispatch, SetStateAction } from "react";
 import { Desktop, Full, Laptop, Phone, Tablet } from "../icons";
-import { BreakPoint, ComponentToShow } from "./playground-container-client";
 
 type Props = {
   setBreakPoint: Dispatch<SetStateAction<BreakPoint>>;
