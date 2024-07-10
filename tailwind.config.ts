@@ -13,15 +13,22 @@ const config: Config = {
           DEFAULT: "#eb5e28",
         },
         foreground: "#efefef",
+        background: "#252422",
       },
       animation: {
-        "fade-in": "fade 0.1s ease-in-out forwards",
+        "fade-in": "fade-in 0.1s ease-in-out forwards",
+        "fade-out": "fade-out 0.1s ease-in-out forwards",
         "translate-up": "translate 0.5s ease-in-out forwards",
+        "air-bnb": "air-bnb 3s ease-in-out infinite",
       },
       keyframes: {
-        fade: {
+        "fade-in": {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
+        },
+        "fade-out": {
+          "0%": { opacity: "1" },
+          "100%": { opacity: "0" },
         },
         translate: {
           "0%": { translate: "0 15px", opacity: "0" },
@@ -30,6 +37,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 };
 export default config;

@@ -2,37 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-  --foreground: 0, 43%, 97%;
-  --background: #252422;
-  --primary-50: #fffbeb;
-  --primary-100: #fff5c6;
-  --primary-200: #ffe988;
-  --primary-300: #ffd43b;
-  --primary-400: #ffc420;
-  --primary-500: #f9a307;
-  --primary-600: #dd7a02;
-  --primary-700: #b75606;
-  --primary-800: #94410c;
-  --primary-900: #7a370d;
-  --primary-950: #461b02;
+* {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  background: var(--background)
-}
 
 @layer utilities {
   .text-balance {

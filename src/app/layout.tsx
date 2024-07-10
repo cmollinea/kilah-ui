@@ -1,3 +1,4 @@
+import { Banner } from "@/components/home/banner";
 import type { Metadata } from "next";
 import { Ubuntu_Sans } from "next/font/google";
 import "./globals.css";
@@ -21,8 +22,9 @@ export default function RootLayout({
     <html lang="en">
       <body
         style={{ backgroundImage: "url('/assets/nnnoise.svg')" }}
-        className={ubuntu.className + " text-gray-50"}
+        className={ubuntu.className + " bg-background text-foreground"}
       >
+        <Banner />
         {children}
       </body>
     </html>
