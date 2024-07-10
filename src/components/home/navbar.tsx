@@ -1,20 +1,27 @@
+"use client";
+
+import { useScroll } from "@/hooks/use-scroll";
 import Image from "next/image";
 import Link from "next/link";
 import { GitHub } from "../icons";
 
 export const NavBar = () => {
+  const { isTop } = useScroll();
+
   return (
-    <header className="sticky top-0 z-50 flex items-center justify-between px-8 py-3 text-gray-50 md:px-20">
+    <header
+      className={`sticky top-0 z-50 flex items-center justify-between px-8 py-4 text-gray-50 md:px-20 ${!isTop ? "bg-background/80 backdrop-blur-lg" : "bg-transparent"} transition-all ease-in-out`}
+    >
       <Link href="/">
         <Image
           alt="Logo"
           height={329}
           width={1500}
-          className="h-6 w-full"
+          className="h-5 w-full md:h-6"
           src="/assets/logo-no-background.png"
         />
       </Link>
-      <div className="flex items-center space-x-3">
+      <div className="flex items-center space-x-2">
         <button className="rounded-xl p-1 text-primary">
           <GitHub />
         </button>
@@ -26,7 +33,7 @@ export const NavBar = () => {
             Components
           </Link>
         </nav>
-        <button className="rounded-xl bg-gray-50/10 p-1 lg:hidden">
+        <button className="rounded-xl p-1 lg:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"
