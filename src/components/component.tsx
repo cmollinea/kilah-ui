@@ -2,6 +2,10 @@ import { ClientPlaygroundContainer } from "@/components/playground/playground-co
 import { highlight } from "@/lib/shiki";
 import { createIframe, translateToJsx } from "@/lib/utils";
 
+const url = process.env.NEXT_PUBLIC_VERCEL_URL
+  ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/`
+  : "http://localhost:3000/";
+
 export const Component = async ({
   fileName,
   filePath,
@@ -13,7 +17,7 @@ export const Component = async ({
   container: string;
   tailwindConfig: string;
 }) => {
-  const url = `http://localhost:3000//components/${filePath}/${fileName}.html`;
+  const url = `http://localhost:3000/components/${filePath}/${fileName}.html`;
   const res = await fetch(url, {
     cache: "no-cache",
   });
