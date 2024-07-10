@@ -18,7 +18,7 @@ const config: Config = {
       animation: {
         "fade-in": "fade-in 0.1s ease-in-out forwards",
         "fade-out": "fade-out 0.1s ease-in-out forwards",
-        "translate-up": "translate 0.5s ease-in-out forwards",
+        "translate-up": "translate 0.5s ease-in forwards",
         "air-bnb": "air-bnb 3s ease-in-out infinite",
       },
       keyframes: {
