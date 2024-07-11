@@ -1,14 +1,11 @@
 import { Features } from "@/components/home/features";
 import { Hero } from "@/components/home/hero";
-import { NavBar } from "@/components/home/navbar";
 import { categories } from "@/content";
 import Link from "next/link";
 
 export default async function Home() {
   return (
     <>
-      <NavBar />
-
       <main className="flex min-h-screen animate-translate-up flex-col place-content-center items-center overflow-x-hidden px-4 opacity-0">
         <div className="container flex flex-col place-content-center items-center space-y-20">
           <Hero />

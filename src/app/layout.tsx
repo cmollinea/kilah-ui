@@ -1,4 +1,6 @@
 import { Banner } from "@/components/home/banner";
+import { NavBar } from "@/components/home/navbar";
+import { ProgressBarProvider } from "@/components/home/progress-bar";
 import type { Metadata } from "next";
 import { Roboto_Condensed } from "next/font/google";
 import "./globals.css";
@@ -24,8 +26,13 @@ export default function RootLayout({
         style={{ backgroundImage: "url('/assets/nnnoise.svg')" }}
         className={roboto.className + " bg-background text-foreground"}
       >
-        <Banner />
-        {children}
+        <ProgressBarProvider>
+          <>
+            <Banner />
+            <NavBar />
+            {children}
+          </>
+        </ProgressBarProvider>
       </body>
     </html>
   );
