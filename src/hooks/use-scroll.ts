@@ -1,18 +1,18 @@
 import { useEffect, useState } from "react";
 
-export const useScroll = () => {
+export const useScroll = (scrolled?: number) => {
   const [isTop, setIsTop] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsTop(window.scrollY <= 150);
+      setIsTop(window.scrollY <= (scrolled ?? 150));
     };
     window.addEventListener("scroll", handleScroll);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [scrolled]);
 
   return { isTop };
 };
