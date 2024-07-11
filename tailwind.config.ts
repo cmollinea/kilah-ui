@@ -13,6 +13,7 @@ const config: Config = {
           DEFAULT: "#eb5e28",
         },
         foreground: "#efefef",
+        "primary-foreground": "#09090b",
         background: "#252422",
       },
       animation: {
