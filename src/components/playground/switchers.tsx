@@ -23,12 +23,12 @@ export const Switchers = ({
   children,
 }: Props) => {
   return (
-    <div className="flex items-center gap-2 max-md:text-xs">
+    <div className="text-primary-foreground flex items-center gap-2 max-md:text-xs">
       <button
         disabled={componentToShow === "playground"}
         aria-disabled={componentToShow === "playground"}
         onClick={handleSwitchFile}
-        className={`flex place-content-center items-center gap-x-1 rounded-md bg-primary py-1 transition-colors ease-in-out hover:bg-primary/80 disabled:cursor-not-allowed disabled:bg-gray-800 disabled:opacity-50 max-md:w-28 md:w-40`}
+        className={`flex place-content-center items-center gap-x-1 rounded-md bg-primary py-1 transition-colors ease-in-out hover:bg-primary/80 disabled:cursor-not-allowed disabled:bg-stone-600 disabled:opacity-50 max-md:w-28 md:w-40`}
       >
         {showConfig ? (
           <div
@@ -52,7 +52,7 @@ export const Switchers = ({
         aria-disabled={componentToShow === "playground"}
         aria-label={`Set code to show to ${selectedLang}`}
         disabled={componentToShow === "playground"}
-        className="flex w-24 place-content-center items-center gap-x-1 rounded-md bg-primary px-2 py-1 transition-colors ease-in-out hover:bg-primary/80 disabled:cursor-not-allowed disabled:bg-gray-800 disabled:opacity-50 max-lg:order-[-1] max-md:w-16"
+        className="flex w-24 place-content-center items-center gap-x-1 rounded-md bg-primary px-2 py-1 transition-colors ease-in-out hover:bg-primary/80 disabled:cursor-not-allowed disabled:bg-stone-600 disabled:opacity-50 max-lg:order-[-1] max-md:w-16"
         onClick={handleLang}
       >
         {selectedLang === "html" ? (

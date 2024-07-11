@@ -35,7 +35,7 @@ export const Hero = () => {
       </p>
 
       <div className="flex items-center space-x-2 pt-6">
-        <button className="rounded-md bg-primary p-2 px-4 text-zinc-950 md:px-10">
+        <button className="text-primary-foreground rounded-md bg-primary p-2 px-4 md:px-10">
           Get Started
         </button>
         <button className="rounded-md border border-primary p-2 px-4 text-primary md:px-10">
