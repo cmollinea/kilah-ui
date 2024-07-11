@@ -39,7 +39,7 @@ export const ClientPlaygroundContainer = ({
   } = usePlayground();
   return (
     <section className="flex w-full max-w-[1280px] flex-col text-foreground">
-      <div className="mb-4 flex w-full justify-between space-x-4 font-medium">
+      <div className="mb-4 flex w-full justify-between font-medium md:space-x-4">
         <BreakPointsButtons
           componentToShow={componentToShow}
           breakPoint={breakPoint}

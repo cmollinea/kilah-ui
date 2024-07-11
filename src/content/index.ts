@@ -1,4 +1,22 @@
-export const categories = [
+import type { Config } from "tailwindcss";
+
+type Component = {
+  title: string;
+  fileName: string;
+  tailwindConfig?: Partial<Config>;
+};
+
+type Category = {
+  section: string;
+  title: string;
+  slug: string;
+  container: string;
+  components: Component[];
+};
+
+export const categories: Category[] = [
+  // Cards
+
   {
     section: "application-ui",
     title: "Cards",
@@ -39,71 +57,71 @@ export const categories = [
               keyframes: {
                 "bnb-first": {
                   "0%": {
-                    opacity: 0,
+                    opacity: "0",
                   },
 
                   "2%": {
                     transform: "scale(1)",
-                    opacity: 0,
+                    opacity: "0",
                   },
 
                   "3%": {
                     transform: "scale(1)",
-                    opacity: 1,
+                    opacity: "1",
                   },
 
                   "30%": {
                     transform: "scale(1.5)",
-                    opacity: 1,
+                    opacity: "1",
                   },
 
                   "35%": {
                     transform: "scale(1.5)",
-                    opacity: 0,
+                    opacity: "0",
                   },
                 },
 
                 "bnb-second": {
                   "36%": {
                     transform: "scale(1)",
-                    opacity: 0,
+                    opacity: "0",
                   },
 
                   "40%": {
                     transform: "scale(1)",
-                    opacity: 1,
+                    opacity: "1",
                   },
 
                   "60%": {
                     transform: "scale(1.5)",
-                    opacity: 1,
+                    opacity: "1",
                   },
 
                   "65%": {
                     transform: "scale(1.5)",
-                    opacity: 0,
+                    opacity: "0",
                   },
                 },
 
                 "bnb-third": {
                   "66%": {
                     transform: "scale(1)",
-                    opacity: 0,
+                    opacity: "0",
                   },
 
                   "70%": {
                     transform: "scale(1)",
-                    opacity: 1,
+                    opacity: "1",
                   },
 
                   "95%": {
                     transform: "scale(1.5)",
-                    opacity: 1,
+                    opacity: "1",
                   },
 
                   "100%": {
                     transform: "scale(1.5)",
-                    opacity: 0,
+                    opacity: "0",
                   },
                 },
               },
@@ -153,6 +171,11 @@ export const categories = [
       },
     ],
   },
+
+  //<-- /Cards
+
+  // Features Section
+
   {
     section: "application-ui",
     title: "Features Section",
@@ -256,6 +279,11 @@ export const categories = [
       },
     ],
   },
+
+  //<-- /Features Section
+
+  // Navbars
+
   {
     section: "application-ui",
     title: "Navbars",
@@ -336,6 +364,11 @@ export const categories = [
       },
     ],
   },
+
+  //<-- /Navbars
+
+  // Hero
+
   {
     section: "application-ui",
     title: "Hero Sections",
@@ -345,30 +378,30 @@ export const categories = [
       {
         title: "Text on left with image on right",
         fileName: "text-on-left-image-on-right",
-        tailwindConfig: "",
       },
       {
         title: "Centered text with image background",
         fileName: "image-bg",
-        tailwindConfig: "",
       },
       {
         title: "Centered with image",
         fileName: "centered-with-image",
-        tailwindConfig: "",
       },
       {
         title: "Centered text with gradiant text",
         fileName: "centered-with-gradiant-text",
-        tailwindConfig: "",
       },
       {
         title: "Centered text with cta",
         fileName: "centered-text-with-cta",
-        tailwindConfig: "",
       },
     ],
   },
+
+  //<-- /Heroes
+
+  //--> Banners
+
   {
     section: "application-ui",
     title: "Banners",
@@ -378,18 +411,17 @@ export const categories = [
       {
         title: "Top with cta",
         fileName: "top-with-cta",
-        tailwindConfig: "",
       },
       {
         title: "Top with centered text",
         fileName: "top-centered-text",
-        tailwindConfig: "",
       },
       {
         title: "Bottom with centered text",
         fileName: "bottom-centered-text",
-        tailwindConfig: "",
       },
     ],
   },
+
+  //<-- /Banners
 ];
