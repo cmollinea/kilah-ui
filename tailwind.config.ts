@@ -14,7 +14,7 @@ const config: Config = {
         },
         foreground: "#efefef",
         "primary-foreground": "#09090b",
-        background: "#252422",
+        background: "#1a1a1a",
       },
       animation: {
         "fade-in": "fade-in 0.1s ease-in-out forwards",

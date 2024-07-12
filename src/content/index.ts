@@ -15,7 +15,52 @@ type Category = {
 };
 
 export const categories: Category[] = [
-  // Cards
+  //--> Footers
+
+  {
+    section: "Application UI",
+    title: "Footers",
+    slug: "footers",
+    container: "30rem",
+    components: [
+      {
+        title: "Centered with form",
+        fileName: "centered-with-input",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            extend: {
+              fontFamily: {
+                sans: ["Roboto Condensed"],
+              },
+              colors: {
+                primary: "#E60023",
+                foreground: "#fafafa",
+                background: "#0c0c0c",
+                "card-background": "#1a1a1a",
+              },
+            },
+          },
+        },
+      },
+      {
+        title: "Three Section Footer",
+        fileName: "three-section-footer",
+      },
+      {
+        title: "Centered Footer",
+        fileName: "centered-footer",
+      },
+      {
+        title: "Simple Footer",
+        fileName: "simple-footer",
+      },
+    ],
+  },
+
+  //<-- /Footers
+
+  //--> Cards
 
   {
     section: "application-ui",
@@ -174,7 +219,7 @@ export const categories: Category[] = [
 
   //<-- /Cards
 
-  // Features Section
+  //--> Features Section
 
   {
     section: "application-ui",
@@ -282,7 +327,7 @@ export const categories: Category[] = [
 
   //<-- /Features Section
 
-  // Navbars
+  //--> Navbars
 
   {
     section: "application-ui",
@@ -367,7 +412,7 @@ export const categories: Category[] = [
 
   //<-- /Navbars
 
-  // Hero
+  //--> Hero
 
   {
     section: "application-ui",

@@ -6,9 +6,12 @@ export const defaultConfig = `{
                 sans: ['Roboto Condensed'],
             },
             colors: {
-                primary: '#ffd43b',
-                foreground: "#fafafa",
-                background:"#1c1c1c"
+                primary: {
+                    DEFAULT: "#eb5e28",
+                  },
+                  foreground: "#efefef",
+                  "primary-foreground": "#09090b",
+                  background: "#252422",
             }
         }
     }
