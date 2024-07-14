@@ -11,11 +11,11 @@ type Props = {
 };
 
 const buttons = [
-  { breakPoint: "400px", icon: Desktop },
-  { breakPoint: "684px", icon: Full },
-  { breakPoint: "748px", icon: Laptop },
-  { breakPoint: "1024px", icon: Phone },
-  { breakPoint: "1280px", icon: Tablet },
+  { breakPoint: "400px", icon: Phone },
+  { breakPoint: "640px", icon: Tablet },
+  { breakPoint: "768px", icon: Laptop },
+  { breakPoint: "1024px", icon: Desktop },
+  { breakPoint: "1280px", icon: Full },
 ] as const;
 
 export const BreakPointsButtons = ({
@@ -24,7 +24,7 @@ export const BreakPointsButtons = ({
   breakPoint,
 }: Props) => {
   return (
-    <div className="text-primary-foreground flex items-center space-x-4 max-lg:hidden">
+    <div className="flex items-center space-x-4 text-primary-foreground max-lg:hidden">
       {buttons.map((button) => (
         <button
           key={button.breakPoint}
