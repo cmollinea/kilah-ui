@@ -7,8 +7,10 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function createIframe(componentHtml: string, tailwindConfig?: string) {
+  //* --> This code is a tweek version of hyperui.dev code so thanks for the aproach!
+
   return `
-  <html class="dark"">
+  <html>
   <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,7 +34,7 @@ export function createIframe(componentHtml: string, tailwindConfig?: string) {
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
   
   <script>
-    tailwind.config = ${tailwindConfig ? tailwindConfig : defaultConfig}
+    tailwind.config = ${tailwindConfig ?? defaultConfig}
   </script>
   </head>
   
@@ -45,6 +47,8 @@ export function createIframe(componentHtml: string, tailwindConfig?: string) {
 }
 
 export function translateToJsx(html: string) {
+  //* --> This code is from hyperui.dev code so thanks for still Open Source!
+
   let clonedHtml = html;
 
   clonedHtml = clonedHtml.replace(/class=/g, "className=");

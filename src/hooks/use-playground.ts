@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export type ComponentToShow = "playground" | "codeBlock";
-export type BreakPoint = "400px" | "684px" | "748px" | "1024px" | "1280px";
+export type BreakPoint = "400px" | "640px" | "768px" | "1024px" | "1280px";
 export type SelectedLanguaje = "html" | "jsx";
 
 export const usePlayground = () => {
