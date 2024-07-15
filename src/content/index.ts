@@ -21,8 +21,66 @@ export const categories: Category[] = [
     section: "Application UI",
     title: "Footers",
     slug: "footers",
-    container: "30rem",
+    container: "35rem",
     components: [
+      {
+        title: "Grid with cta and form",
+        fileName: "footer-with-cta-and-form",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            extend: {
+              fontFamily: {
+                sans: ["Roboto Condensed"],
+              },
+              colors: {
+                primary: "#4f46e5",
+                foreground: "#f5f5f4",
+                background: "#0f172a",
+                "card-background": "#e0e7ff",
+              },
+            },
+          },
+        },
+      },
+      {
+        title: "Grid with form",
+        fileName: "grid-with-form",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            extend: {
+              fontFamily: {
+                sans: ["Roboto Condensed"],
+              },
+              colors: {
+                primary: "#FF9500",
+                foreground: "#fafafa",
+                background: "#0c0c0c",
+              },
+            },
+          },
+        },
+      },
+      {
+        title: "Social Media on left, grid on right",
+        fileName: "social-left-grid-right",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            extend: {
+              fontFamily: {
+                sans: ["Roboto Condensed"],
+              },
+              colors: {
+                primary: "#13768b",
+                foreground: "#fafafa",
+                background: "#0c0c0c",
+              },
+            },
+          },
+        },
+      },
       {
         title: "Centered with form",
         fileName: "centered-with-input",
