@@ -27,6 +27,7 @@ export const BreakPointsButtons = ({
     <div className="flex items-center space-x-4 text-primary-foreground max-lg:hidden">
       {buttons.map((button) => (
         <button
+          title={`Breakpoint ${button.breakPoint}`}
           key={button.breakPoint}
           aria-label={`Set Breakpoint to ${breakPoint}`}
           aria-disabled={componentToShow === "codeBlock"}
