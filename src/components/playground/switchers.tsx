@@ -23,8 +23,9 @@ export const Switchers = ({
   children,
 }: Props) => {
   return (
-    <div className="text-primary-foreground flex items-center gap-2 max-md:text-xs">
+    <div className="flex items-center gap-2 text-primary-foreground max-md:text-xs">
       <button
+        title={`Switch between component or tailwind config`}
         disabled={componentToShow === "playground"}
         aria-disabled={componentToShow === "playground"}
         onClick={handleSwitchFile}
@@ -49,6 +50,7 @@ export const Switchers = ({
       </button>
 
       <button
+        title="Switch between HTML or JSX"
         aria-disabled={componentToShow === "playground"}
         aria-label={`Set code to show to ${selectedLang}`}
         disabled={componentToShow === "playground"}
@@ -72,6 +74,7 @@ export const Switchers = ({
         )}
       </button>
       <button
+        title="Switch between Demo or Code"
         aria-label={`Set component to show to ${componentToShow}`}
         className="flex w-24 place-content-center items-center gap-x-1 rounded-md bg-primary px-2 py-1 transition-colors ease-in-out hover:bg-primary/80 max-lg:order-first max-md:w-16"
         onClick={handleComponent}

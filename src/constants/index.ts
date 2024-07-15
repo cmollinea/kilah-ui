@@ -1,15 +1,20 @@
-export const defaultConfig = `{
-    darkMode: 'class',
-    theme: {
-        extend: {
-            fontFamily: {
-                sans: ['Roboto Condensed'],
-            },
-            colors: {
-                primary: '#ffd43b',
-                foreground: "#fafafa",
-                background:"#1c1c1c"
-            }
-        }
-    }
-}`;
+import type { Config } from "tailwindcss";
+
+export const defaultConfig: Partial<Config> = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ["Roboto Condensed"],
+      },
+      colors: {
+        primary: {
+          DEFAULT: "#eb5e28",
+        },
+        foreground: "#efefef",
+        "primary-foreground": "#09090b",
+        background: "#252422",
+      },
+    },
+  },
+};

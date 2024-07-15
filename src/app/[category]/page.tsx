@@ -29,11 +29,11 @@ async function Category({ params }: Props) {
                 filePath={routeComponents.slug}
                 key={component.fileName}
                 container={routeComponents.container}
-                tailwindConfig={
-                  component.tailwindConfig
-                    ? JSON.stringify(component.tailwindConfig)
-                    : defaultConfig
-                }
+                tailwindConfig={JSON.stringify(
+                  component.tailwindConfig ?? defaultConfig,
+                  null,
+                  4,
+                )}
               />
             </li>
           ))}

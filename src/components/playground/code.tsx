@@ -11,7 +11,7 @@ type CodeProps = {
 export const Code = ({ code }: CodeProps) => {
   return (
     <div
-      className={`${mono.className} h-full w-full overflow-x-auto p-10 text-xs font-bold md:text-base lg:pl-20`}
+      className={`${mono.className} h-full w-full overflow-x-auto bg-background p-10 text-xs font-bold md:text-base lg:pl-20`}
       dangerouslySetInnerHTML={{ __html: code }}
     />
   );
