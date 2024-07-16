@@ -24,7 +24,10 @@ export default function RootLayout({
     <html lang="en">
       <body
         style={{ backgroundImage: "url('/assets/nnnoise.svg')" }}
-        className={roboto.className + " bg-background text-foreground"}
+        className={
+          roboto.className +
+          " bg-background text-foreground selection:bg-primary selection:text-primary-foreground"
+        }
       >
         <ProgressBarProvider>
           <>
