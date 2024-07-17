@@ -15,7 +15,31 @@ type Category = {
 };
 
 export const categories: Category[] = [
-  //--> Testimonials
+  //*--> SignUp
+
+  {
+    section: "Auth",
+    title: "Sign Up",
+    slug: "signup",
+    container: "50rem",
+    components: [],
+  },
+
+  //*<-- /SignUp
+
+  //*--> Login
+
+  {
+    section: "Auth",
+    title: "Login",
+    slug: "login",
+    container: "50rem",
+    components: [],
+  },
+
+  //*<-- /Login
+
+  //*--> Testimonials
 
   {
     section: "Application UI",
@@ -133,9 +157,9 @@ export const categories: Category[] = [
     ],
   },
 
-  //<-- /Testimonials
+  //*<-- /Testimonials
 
-  //--> Footers
+  //*--> Footers
 
   {
     section: "Application UI",
@@ -236,9 +260,9 @@ export const categories: Category[] = [
     ],
   },
 
-  //<-- /Footers
+  //*<-- /Footers
 
-  //--> Cards
+  //*--> Cards
 
   {
     section: "application-ui",
@@ -395,9 +419,9 @@ export const categories: Category[] = [
     ],
   },
 
-  //<-- /Cards
+  //*<-- /Cards
 
-  //--> Features Section
+  //*--> Features Section
 
   {
     section: "application-ui",
@@ -503,9 +527,9 @@ export const categories: Category[] = [
     ],
   },
 
-  //<-- /Features Section
+  //*<-- /Features Section
 
-  //--> Navbars
+  //*--> Navbars
 
   {
     section: "application-ui",
@@ -588,9 +612,9 @@ export const categories: Category[] = [
     ],
   },
 
-  //<-- /Navbars
+  //*<-- /Navbars
 
-  //--> Hero
+  //*--> Hero
 
   {
     section: "application-ui",
@@ -621,9 +645,9 @@ export const categories: Category[] = [
     ],
   },
 
-  //<-- /Heroes
+  //*<-- /Heroes
 
-  //--> Banners
+  //*--> Banners
 
   {
     section: "application-ui",
@@ -646,5 +670,5 @@ export const categories: Category[] = [
     ],
   },
 
-  //<-- /Banners
+  //*<-- /Banners
 ];
