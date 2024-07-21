@@ -1,0 +1,111 @@
+<main class="bg-background">
+  <section
+    class="flex min-h-screen w-full place-content-center items-center bg-[url(https://images.unsplash.com/photo-1646419624153-188a99c84aea?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover p-4"
+  >
+    <div class="flex w-full max-w-md place-content-center p-4 py-16">
+      <div
+        class="flex w-4/5 flex-col place-content-center items-center space-y-6"
+      >
+        <div class="flex flex-col items-center py-6 text-center">
+          <a href="#" class="text-2xl font-bold"> Logo </a>
+          <h1 class="mt-6 text-3xl font-bold">Sign In</h1>
+          <div
+            class="mt-10 flex h-40 w-40 place-content-center items-center rounded-full bg-muted/20 p-2 backdrop-blur-xl"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="h-28 w-28 stroke-foreground"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+              <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+            </svg>
+          </div>
+        </div>
+        <form action="" class="w-full space-y-4">
+          <div class="space-y-1">
+            <label class="text-foreground/70" htmlFor="username">
+              Username
+            </label>
+            <div class="relative">
+              <input
+                placeholder="Your username"
+                class="border-input/20 w-full rounded-lg bg-muted/20 p-2 backdrop-blur-sm transition placeholder:text-foreground/80 focus:border-transparent focus:bg-muted/50 focus:outline-none focus:ring-0"
+                id="username"
+                name="username"
+                type="text"
+              />
+            </div>
+          </div>
+          <div class="space-y-1">
+            <label class="text-foreground/70" htmlFor="password">
+              Password
+            </label>
+
+            <div class="relative flex items-center justify-between gap-2">
+              <input
+                placeholder="•••••••••••••••"
+                class="border-input/20 w-full shrink-0 rounded-lg bg-muted/20 p-2 backdrop-blur-sm transition placeholder:text-foreground/80 focus:border-transparent focus:bg-muted/50 focus:outline-none focus:ring-0"
+                id="password"
+                name="password"
+                type="password"
+              />
+              <button
+                aria-label="Sign in to your account"
+                class="flex w-full flex-1 place-content-center items-center rounded-full bg-primary p-2 font-medium text-primary-foreground transition hover:brightness-125"
+                type="submit"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 6l6 6l-6 6" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-1">
+              <input
+                class="border-input/20 h-4 w-4 cursor-pointer border bg-muted/20 text-primary backdrop-blur-sm focus:outline-none focus:ring-0"
+                type="checkbox"
+                name="remember"
+                id="remember"
+              />
+
+              <label class="text-sm" htmlFor="remember"> Remember me </label>
+            </div>
+            <a href="" class="w-fit text-sm text-primary underline">
+              Forgot password?
+            </a>
+          </div>
+        </form>
+        <div class="">
+          <p>
+            Don&apos;t have an account?&nbsp;
+            <a
+              href="#"
+              class="text-primary underline transition hover:opacity-90"
+            >
+              Create one for free
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

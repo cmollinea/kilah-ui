@@ -52,6 +52,8 @@ export function translateToJsx(html: string) {
   let clonedHtml = html;
 
   clonedHtml = clonedHtml.replace(/class=/g, "className=");
+  clonedHtml = clonedHtml.replace(/inputmode=/g, "inputMode=");
+  clonedHtml = clonedHtml.replace(/autocomplete=/g, "autoComplete=");
   clonedHtml = clonedHtml.replace(/for=/g, "htmlFor=");
   clonedHtml = clonedHtml.replace(/viewBox=/g, "viewBox=");
   clonedHtml = clonedHtml.replace(/fill-rule=/g, "fillRule=");

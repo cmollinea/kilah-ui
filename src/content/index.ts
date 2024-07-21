@@ -33,8 +33,135 @@ export const categories: Category[] = [
     section: "Auth",
     title: "Login",
     slug: "login",
-    container: "50rem",
-    components: [],
+    container: "40rem",
+    components: [
+      {
+        title: "Flex with testimonial",
+        fileName: "flex-with-testimonial",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            extend: {
+              fontFamily: {
+                sans: ["Roboto Condensed"],
+              },
+              colors: {
+                primary: "#5932e6",
+                "primary-foreground": "#fbfaff",
+                input: "#062726",
+                foreground: "#062726",
+                background: "#f0fff1",
+                "card-background": "#f1faee",
+                muted: "#e9edc9",
+                "muted-foreground": "#03071e",
+              },
+            },
+          },
+          //Tricky one!!! i use a string but in fact is the array inside 😉
+          plugins: `[require('@tailwindcss/forms')]` as any,
+        },
+      },
+      {
+        title: "Flex with image",
+        fileName: "flex-with-image",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            extend: {
+              fontFamily: {
+                sans: ["Roboto Condensed"],
+              },
+              colors: {
+                primary: "#415a77",
+                "primary-foreground": "#f8f9fa",
+                input: "#ffe8d6",
+                foreground: "#ffffff",
+                background: "#0d1b2a",
+                "card-background": "#1b263b",
+                muted: "#272725",
+                "muted-foreground": "#ffffff",
+              },
+            },
+          },
+          //Tricky one!!! i use a string but in fact is the array inside 😉
+          plugins: `[require('@tailwindcss/forms')]` as any,
+        },
+      },
+      {
+        title: "Ubuntu Inspired",
+        fileName: "ubuntu-inspired",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            extend: {
+              fontFamily: {
+                sans: ["Roboto Condensed"],
+              },
+              colors: {
+                primary: "#f07167",
+                "primary-foreground": "#000000",
+                input: "#ffe8d6",
+                foreground: "#f8edeb",
+                background: "#ddbea9",
+                "card-background": "#b7b7a4",
+                muted: "#fdfcdc",
+              },
+            },
+          },
+          //Tricky one!!! i use a string but in fact is the array inside 😉
+          plugins: `[require('@tailwindcss/forms')]` as any,
+        },
+      },
+      {
+        title: "Simple with waves",
+        fileName: "simple-with-waves",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            extend: {
+              fontFamily: {
+                sans: ["Roboto Condensed"],
+              },
+              colors: {
+                primary: "#22c55e",
+                "primary-foreground": "#ffffff",
+                input: "#E8E8E8",
+                foreground: "#E5E5E5",
+                background: "#042f2e",
+                "card-background": "#090909",
+                muted: "#dee2e6",
+              },
+            },
+          },
+          //Tricky one!!! i use a string but in fact is the array inside 😉
+          plugins: `[require('@tailwindcss/forms')]` as any,
+        },
+      },
+      {
+        title: "Simple centered Card",
+        fileName: "simple-centered-card",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            extend: {
+              fontFamily: {
+                sans: ["Roboto Condensed"],
+              },
+              colors: {
+                primary: "#FCA311",
+                "primary-foreground": "#000000",
+                input: "#E8E8E8",
+                foreground: "#E5E5E5",
+                background: "#000000",
+                "card-background": "#090909",
+              },
+            },
+          },
+          //Tricky one!!! i use a string but in fact is the array inside 😉
+          plugins: `[require('@tailwindcss/forms')]` as any,
+        },
+      },
+    ],
   },
 
   //*<-- /Login

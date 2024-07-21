@@ -15,6 +15,8 @@ const config: Config = {
         foreground: "#efefef",
         "primary-foreground": "#09090b",
         background: "#1a1a1a",
+        "card-background": "#101010",
+        muted: "#e7e5e4",
       },
       animation: {
         "fade-in": "fade-in 0.1s ease-in-out forwards",
@@ -38,6 +40,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/forms")],
 };
 export default config;

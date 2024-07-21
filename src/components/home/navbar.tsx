@@ -44,11 +44,12 @@ export const NavBar = () => {
           </nav>
         ) : (
           <div className="order-1 border-r border-foreground/50 pr-3">
-            <input
+            {/* <input
               placeholder="Search components"
               className="flex items-center rounded-md border border-foreground/50 bg-stone-900 px-2 transition-colors focus:border-foreground focus:outline-none max-md:max-w-[150px] max-md:text-sm max-md:placeholder:text-xs"
               type="text"
-            />
+            /> */}
+            <Link href={"/test"}>Test Component</Link>
           </div>
         )}
       </div>
