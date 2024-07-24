@@ -47,7 +47,9 @@
               Password
             </label>
 
-            <div class="relative flex items-center justify-between gap-2">
+            <div
+              class="relative items-center justify-between gap-2 max-md:space-y-6 md:flex"
+            >
               <input
                 placeholder="•••••••••••••••"
                 class="border-input/20 w-full shrink-0 rounded-lg bg-muted/20 p-2 backdrop-blur-sm transition placeholder:text-foreground/80 focus:border-transparent focus:bg-muted/50 focus:outline-none focus:ring-0"
@@ -57,9 +59,10 @@
               />
               <button
                 aria-label="Sign in to your account"
-                class="flex w-full flex-1 place-content-center items-center rounded-full bg-primary p-2 font-medium text-primary-foreground transition hover:brightness-125"
+                class="flex w-full flex-1 place-content-center items-center rounded-lg bg-primary p-2 font-medium text-primary-foreground transition hover:brightness-125 md:rounded-full"
                 type="submit"
               >
+                <span class="text-lg md:sr-only">Enter</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
