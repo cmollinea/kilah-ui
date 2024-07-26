@@ -12,11 +12,14 @@ const config: Config = {
         primary: {
           DEFAULT: "#eb5e28",
         },
+        secondary: "#d62828",
+        "secondary-foreground": "#edf6f9",
         foreground: "#efefef",
         "primary-foreground": "#09090b",
         background: "#1a1a1a",
         "card-background": "#101010",
         muted: "#e7e5e4",
+        input: "#888888",
       },
       animation: {
         "fade-in": "fade-in 0.1s ease-in-out forwards",
@@ -40,6 +43,10 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), require("@tailwindcss/forms")],
+  plugins: [
+    require("tailwindcss-animate"),
+    require("@tailwindcss/forms"),
+    require("tailwindcss-bg-patterns"),
+  ],
 };
 export default config;
