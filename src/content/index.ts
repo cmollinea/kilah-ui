@@ -22,7 +22,89 @@ export const categories: Category[] = [
     title: "Sign Up",
     slug: "signup",
     container: "50rem",
-    components: [],
+    components: [
+      {
+        title: "Simple centered card",
+        fileName: "simple-card",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            extend: {
+              fontFamily: {
+                sans: ["Roboto Condensed"],
+              },
+              colors: {
+                primary: "#3772ff",
+                "primary-foreground": "#0c0a09",
+                secondary: "#00916e",
+                "secondary-foreground": "#f5f5f4",
+                input: "#888888",
+                foreground: "#f5f5f4",
+                background: "#080708",
+                "card-background": "#0c0a09",
+              },
+            },
+          },
+          //Tricky one!!! i use a string but in fact is the array inside 😉
+          plugins: `[require('@tailwindcss/forms')]` as any,
+        },
+      },
+      {
+        title: "Auth form on left testimonial on right",
+        fileName: "with-testimonial",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            extend: {
+              fontFamily: {
+                sans: ["Roboto Condensed"],
+              },
+              colors: {
+                primary: "#3c6e71",
+                "primary-foreground": "#f5f5f4",
+                secondary: "#284b63",
+                "secondary-foreground": "#f5f5f4",
+                input: "#888888",
+                foreground: "#f5f5f4",
+                background: "#09090b",
+                accent: "#d4d4d4",
+                "accent-foreground": "#0c0a09",
+              },
+            },
+          },
+          //Tricky one!!! i use a string but in fact is the array inside 😉
+          plugins: `[require('@tailwindcss/forms')]` as any,
+        },
+      },
+      {
+        title: "Auth form on right, image and features on left",
+        fileName: "flex-with-features-and-image",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            extend: {
+              fontFamily: {
+                sans: ["Roboto Condensed"],
+              },
+              colors: {
+                primary: "#6930c3",
+                "primary-foreground": "#000000",
+                secondary: "#56cfe1",
+                "secondary-foreground": "#000000",
+                input: "#888888",
+                foreground: "#000000",
+                background: "#f9f9f9",
+                "card-background": "#3d405b",
+                accent: "#edf2f4",
+                "accent-foreground": "#2b2d42",
+              },
+            },
+          },
+          //Tricky one!!! i use a string but in fact is the array inside 😉
+          plugins: `[require('@tailwindcss/forms')]` as any,
+        },
+      },
+    ],
   },
 
   //*<-- /SignUp
@@ -52,8 +134,8 @@ export const categories: Category[] = [
                 foreground: "#062726",
                 background: "#f0fff1",
                 "card-background": "#f1faee",
-                muted: "#e9edc9",
-                "muted-foreground": "#03071e",
+                accent: "#e9edc9",
+                "accent-foreground": "#03071e",
               },
             },
           },
@@ -78,8 +160,8 @@ export const categories: Category[] = [
                 foreground: "#ffffff",
                 background: "#0d1b2a",
                 "card-background": "#1b263b",
-                muted: "#272725",
-                "muted-foreground": "#ffffff",
+                accent: "#272725",
+                "accent-foreground": "#ffffff",
               },
             },
           },
@@ -104,7 +186,7 @@ export const categories: Category[] = [
                 foreground: "#f8edeb",
                 background: "#ddbea9",
                 "card-background": "#b7b7a4",
-                muted: "#fdfcdc",
+                accent: "#fdfcdc",
               },
             },
           },
@@ -129,7 +211,7 @@ export const categories: Category[] = [
                 foreground: "#E5E5E5",
                 background: "#042f2e",
                 "card-background": "#090909",
-                muted: "#dee2e6",
+                accent: "#dee2e6",
               },
             },
           },

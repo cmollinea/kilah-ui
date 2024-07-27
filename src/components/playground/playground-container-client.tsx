@@ -69,17 +69,18 @@ export const ClientPlaygroundContainer = ({
       </div>
 
       {componentToShow === "playground" ? (
-        <div className="relative w-full lg:outline-dashed lg:outline-2 lg:outline-foreground/20">
+        <div className="relative w-full bg-background">
+          <div className="absolute inset-0 z-0 pattern-input pattern-opacity-5 lg:pattern-rectangles"></div>
           <section
             style={{
               maxWidth: breakPoint,
               height: container,
             }}
             key={"playground"}
-            className="relative h-full w-full animate-fade-in overflow-hidden rounded-md opacity-0 transition-all duration-300 ease-in-out max-lg:border max-lg:border-foreground/20"
+            className="relative z-10 h-full w-full animate-fade-in overflow-hidden rounded-md opacity-0 transition-all duration-300 ease-in-out"
           >
             <iframe
-              className="h-full w-full overflow-y-auto"
+              className="relative z-10 h-full w-full overflow-y-auto"
               srcDoc={html.render}
             />
           </section>

@@ -18,7 +18,7 @@ const config: Config = {
         "primary-foreground": "#09090b",
         background: "#1a1a1a",
         "card-background": "#101010",
-        muted: "#e7e5e4",
+        accent: "#e7e5e4",
         input: "#888888",
       },
       animation: {

@@ -1,19 +1,25 @@
-<main class="bg-background lg:h-screen">
-  <section class="flex h-full w-full p-4">
-    <div class="hidden flex-1 place-content-center items-center lg:flex">
+<!-- TODO: change name -->
+
+<section class="bg-background">
+  <div class="grid grid-cols-1 lg:min-h-screen lg:grid-cols-2">
+    <div
+      class="relative hidden h-full place-content-center items-center lg:flex"
+    >
       <img
         src="https://res.cloudinary.com/dprty78z0/image/upload/v1721575936/jx5ojulkkpyn54otllqt.png"
         alt=""
       />
     </div>
-    <div class="flex-1 p-1 max-lg:min-h-screen">
+    <div class="p-4 max-lg:min-h-screen">
       <div
-        class="flex min-h-full w-full place-content-center rounded-xl bg-card-background px-10 py-10 md:pt-16 lg:px-32 xl:px-40"
+        class="flex h-full items-center justify-center rounded-md bg-card-background px-4 py-10 sm:px-6 sm:py-16 lg:px-8 lg:py-24"
       >
-        <div class="flex w-full max-w-md flex-1 flex-col">
+        <div
+          class="flex h-full w-full max-w-sm flex-col xl:mx-auto 2xl:max-w-md"
+        >
           <div class="flex flex-col items-center space-y-5">
-            <a href="#"
-              ><svg
+            <a href="#">
+              <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
@@ -22,15 +28,15 @@
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path
                   d="M13.5 3c5.187 0 9.5 3.044 9.5 7c0 3.017 -2.508 5.503 -6 6.514v3.486a1 1 0 0 1 -1 1h-6a1 1 0 0 1 -1 -1v-4.046a21 21 0 0 1 -2.66 -1.411l-.13 -.082l-1.57 1.308a1 1 0 0 1 -1.634 -.656l-.006 -.113v-2.851l-.31 -.25a47 47 0 0 1 -.682 -.568l-.67 -.582a1 1 0 0 1 0 -1.498a47 47 0 0 1 1.351 -1.151l.311 -.25v-2.85a1 1 0 0 1 1.55 -.836l.09 .068l1.57 1.307l.128 -.08c2.504 -1.553 4.784 -2.378 6.853 -2.453zm-2.499 13.657l-.001 2.343h4l.001 -2.086q -.735 .086 -1.501 .086a9.6 9.6 0 0 1 -2.13 -.252z"
-                /></svg
-            ></a>
+                />
+              </svg>
+            </a>
             <h4 class="text-2xl font-medium">Welcome back!</h4>
           </div>
-          <form action="" class="mt-10 w-full max-w-3xl space-y-10">
+          <form action="" class="mt-10 w-full max-w-2xl space-y-10">
             <div class="flex flex-col space-y-8">
               <div class="relative z-0">
                 <input
-                  autocomplete="off"
                   name="email"
                   type="email"
                   inputmode="email"
@@ -40,12 +46,12 @@
                 <label
                   for="email"
                   class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-foreground duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4"
-                  >Email</label
                 >
+                  Email
+                </label>
               </div>
               <div class="relative z-0">
                 <input
-                  autocomplete="off"
                   name="password"
                   type="password"
                   id="password"
@@ -55,34 +61,35 @@
                 <label
                   for="password"
                   class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-foreground duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4"
-                  >Password</label
                 >
+                  Password
+                </label>
               </div>
               <div class="flex items-center justify-between">
                 <div class="flex items-center gap-1">
                   <input
-                    class="border-input/50 h-4 w-4 cursor-pointer border bg-background text-primary focus:outline-none focus:ring-0"
+                    class="h-4 w-4 cursor-pointer border border-input/50 bg-background text-primary focus:outline-none focus:ring-0"
                     type="checkbox"
                     name="remember"
                     id="remember"
                   />
-                  <label class="text-sm" for="remember">Remember me</label>
+                  <label class="text-sm" for="remember"> Remember me </label>
                 </div>
-                <a href="#" class="text-sm text-foreground/50 hover:underline"
-                  >Forgot password?</a
-                >
+                <a href="#" class="text-sm text-foreground/50 hover:underline">
+                  Forgot password?
+                </a>
               </div>
             </div>
 
             <div class="space-y-2">
               <button
-                class="w-full rounded-full bg-primary p-2 font-medium text-primary-foreground transition hover:bg-primary/80"
+                class="w-full rounded-md bg-primary px-2 py-3 font-medium text-primary-foreground transition hover:bg-primary/80"
                 type="submit"
               >
                 Log in
               </button>
               <button
-                class="text-muted-foreground flex w-full place-content-center items-center gap-1 rounded-full bg-muted/80 p-2 font-medium transition-all hover:bg-muted/80"
+                class="flex w-full place-content-center items-center gap-1 rounded-md border border-input/10 px-2 py-3 font-medium transition-all hover:bg-input/10"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -114,9 +121,7 @@
               </button>
             </div>
           </form>
-          <div
-            class="flex h-full flex-1 place-content-center items-end text-sm"
-          >
+          <div class="flex h-full grow place-content-center items-end text-sm">
             <p>
               Don&apos;t have an account?&nbsp;
               <a
@@ -130,5 +135,5 @@
         </div>
       </div>
     </div>
-  </section>
-</main>
+  </div>
+</section>
