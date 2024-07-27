@@ -17,5 +17,5 @@ export const defaultConfig: Partial<Config> = {
       },
     },
   },
-  plugins: `[require('@tailwindcss/typography')]` as any,
+  plugins: ["require('@tailwindcss/typography')"] as any,
 };

@@ -15,28 +15,38 @@ async function Category({ params }: Props) {
     <>
       <main className="flex w-full animate-translate-up flex-col items-center overflow-x-auto px-4 py-28 opacity-0 transition-opacity duration-300 ease-out">
         <ul className="flex w-full flex-col items-center space-y-10">
-          {routeComponents?.components.map((component) => (
-            <li
-              key={component.fileName}
-              id={component.fileName}
-              className="flex w-full max-w-[1280px] flex-col space-y-8 border-b border-foreground/20 pb-20"
-            >
-              <h3 className="w-fit py-2 text-xl font-black md:pr-20 md:text-4xl">
-                #{component.title}
-              </h3>
-              <Component
-                fileName={component.fileName}
-                filePath={routeComponents.slug}
+          {routeComponents?.components.map((component) => {
+            let config = defaultConfig;
+
+            if (component.tailwindConfig && config.theme) {
+              config.theme.extend = { ...component.tailwindConfig.theme };
+            }
+
+            if (component.tailwindConfig?.plugins && config.plugins) {
+              config.plugins = config.plugins.concat(
+                component.tailwindConfig.plugins,
+              );
+            }
+
+            return (
+              <li
                 key={component.fileName}
-                container={routeComponents.container}
-                tailwindConfig={JSON.stringify(
-                  component.tailwindConfig ?? defaultConfig,
-                  null,
-                  4,
-                )}
-              />
-            </li>
-          ))}
+                id={component.fileName}
+                className="flex w-full max-w-[1280px] flex-col space-y-8 border-b border-foreground/20 pb-20"
+              >
+                <h3 className="w-fit py-2 text-xl font-black md:pr-20 md:text-4xl">
+                  #{component.title}
+                </h3>
+                <Component
+                  fileName={component.fileName}
+                  filePath={routeComponents.slug}
+                  key={component.fileName}
+                  container={routeComponents.container}
+                  tailwindConfig={JSON.stringify(config, null, 4)}
+                />
+              </li>
+            );
+          })}
         </ul>
       </main>
     </>
