@@ -15,6 +15,144 @@ type Category = {
 };
 
 export const categories: Category[] = [
+  //*--> Buttons
+
+  {
+    title: "Buttons",
+    section: "Application Ui",
+    slug: "buttons",
+    container: "10rem",
+    components: [
+      {
+        title: "Primary Button",
+        fileName: "primary",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            colors: {
+              primary: "#415a77",
+              "primary-foreground": "#ffffff",
+              secondary: "#1b263b",
+              "secondary-foreground": "#ffffff",
+              background: "#000814",
+            },
+          },
+        },
+      },
+      {
+        title: "Outline Button",
+        fileName: "outline",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            colors: {
+              primary: "#415a77",
+              "primary-foreground": "#ffffff",
+              background: "#000814",
+            },
+          },
+        },
+      },
+      {
+        title: "Ghost Button",
+        fileName: "ghost",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            colors: {
+              accent: "#e0e1dd",
+              foreground: "#ffffff",
+              background: "#000814",
+            },
+          },
+        },
+      },
+      {
+        title: "Primary with icon Button",
+        fileName: "primary-icon",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            colors: {
+              primary: "#415a77",
+              "primary-foreground": "#ffffff",
+              secondary: "#1b263b",
+              "secondary-foreground": "#ffffff",
+              background: "#000814",
+            },
+          },
+        },
+      },
+      {
+        title: "Busy Button",
+        fileName: "busy",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            colors: {
+              primary: "#415a77",
+              "primary-foreground": "#ffffff",
+              secondary: "#1b263b",
+              "secondary-foreground": "#ffffff",
+              background: "#000814",
+            },
+          },
+        },
+      },
+      {
+        title: "Icon Button",
+        fileName: "only-icon",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            colors: {
+              primary: "#415a77",
+              "primary-foreground": "#ffffff",
+              secondary: "#1b263b",
+              "secondary-foreground": "#ffffff",
+              background: "#000814",
+            },
+          },
+        },
+      },
+      {
+        title: "With drop shadow",
+        fileName: "drop-shadow",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            colors: {
+              primary: "#22223b",
+              "primary-foreground": "#f0efeb",
+              secondary: "#c9ada7",
+              "secondary-foreground": "#001219",
+              background: "#f7ede2",
+              foreground: "#081c15",
+            },
+          },
+        },
+      },
+      {
+        title: "Gradient outline button with rotate and scale on hover",
+        fileName: "gradient",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            colors: {
+              primary: "#415a77",
+              "primary-foreground": "#ffffff",
+              secondary: "#1b263b",
+              "secondary-foreground": "#ffffff",
+              background: "#000814",
+            },
+          },
+        },
+      },
+    ],
+  },
+
+  //*<-- /Buttons
+
   //*--> SignUp
 
   {
