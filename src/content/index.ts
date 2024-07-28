@@ -15,6 +15,144 @@ type Category = {
 };
 
 export const categories: Category[] = [
+  //*--> Badges
+
+  {
+    title: "Badges",
+    section: "Application Ui",
+    slug: "badges",
+    container: "10rem",
+    components: [
+      {
+        title: "Flat Badges",
+        fileName: "flat",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            colors: {
+              primary: "#811aff",
+              "primary-foreground": "#ffffff",
+              secondary: "#037e82",
+              "secondary-foreground": "#000000",
+              success: "#38c172",
+              "success-foreground": "#ffffff",
+              warning: "#e6e925",
+              "warning-foreground": "#ffffff",
+              danger: "#e3342f",
+              "danger-foreground": "#ffffff",
+              info: "#6cb2eb",
+              "info-foreground": "#ffffff",
+              accent: "#b8b4b4",
+              "accent-foreground": "#000000",
+              background: "#0d0d0d",
+            },
+          },
+        },
+      },
+      {
+        title: "Bordered Badges",
+        fileName: "bordered",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            colors: {
+              primary: "#811aff",
+              "primary-foreground": "#ffffff",
+              secondary: "#037e82",
+              "secondary-foreground": "#000000",
+              success: "#38c172",
+              "success-foreground": "#ffffff",
+              warning: "#e6e925",
+              "warning-foreground": "#ffffff",
+              danger: "#e3342f",
+              "danger-foreground": "#ffffff",
+              info: "#6cb2eb",
+              "info-foreground": "#ffffff",
+              accent: "#b8b4b4",
+              "accent-foreground": "#000000",
+              background: "#0d0d0d",
+            },
+          },
+        },
+      },
+      {
+        title: "Bordered with dots badges",
+        fileName: "bordered-with-dot",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            colors: {
+              primary: "#811aff",
+              "primary-foreground": "#ffffff",
+              secondary: "#037e82",
+              "secondary-foreground": "#000000",
+              success: "#38c172",
+              "success-foreground": "#ffffff",
+              warning: "#e6e925",
+              "warning-foreground": "#ffffff",
+              danger: "#e3342f",
+              "danger-foreground": "#ffffff",
+              info: "#6cb2eb",
+              "info-foreground": "#ffffff",
+              accent: "#b8b4b4",
+              "accent-foreground": "#000000",
+              background: "#0d0d0d",
+              foreground: "#fafafa",
+              input: "#e4e4e7",
+            },
+          },
+        },
+      },
+      {
+        title: "Bordered with icon",
+        fileName: "bordered-with-icon",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            colors: {
+              info: "#6cb2eb",
+              "info-foreground": "#ffffff",
+              background: "#0d0d0d",
+              foreground: "#fafafa",
+            },
+          },
+        },
+      },
+      {
+        title: "Notification",
+        fileName: "notification",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            colors: {
+              background: "#0d0d0d",
+              foreground: "#fafafa",
+              input: "#a1a1aa",
+              info: "#2563eb",
+            },
+          },
+        },
+      },
+      {
+        title: "Notification with pulse",
+        fileName: "notification-with-pulse",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            colors: {
+              background: "#0d0d0d",
+              foreground: "#fafafa",
+              input: "#a1a1aa",
+              info: "#2563eb",
+            },
+          },
+        },
+      },
+    ],
+  },
+
+  //*<-- /Badges
+
   //*--> Buttons
 
   {
