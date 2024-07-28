@@ -15,6 +15,109 @@ type Category = {
 };
 
 export const categories: Category[] = [
+  //*--> Tabs
+
+  {
+    title: "Tabs",
+    section: "Application Ui",
+    slug: "tabs",
+    container: "10rem",
+    components: [
+      {
+        title: "Simple Tabs",
+        fileName: "simple-tabs",
+        tailwindConfig: {
+          theme: {
+            colors: {
+              primary: "#84cc16",
+              "primary-foreground": "#09090b",
+              background: "#000814",
+              foreground: "#f5f5f5",
+              accent: "#a1a1aa",
+            },
+          },
+        },
+      },
+      {
+        title: "Underlined Tabs",
+        fileName: "underlined-tabs",
+        tailwindConfig: {
+          theme: {
+            colors: {
+              primary: "#84cc16",
+              "primary-foreground": "#09090b",
+              background: "#000814",
+              foreground: "#f5f5f5",
+              accent: "#a1a1aa",
+            },
+          },
+        },
+      },
+      {
+        title: "Tabs with Icons",
+        fileName: "tabs-with-icons",
+        tailwindConfig: {
+          theme: {
+            colors: {
+              primary: "#84cc16",
+              "primary-foreground": "#09090b",
+              background: "#000814",
+              foreground: "#f5f5f5",
+              accent: "#a1a1aa",
+            },
+          },
+        },
+      },
+      {
+        title: "Underlined Tabs with Icons",
+        fileName: "underlined-tabs-with-icons",
+        tailwindConfig: {
+          theme: {
+            colors: {
+              primary: "#84cc16",
+              "primary-foreground": "#09090b",
+              background: "#000814",
+              foreground: "#f5f5f5",
+              accent: "#a1a1aa",
+            },
+          },
+        },
+      },
+      {
+        title: "Pilled Tabs with Badge",
+        fileName: "pilled-tabs-with-badge",
+        tailwindConfig: {
+          theme: {
+            colors: {
+              primary: "#84cc16",
+              "primary-foreground": "#09090b",
+              background: "#000814",
+              foreground: "#f5f5f5",
+              accent: "#a1a1aa",
+            },
+          },
+        },
+      },
+      {
+        title: "Pilled Tabs with Badge & icon",
+        fileName: "pilled-tabs-with-badge-and-icon",
+        tailwindConfig: {
+          theme: {
+            colors: {
+              primary: "#84cc16",
+              "primary-foreground": "#09090b",
+              background: "#000814",
+              foreground: "#f5f5f5",
+              accent: "#a1a1aa",
+            },
+          },
+        },
+      },
+    ],
+  },
+
+  //*<-- /Tabs
+
   //*--> Badges
 
   {
@@ -27,7 +130,6 @@ export const categories: Category[] = [
         title: "Flat Badges",
         fileName: "flat",
         tailwindConfig: {
-          darkMode: "class",
           theme: {
             colors: {
               primary: "#811aff",
@@ -53,7 +155,6 @@ export const categories: Category[] = [
         title: "Bordered Badges",
         fileName: "bordered",
         tailwindConfig: {
-          darkMode: "class",
           theme: {
             colors: {
               primary: "#811aff",
@@ -79,7 +180,6 @@ export const categories: Category[] = [
         title: "Bordered with dots badges",
         fileName: "bordered-with-dot",
         tailwindConfig: {
-          darkMode: "class",
           theme: {
             colors: {
               primary: "#811aff",
@@ -107,7 +207,6 @@ export const categories: Category[] = [
         title: "Bordered with icon",
         fileName: "bordered-with-icon",
         tailwindConfig: {
-          darkMode: "class",
           theme: {
             colors: {
               info: "#6cb2eb",
@@ -122,7 +221,6 @@ export const categories: Category[] = [
         title: "Notification",
         fileName: "notification",
         tailwindConfig: {
-          darkMode: "class",
           theme: {
             colors: {
               background: "#0d0d0d",
@@ -137,7 +235,6 @@ export const categories: Category[] = [
         title: "Notification with pulse",
         fileName: "notification-with-pulse",
         tailwindConfig: {
-          darkMode: "class",
           theme: {
             colors: {
               background: "#0d0d0d",
@@ -165,14 +262,14 @@ export const categories: Category[] = [
         title: "Primary Button",
         fileName: "primary",
         tailwindConfig: {
-          darkMode: "class",
           theme: {
             colors: {
-              primary: "#415a77",
-              "primary-foreground": "#ffffff",
+              primary: "#84cc16",
+              "primary-foreground": "#09090b",
               secondary: "#1b263b",
               "secondary-foreground": "#ffffff",
               background: "#000814",
+              foreground: "#f5f5f5",
             },
           },
         },
@@ -181,12 +278,13 @@ export const categories: Category[] = [
         title: "Outline Button",
         fileName: "outline",
         tailwindConfig: {
-          darkMode: "class",
           theme: {
             colors: {
-              primary: "#415a77",
-              "primary-foreground": "#ffffff",
+              primary: "#84cc16",
+              "primary-foreground": "#09090b",
               background: "#000814",
+              foreground: "#f5f5f5",
+              accent: "#a1a1aa",
             },
           },
         },
@@ -195,7 +293,6 @@ export const categories: Category[] = [
         title: "Ghost Button",
         fileName: "ghost",
         tailwindConfig: {
-          darkMode: "class",
           theme: {
             colors: {
               accent: "#e0e1dd",
@@ -209,14 +306,14 @@ export const categories: Category[] = [
         title: "Primary with icon Button",
         fileName: "primary-icon",
         tailwindConfig: {
-          darkMode: "class",
           theme: {
             colors: {
-              primary: "#415a77",
-              "primary-foreground": "#ffffff",
+              primary: "#84cc16",
+              "primary-foreground": "#09090b",
               secondary: "#1b263b",
               "secondary-foreground": "#ffffff",
               background: "#000814",
+              foreground: "#f5f5f5",
             },
           },
         },
@@ -225,14 +322,14 @@ export const categories: Category[] = [
         title: "Busy Button",
         fileName: "busy",
         tailwindConfig: {
-          darkMode: "class",
           theme: {
             colors: {
-              primary: "#415a77",
-              "primary-foreground": "#ffffff",
+              primary: "#84cc16",
+              "primary-foreground": "#09090b",
               secondary: "#1b263b",
               "secondary-foreground": "#ffffff",
               background: "#000814",
+              foreground: "#f5f5f5",
             },
           },
         },
@@ -241,14 +338,14 @@ export const categories: Category[] = [
         title: "Icon Button",
         fileName: "only-icon",
         tailwindConfig: {
-          darkMode: "class",
           theme: {
             colors: {
-              primary: "#415a77",
-              "primary-foreground": "#ffffff",
+              primary: "#84cc16",
+              "primary-foreground": "#09090b",
               secondary: "#1b263b",
               "secondary-foreground": "#ffffff",
               background: "#000814",
+              foreground: "#f5f5f5",
             },
           },
         },
@@ -257,7 +354,6 @@ export const categories: Category[] = [
         title: "With drop shadow",
         fileName: "drop-shadow",
         tailwindConfig: {
-          darkMode: "class",
           theme: {
             colors: {
               primary: "#22223b",
@@ -274,14 +370,14 @@ export const categories: Category[] = [
         title: "Gradient outline button with rotate and scale on hover",
         fileName: "gradient",
         tailwindConfig: {
-          darkMode: "class",
           theme: {
             colors: {
-              primary: "#415a77",
-              "primary-foreground": "#ffffff",
+              primary: "#84cc16",
+              "primary-foreground": "#09090b",
               secondary: "#1b263b",
               "secondary-foreground": "#ffffff",
               background: "#000814",
+              foreground: "#f5f5f5",
             },
           },
         },
@@ -401,7 +497,7 @@ export const categories: Category[] = [
         tailwindConfig: {
           theme: {
             colors: {
-              primary: "#415a77",
+              primary: "#84cc16",
               "primary-foreground": "#f8f9fa",
               input: "#ffe8d6",
               foreground: "#ffffff",
