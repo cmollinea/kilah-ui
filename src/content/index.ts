@@ -15,6 +15,150 @@ type Category = {
 };
 
 export const categories: Category[] = [
+  //*--> Alerts
+  {
+    title: "Alerts",
+    section: "Application Ui",
+    slug: "alerts",
+    container: "30rem",
+    components: [
+      {
+        title: "Simple Alerts",
+        fileName: "simple-alerts",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            colors: {
+              info: "#1e40af",
+              "info-foreground": "#ffffff",
+              success: "#15803d",
+              "success-foreground": "#ffffff",
+              accent: "#78716c",
+              "accent-foreground": "#ffffff",
+              danger: "#b91c1c",
+              "danger-foreground": "#ffffff",
+              warning: "#b45309",
+              "warning-foreground": "#ffffff",
+              foreground: "#f5f5f5",
+              background: "#121212",
+            },
+          },
+        },
+      },
+      {
+        title: "Alert with Huge Icon",
+        fileName: "alert-with-huge-icon",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            colors: {
+              info: "#1e40af",
+              "info-foreground": "#ffffff",
+              success: "#15803d",
+              "success-foreground": "#ffffff",
+              accent: "#78716c",
+              "accent-foreground": "#ffffff",
+              danger: "#b91c1c",
+              "danger-foreground": "#ffffff",
+              warning: "#b45309",
+              "warning-foreground": "#ffffff",
+              foreground: "#f5f5f5",
+              background: "#121212",
+            },
+          },
+        },
+      },
+      {
+        title: "Filled Alert",
+        fileName: "filled-alert",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            colors: {
+              info: "#1e40af",
+              "info-foreground": "#ffffff",
+              success: "#15803d",
+              "success-foreground": "#ffffff",
+              accent: "#78716c",
+              "accent-foreground": "#ffffff",
+              danger: "#b91c1c",
+              "danger-foreground": "#ffffff",
+              warning: "#b45309",
+              "warning-foreground": "#ffffff",
+              foreground: "#f5f5f5",
+              background: "#121212",
+            },
+          },
+        },
+      },
+      {
+        title: "Alert with Actions",
+        fileName: "alert-with-actions",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            colors: {
+              info: "#1e40af",
+              "info-foreground": "#ffffff",
+              success: "#15803d",
+              "success-foreground": "#ffffff",
+              accent: "#78716c",
+              "accent-foreground": "#ffffff",
+              danger: "#b91c1c",
+              "danger-foreground": "#ffffff",
+              warning: "#b45309",
+              "warning-foreground": "#ffffff",
+              foreground: "#f5f5f5",
+              background: "#121212",
+            },
+          },
+        },
+      },
+      {
+        title: "Alert with CTA",
+        fileName: "alert-with-cta",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            colors: {
+              success: "#15803d",
+              "success-foreground": "#ffffff",
+              accent: "#78716c",
+              "accent-foreground": "#ffffff",
+              danger: "#b91c1c",
+              "danger-foreground": "#ffffff",
+              foreground: "#f5f5f5",
+              background: "#121212",
+              "card-background": "#181818",
+            },
+          },
+        },
+      },
+      {
+        title: "Alert with CTA 2",
+        fileName: "alert-with-cta-2",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            colors: {
+              success: "#15803d",
+              "success-foreground": "#ffffff",
+              accent: "#78716c",
+              "accent-foreground": "#ffffff",
+              danger: "#b91c1c",
+              "danger-foreground": "#ffffff",
+              foreground: "#f5f5f5",
+              background: "#121212",
+              "card-background": "#181818",
+            },
+          },
+        },
+      },
+    ],
+  },
+
+  //*<-- /Alerts
+
   //*--> Tabs
 
   {
@@ -295,7 +439,7 @@ export const categories: Category[] = [
         tailwindConfig: {
           theme: {
             colors: {
-              accent: "#e0e1dd",
+              accent: "#78716c",
               foreground: "#ffffff",
               background: "#000814",
             },

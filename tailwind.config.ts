@@ -9,16 +9,23 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: {
-          DEFAULT: "#eb5e28",
-        },
+        primary: "#eb5e28",
+        "primary-foreground": "#09090b",
         secondary: "#d62828",
         "secondary-foreground": "#edf6f9",
+        accent: "#e7e5e4",
+        "accent-foreground": "#ffffff",
+        info: "#3b82f6",
+        "info-foreground": "#ffffff",
+        success: "#10b981",
+        "success-foreground": "#ffffff",
+        danger: "#ef4444",
+        "danger-foreground": "#ffffff",
+        warning: "#f59e0b",
+        "warning-foreground": "#ffffff",
         foreground: "#efefef",
-        "primary-foreground": "#09090b",
         background: "#1a1a1a",
         "card-background": "#101010",
-        accent: "#e7e5e4",
         input: "#888888",
       },
       animation: {

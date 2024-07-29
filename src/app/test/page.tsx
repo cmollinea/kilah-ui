@@ -1,14 +1,11 @@
 function Test() {
   return (
-    <section className="bg-background">
-      <div className="grid grid-cols-1 lg:min-h-screen lg:grid-cols-2">
-        <div className="relative flex items-center justify-center bg-background px-4 py-10 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
-          <div className="absolute left-4 top-4">
-            <a
-              href="#"
-              className="text-xs text-foreground/40 transition hover:text-foreground hover:underline"
-            >
-              <div className="flex items-center gap-[1px]">
+    <section className="flex min-h-screen flex-col place-content-center items-center space-y-2 bg-background px-4 py-20">
+      <div role="alert" className="flex w-full max-w-md bg-background">
+        <div className="w-full rounded-xl bg-accent/10 ring-1 ring-inset ring-accent/20">
+          <div className="relative flex w-full gap-2 py-5 pl-4 pr-6 max-md:flex-col md:gap-4">
+            <div className="absolute right-3 top-2">
+              <button className="rounded-xl p-0.5 transition-all ease-in-out hover:bg-foreground/20 active:scale-95">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="14"
@@ -21,365 +18,217 @@ function Test() {
                   strokeLinejoin="round"
                 >
                   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path d="M15 6l-6 6l6 6" />
+                  <path d="M18 6l-12 12" />
+                  <path d="M6 6l12 12" />
                 </svg>
-                <span>Home</span>
-              </div>
-            </a>
-          </div>
-          <div className="xl:mx-auto xl:w-full xl:max-w-sm 2xl:max-w-md">
-            <h2 className="text-3xl font-bold leading-relaxed text-foreground sm:text-4xl">
-              Sign up to KilahUI
-            </h2>
-            <p className="mt-2 text-base text-gray-600">
-              Already have an account?
-              <a
-                href="#"
-                title=""
-                className="font-medium text-primary transition-all hover:text-opacity-95 hover:underline focus:text-opacity-95"
-              >
-                Login
-              </a>
-            </p>
-
-            <form action="#" method="POST" className="mt-8">
-              <div className="space-y-5">
-                <div>
-                  <label
-                    htmlFor=""
-                    className="text-base font-medium text-foreground"
-                  >
-                    Full Name
-                  </label>
-                  <div className="relative mt-2.5 text-input focus-within:text-primary">
-                    <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="h-5 w-5"
-                      >
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M12 13a3 3 0 1 0 0 -6a3 3 0 0 0 0 6z" />
-                        <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />
-                        <path d="M6 20.05v-.05a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v.05" />
-                      </svg>
-                    </div>
-
-                    <input
-                      type="text"
-                      name=""
-                      id=""
-                      placeholder="Jane Doe"
-                      className="block w-full rounded-md border border-input bg-transparent py-2 pl-10 pr-4 text-foreground placeholder-input transition-colors focus:border-primary focus:outline-none focus:ring-0"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor=""
-                    className="text-base font-medium text-foreground"
-                  >
-                    Email
-                  </label>
-                  <div className="relative mt-2.5 text-input focus-within:text-primary">
-                    <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="h-5 w-5"
-                      >
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
-                        <path d="M3 7l9 6l9 -6" />
-                      </svg>
-                    </div>
-
-                    <input
-                      type="email"
-                      name=""
-                      id=""
-                      inputMode="email"
-                      placeholder="jdoe@gmail.com"
-                      className="block w-full rounded-md border border-input bg-transparent py-2 pl-10 pr-4 text-foreground placeholder-input transition-colors focus:border-primary focus:outline-none focus:ring-0"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor=""
-                    className="text-base font-medium text-foreground"
-                  >
-                    Password
-                  </label>
-                  <div className="relative mt-2.5 text-input focus-within:text-primary">
-                    <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="h-5 w-5"
-                      >
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M12 17v4" />
-                        <path d="M10 20l4 -2" />
-                        <path d="M10 18l4 2" />
-                        <path d="M5 17v4" />
-                        <path d="M3 20l4 -2" />
-                        <path d="M3 18l4 2" />
-                        <path d="M19 17v4" />
-                        <path d="M17 20l4 -2" />
-                        <path d="M17 18l4 2" />
-                        <path d="M9 6a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
-                        <path d="M7 14a2 2 0 0 1 2 -2h6a2 2 0 0 1 2 2" />
-                      </svg>
-                    </div>
-
-                    <input
-                      type="password"
-                      name=""
-                      id=""
-                      placeholder="********"
-                      className="block w-full rounded-md border border-input bg-transparent py-2 pl-10 pr-4 text-foreground placeholder-input transition-colors focus:border-primary focus:outline-none focus:ring-0"
-                    />
-                  </div>
-                </div>
-
-                <div className="space-y-5">
-                  <div>
-                    <label
-                      htmlFor=""
-                      className="text-base font-medium text-foreground"
-                    >
-                      Confirm Password
-                    </label>
-                    <div className="relative mt-2.5 text-input focus-within:text-primary">
-                      <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          className="h-5 w-5"
-                        >
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                          <path d="M7 12l5 5l10 -10" />
-                          <path d="M2 12l5 5m5 -5l5 -5" />
-                        </svg>
-                      </div>
-
-                      <input
-                        type="confirm"
-                        name=""
-                        id=""
-                        placeholder="********"
-                        className="block w-full rounded-md border border-input bg-transparent py-2 pl-10 pr-4 text-foreground placeholder-input transition-colors focus:border-primary focus:outline-none focus:ring-0"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <button
-                    type="submit"
-                    className="inline-flex w-full place-content-center items-center rounded-md bg-gradient-to-r from-primary to-secondary p-2 font-medium transition-all ease-in-out hover:opacity-90 active:translate-y-0.5"
-                  >
-                    Sign up
-                  </button>
-                </div>
-              </div>
-            </form>
-
-            <div className="mt-3 space-y-3">
-              <button
-                type="button"
-                className="hover:bg-accent/5 relative inline-flex w-full items-center justify-center space-x-1 rounded-md border border-input/40 p-2 text-base font-semibold transition-all ease-in-out active:translate-y-0.5"
-              >
-                <span>
-                  <svg
-                    className="h-6 w-6"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                  >
-                    <path d="M20.283 10.356h-8.327v3.451h4.792c-.446 2.193-2.313 3.453-4.792 3.453a5.27 5.27 0 0 1-5.279-5.28 5.27 5.27 0 0 1 5.279-5.279c1.259 0 2.397.447 3.29 1.178l2.6-2.599c-1.584-1.381-3.615-2.233-5.89-2.233a8.908 8.908 0 0 0-8.934 8.934 8.907 8.907 0 0 0 8.934 8.934c4.467 0 8.529-3.249 8.529-8.934 0-.528-.081-1.097-.202-1.625z"></path>
-                  </svg>
-                </span>
-                <span>Sign up with Google</span>
-              </button>
-
-              <button
-                type="button"
-                className="hover:bg-accent/5 relative inline-flex w-full items-center justify-center space-x-1 rounded-md border border-input/40 p-2 text-base font-semibold transition-all ease-in-out active:translate-y-0.5"
-              >
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    className="h-6 w-6"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M15.079 5.999l.239 .012c1.43 .097 3.434 1.013 4.508 2.586a1 1 0 0 1 -.344 1.44c-.05 .028 -.372 .158 -.497 .217a4.15 4.15 0 0 0 -.722 .431c-.614 .461 -.948 1.009 -.942 1.694c.01 .885 .339 1.454 .907 1.846c.208 .143 .436 .253 .666 .33c.126 .043 .426 .116 .444 .122a1 1 0 0 1 .662 .942c0 2.621 -3.04 6.381 -5.286 6.381c-.79 0 -1.272 -.091 -1.983 -.315l-.098 -.031c-.463 -.146 -.702 -.192 -1.133 -.192c-.52 0 -.863 .06 -1.518 .237l-.197 .053c-.575 .153 -.964 .226 -1.5 .248c-2.749 0 -5.285 -5.093 -5.285 -9.072c0 -3.87 1.786 -6.92 5.286 -6.92c.297 0 .598 .045 .909 .128c.403 .107 .774 .26 1.296 .508c.787 .374 .948 .44 1.009 .44h.016c.03 -.003 .128 -.047 1.056 -.457c1.061 -.467 1.864 -.685 2.746 -.616l-.24 -.012z" />
-                    <path d="M14 1a1 1 0 0 1 1 1a3 3 0 0 1 -3 3a1 1 0 0 1 -1 -1a3 3 0 0 1 3 -3z" />
-                  </svg>
-                </span>
-                <span> Sign up with Apple ID </span>
               </button>
             </div>
-
-            <p className="mt-5 text-center text-sm text-foreground/80">
-              By creating an account you are accepting our&nbsp;
-              <a
-                href="#"
-                title=""
-                className="text-primary transition-all hover:text-opacity-95 hover:underline"
-              >
-                Privacy Policy
-              </a>
-              &nbsp;& &nbsp;
-              <a
-                href="#"
-                title=""
-                className="text-primary transition-all hover:text-opacity-95 hover:underline"
-              >
-                Terms of Service
-              </a>
-            </p>
+            <div>
+              <span className="flex h-12 w-12 place-content-center items-center rounded-xl bg-success/20 p-2 text-success/80 ring-1 ring-inset ring-success/80">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  className="h-full w-full"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-1.293 5.953a1 1 0 0 0 -1.32 -.083l-.094 .083l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.403 1.403l.083 .094l2 2l.094 .083a1 1 0 0 0 1.226 0l.094 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z" />
+                </svg>
+              </span>
+            </div>
+            <div>
+              <h6 className="font-bold text-success">Success Alert</h6>
+              <p className="text-sm leading-relaxed">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                placeat doloremque molestias voluptatem sint nemo
+                necessitatibus, dicta, earum, aut accusamus officiis labore
+                dolores? Illum modi a quisquam eveniet quasi impedit?
+              </p>
+            </div>
+          </div>
+          <div className="flex justify-end space-x-2 border-t border-accent/10 px-4 py-3">
+            <button className="rounded-md bg-accent/10 px-4 py-2 transition-all ease-in-out hover:bg-accent/20 active:scale-[0.98]">
+              Secondary
+            </button>
+            <button className="rounded-md bg-success px-4 py-2 text-success-foreground transition-all ease-in-out hover:brightness-125 active:scale-[0.98]">
+              Primary
+            </button>
           </div>
         </div>
+      </div>
 
-        <div className="relative flex items-center bg-gradient-to-l from-primary to-secondary bg-cover px-4 text-foreground max-lg:row-start-1 sm:px-6 md:justify-center lg:overflow-hidden lg:px-8">
-          <div className="absolute bottom-4 right-4 flex items-center space-x-4 max-lg:left-4 max-lg:justify-between">
-            <button className="rounded-full bg-background p-1">
-              <span className="sr-only">Prev</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4 md:h-6 md:w-6"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M15 6l-6 6l6 6" />
-              </svg>
+      <div role="alert" className="flex w-full max-w-md bg-background">
+        <div className="w-full rounded-xl bg-accent/10 ring-1 ring-inset ring-accent/20">
+          <div className="relative flex w-full gap-2 py-5 pl-4 pr-6 max-md:flex-col md:gap-4">
+            <div className="absolute right-3 top-2">
+              <button className="rounded-xl p-0.5 transition-all ease-in-out hover:bg-foreground/20 active:scale-95">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M18 6l-12 12" />
+                  <path d="M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div>
+              <span className="flex h-12 w-12 place-content-center items-center rounded-xl bg-warning/20 p-2 text-warning/80 ring-1 ring-inset ring-warning/80">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  className="h-full w-full"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 2c5.523 0 10 4.477 10 10a10 10 0 0 1 -19.995 .324l-.005 -.324l.004 -.28c.148 -5.393 4.566 -9.72 9.996 -9.72zm.01 13l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007zm-.01 -8a1 1 0 0 0 -.993 .883l-.007 .117v4l.007 .117a1 1 0 0 0 1.986 0l.007 -.117v-4l-.007 -.117a1 1 0 0 0 -.993 -.883z" />
+                </svg>
+              </span>
+            </div>
+            <div>
+              <h6 className="font-bold text-warning">Warning Alert</h6>
+              <p className="text-sm leading-relaxed">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                placeat doloremque molestias voluptatem sint nemo
+                necessitatibus, dicta, earum, aut accusamus officiis labore
+                dolores? Illum modi a quisquam eveniet quasi impedit?
+              </p>
+            </div>
+          </div>
+          <div className="flex justify-end space-x-2 border-t border-accent/10 px-4 py-3">
+            <button className="rounded-md bg-accent/10 px-4 py-2 transition-all ease-in-out hover:bg-accent/20 active:scale-[0.98]">
+              Secondary
             </button>
-            <button className="rounded-full bg-background p-1">
-              <span className="sr-only">Next</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4 md:h-6 md:w-6"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M9 6l6 6l-6 6" />
-              </svg>
+            <button className="rounded-md bg-warning px-4 py-2 text-warning-foreground transition-all ease-in-out hover:brightness-125 active:scale-[0.98]">
+              Primary
             </button>
           </div>
-          <div className="flex max-w-xl flex-col place-content-center items-center rounded-md p-6 text-center text-primary-foreground">
-            <blockquote className="rounded-md font-medium md:text-xl">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-              repellendus voluptates deleniti porro ullam numquam autem cum,
-              fugit perferendis quod eveniet voluptate ducimus officiis
-              architecto debitis dolores vero, in praesentium.
-            </blockquote>
-            <div className="mt-5 flex flex-col items-center md:mt-10">
-              <img
-                className="h-20 w-20 rounded-full border-2 border-primary"
-                src="https://randomuser.me/api/portraits/women/5.jpg"
-                alt=""
-              />
-              <div>
-                <span className="block font-medium">Claudia Prince</span>
-                <span className="block text-xs text-primary-foreground/50">
-                  CEO at Fake.inc
-                </span>
-                <div className="mt-2 flex items-center gap-1 md:mt-5">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    strokeWidth="2"
-                    stroke-inecap="round"
-                    stroke-inejoin="round"
-                    className="h-4 w-4 fill-amber-400 stroke-amber-400"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    strokeWidth="2"
-                    stroke-inecap="round"
-                    stroke-inejoin="round"
-                    className="h-4 w-4 fill-amber-400 stroke-amber-400"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    strokeWidth="2"
-                    stroke-inecap="round"
-                    stroke-inejoin="round"
-                    className="h-4 w-4 fill-amber-400 stroke-amber-400"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    strokeWidth="2"
-                    stroke-inecap="round"
-                    stroke-inejoin="round"
-                    className="h-4 w-4 fill-amber-400 stroke-amber-400"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    strokeWidth="2"
-                    stroke-inecap="round"
-                    stroke-inejoin="round"
-                    className="h-4 w-4 fill-amber-400 stroke-amber-400"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                  </svg>
-                </div>
-              </div>
+        </div>
+      </div>
+
+      <div role="alert" className="flex w-full max-w-md bg-background">
+        <div className="w-full rounded-xl bg-accent/10 ring-1 ring-inset ring-accent/20">
+          <div className="relative flex w-full gap-2 py-5 pl-4 pr-6 max-md:flex-col md:gap-4">
+            <div className="absolute right-3 top-2">
+              <button className="rounded-xl p-0.5 transition-all ease-in-out hover:bg-foreground/20 active:scale-95">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M18 6l-12 12" />
+                  <path d="M6 6l12 12" />
+                </svg>
+              </button>
             </div>
+            <div>
+              <span className="flex h-12 w-12 place-content-center items-center rounded-xl bg-danger/20 p-2 text-danger/80 ring-1 ring-inset ring-danger/80">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  className="h-full w-full"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 1.67c.955 0 1.845 .467 2.39 1.247l.105 .16l8.114 13.548a2.914 2.914 0 0 1 -2.307 4.363l-.195 .008h-16.225a2.914 2.914 0 0 1 -2.582 -4.2l.099 -.185l8.11 -13.538a2.914 2.914 0 0 1 2.491 -1.403zm.01 13.33l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007zm-.01 -7a1 1 0 0 0 -.993 .883l-.007 .117v4l.007 .117a1 1 0 0 0 1.986 0l.007 -.117v-4l-.007 -.117a1 1 0 0 0 -.993 -.883z" />
+                </svg>
+              </span>
+            </div>
+            <div>
+              <h6 className="font-bold text-danger">Danger Alert</h6>
+              <p className="text-sm leading-relaxed">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                placeat doloremque molestias voluptatem sint nemo
+                necessitatibus, dicta, earum, aut accusamus officiis labore
+                dolores? Illum modi a quisquam eveniet quasi impedit?
+              </p>
+            </div>
+          </div>
+          <div className="flex justify-end space-x-2 border-t border-accent/10 px-4 py-3">
+            <button className="rounded-md bg-accent/10 px-4 py-2 transition-all ease-in-out hover:bg-accent/20 active:scale-[0.98]">
+              Secondary
+            </button>
+            <button className="rounded-md bg-danger px-4 py-2 text-danger-foreground transition-all ease-in-out hover:brightness-125 active:scale-[0.98]">
+              Primary
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div role="alert" className="flex w-full max-w-md bg-background">
+        <div className="w-full rounded-xl bg-accent/10 ring-1 ring-inset ring-accent/20">
+          <div className="relative flex w-full gap-2 py-5 pl-4 pr-6 max-md:flex-col md:gap-4">
+            <div className="absolute right-3 top-2">
+              <button className="rounded-xl p-0.5 transition-all ease-in-out hover:bg-foreground/20 active:scale-95">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M18 6l-12 12" />
+                  <path d="M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div>
+              <span className="flex h-12 w-12 place-content-center items-center rounded-xl bg-info/20 p-2 text-info/80 ring-1 ring-inset ring-info/80">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  className="h-full w-full"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 2c5.523 0 10 4.477 10 10a10 10 0 0 1 -19.995 .324l-.005 -.324l.004 -.28c.148 -5.393 4.566 -9.72 9.996 -9.72zm0 9h-1l-.117 .007a1 1 0 0 0 0 1.986l.117 .007v3l.007 .117a1 1 0 0 0 .876 .876l.117 .007h1l.117 -.007a1 1 0 0 0 .876 -.876l.007 -.117l-.007 -.117a1 1 0 0 0 -.764 -.857l-.112 -.02l-.117 -.006v-3l-.007 -.117a1 1 0 0 0 -.876 -.876l-.117 -.007zm.01 -3l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" />
+                </svg>
+              </span>
+            </div>
+            <div>
+              <h6 className="font-bold text-info">Info Alert</h6>
+              <p className="text-sm leading-relaxed">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                placeat doloremque molestias voluptatem sint nemo
+                necessitatibus, dicta, earum, aut accusamus officiis labore
+                dolores? Illum modi a quisquam eveniet quasi impedit?
+              </p>
+            </div>
+          </div>
+          <div className="flex justify-end space-x-2 border-t border-accent/10 px-4 py-3">
+            <button className="rounded-md bg-accent/10 px-4 py-2 transition-all ease-in-out hover:bg-accent/20 active:scale-[0.98]">
+              Secondary
+            </button>
+            <button className="rounded-md bg-info px-4 py-2 text-info-foreground transition-all ease-in-out hover:brightness-125 active:scale-[0.98]">
+              Primary
+            </button>
           </div>
         </div>
       </div>
