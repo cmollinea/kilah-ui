@@ -15,6 +15,70 @@ type Category = {
 };
 
 export const categories: Category[] = [
+  //*--> Dropdowns
+
+  {
+    title: "Dropdowns",
+    slug: "dropdowns",
+    section: "Application UI",
+    container: "40rem",
+    components: [
+      {
+        title: "Navigation",
+        fileName: "navigation",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            colors: {
+              primary: "#22c55e",
+              accent: "#e0e1dd",
+              background: "#0a0a0a",
+              foreground: "#f5f5f5",
+              success: "#10b981",
+              danger: "#ef4444",
+            },
+          },
+        },
+      },
+      {
+        title: "Notifications",
+        fileName: "notifications",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            colors: {
+              primary: "#06b6d4",
+              accent: "#a1a1aa",
+              background: "#f8fafc",
+              foreground: "#18181b",
+              success: "#10b981",
+              danger: "#ef4444",
+            },
+          },
+        },
+      },
+      {
+        title: "User Dropdown",
+        fileName: "user-dropdown",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            colors: {
+              primary: "#415a77",
+              accent: "#e0e1dd",
+              background: "#000814",
+              foreground: "#ffffff",
+              success: "#10b981",
+              danger: "#ef4444",
+            },
+          },
+        },
+      },
+    ],
+  },
+
+  //*<-- /Dropdowns
+
   //*--> Alerts
   {
     title: "Alerts",
