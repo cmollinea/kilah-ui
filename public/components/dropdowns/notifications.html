@@ -1,5 +1,5 @@
 <section class="flex min-h-screen flex-col items-end bg-background px-4 py-20">
-  <div role="list" class="relative select-none bg-background">
+  <div class="relative select-none bg-background">
     <button
       class="inline-flex items-center gap-1 rounded-md bg-accent/10 p-2 text-accent-foreground"
     >
@@ -25,7 +25,8 @@
     </button>
 
     <div
-      class="absolute -bottom-0 right-0 top-full z-50 mt-2 flex min-h-fit w-[500px] bg-background shadow-lg max-sm:max-w-[80vw]"
+      role="menu"
+      class="absolute end-0 z-50 mt-2 w-[500px] rounded-md bg-background shadow-lg max-sm:max-w-[80vw]"
     >
       <ul
         class="grid w-full divide-y divide-accent/20 overflow-hidden rounded-md bg-accent/10"
