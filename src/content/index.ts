@@ -15,6 +15,101 @@ type Category = {
 };
 
 export const categories: Category[] = [
+  //*--> Blog-Cards
+  {
+    title: "Blog Cards",
+    slug: "blog-cards",
+    section: "Application UI",
+    container: "40rem",
+    components: [
+      {
+        title: "Rounded Image with Title and Date",
+        fileName: "rounded-image-with-title-and-date",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            colors: {
+              primary: "#4f46e5",
+              accent: "#e0e1dd",
+              background: "#f3f4f6",
+              foreground: "#111827",
+              "card-background": "#e5e7eb",
+              "card-foreground": "#fafafa",
+            },
+          },
+        },
+      },
+      {
+        title: "Picture with Topic and Short Description",
+        fileName: "picture-with-topic-and-short-description",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            colors: {
+              primary: "#2563eb",
+              accent: "#e0e1dd",
+              background: "#e7e5e4",
+              foreground: "#292524",
+              "card-background": "#d6d3d1",
+              "card-foreground": "#fafafa",
+            },
+          },
+        },
+      },
+      {
+        title: "Picture with Title Description Date and Likes",
+        fileName: "picture-with-title-description-date-and-likes",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            colors: {
+              primary: "#16a34a",
+              accent: "#e0e1dd",
+              background: "#fafaf9",
+              foreground: "#1c1917",
+              "card-background": "#f5f5f4",
+              "card-foreground": "#fafafa",
+            },
+          },
+        },
+      },
+      {
+        title: "Picture with Title and Author",
+        fileName: "picture-with-title-and-author",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            colors: {
+              primary: "#2563eb",
+              accent: "#e0e1dd",
+              background: "#fafafa",
+              foreground: "#0a0a0a",
+              "card-background": "#f5f5f5",
+              "card-foreground": "#fafafa",
+            },
+          },
+        },
+      },
+      {
+        title: "Large with Author Date Title Picture and Short Description",
+        fileName: "large-with-author-date-title-picture-and-short-description",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            colors: {
+              primary: "#2563eb",
+              accent: "#e0e1dd",
+              background: "#fafafa",
+              foreground: "#0a0a0a",
+              "card-background": "#f5f5f5",
+              "card-foreground": "#fafafa",
+            },
+          },
+        },
+      },
+    ],
+  },
+  //*<-- /Blog-Cards
   //*--> Dropdowns
 
   {
@@ -34,8 +129,8 @@ export const categories: Category[] = [
               accent: "#e0e1dd",
               background: "#0a0a0a",
               foreground: "#f5f5f5",
-              success: "#10b981",
-              danger: "#ef4444",
+              "card-background": "#1a1a1a",
+              "card-foreground": "#fafafa",
             },
           },
         },
@@ -51,8 +146,8 @@ export const categories: Category[] = [
               accent: "#a1a1aa",
               background: "#f8fafc",
               foreground: "#18181b",
-              success: "#10b981",
-              danger: "#ef4444",
+              "card-background": "#1a1a1a",
+              "card-foreground": "#fafafa",
             },
           },
         },
@@ -68,8 +163,8 @@ export const categories: Category[] = [
               accent: "#e0e1dd",
               background: "#000814",
               foreground: "#ffffff",
-              success: "#10b981",
-              danger: "#ef4444",
+              "card-background": "#1a1a1a",
+              "card-foreground": "#fafafa",
             },
           },
         },
