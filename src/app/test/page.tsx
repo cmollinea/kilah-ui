@@ -1,445 +1,2126 @@
 function Test() {
   return (
-    <section className="flex min-h-[500vh] flex-col items-end space-y-[600px] bg-background px-6 py-60">
-      <div role="menu" className="relative select-none">
-        <button className="inline-flex items-center gap-1 rounded-md bg-accent/20 px-4 py-2 text-accent-foreground">
-          <span>Nav</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M6 15l6 -6l6 6" />
-          </svg>
-        </button>
-        <div className="absolute -bottom-0 right-0 top-full z-50 mt-2 flex min-h-fit w-56 bg-background max-[300px]:max-w-[50vw]">
-          <ul className="grid w-full overflow-hidden rounded-md">
-            <li className="">
-              <a
-                className="flex w-full border-l-[5px] border-primary bg-accent/40 px-6 py-3 font-medium transition ease-in-out"
-                href="#"
-              >
-                Link
-              </a>
+    <section className="flex min-h-screen flex-col items-center space-y-40 bg-background px-6 py-60">
+      <div className="grid w-fit gap-4 lg:grid-cols-3">
+        <div className="flex w-full max-w-sm flex-col space-y-8 justify-self-end rounded-xl bg-rose-400 p-10 text-stone-950 max-lg:max-w-sm">
+          <div className="space-y-4">
+            <span className="block font-bold">Basic</span>
+            <p>
+              <span className="text-5xl font-black">Free</span>
+            </p>
+            <small className="block font-medium">Free forever</small>
+          </div>
+          <ul className="grid gap-4">
+            <li className="flex gap-2">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-1.293 5.953a1 1 0 0 0 -1.32 -.083l-.094 .083l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.403 1.403l.083 .094l2 2l.094 .083a1 1 0 0 0 1.226 0l.094 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z" />
+                </svg>
+              </span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </li>
-            <li className="">
-              <a
-                className="flex w-full border-l-[5px] border-accent/20 bg-accent/10 px-6 py-3 font-medium transition ease-in-out hover:border-primary hover:bg-accent/20"
-                href="#"
-              >
-                Link
-              </a>
+            <li className="flex gap-2">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-1.293 5.953a1 1 0 0 0 -1.32 -.083l-.094 .083l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.403 1.403l.083 .094l2 2l.094 .083a1 1 0 0 0 1.226 0l.094 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z" />
+                </svg>
+              </span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </li>
-            <li className="">
-              <a
-                className="flex w-full border-l-[5px] border-accent/20 bg-accent/10 px-6 py-3 font-medium transition ease-in-out hover:border-primary hover:bg-accent/20"
-                href="#"
-              >
-                Link
-              </a>
-            </li>
-            <li className="">
-              <a
-                className="flex w-full border-l-[5px] border-accent/20 bg-accent/10 px-6 py-3 font-medium transition ease-in-out hover:border-primary hover:bg-accent/20"
-                href="#"
-              >
-                Link
-              </a>
-            </li>
-            <li className="">
-              <a
-                className="flex w-full border-l-[5px] border-accent/20 bg-accent/10 px-6 py-3 font-medium transition ease-in-out hover:border-primary hover:bg-accent/20"
-                href="#"
-              >
-                Link
-              </a>
+            <li className="flex gap-2">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-1.293 5.953a1 1 0 0 0 -1.32 -.083l-.094 .083l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.403 1.403l.083 .094l2 2l.094 .083a1 1 0 0 0 1.226 0l.094 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z" />
+                </svg>
+              </span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </li>
           </ul>
+          <div className="flex h-full items-end">
+            <a
+              href="#"
+              className="w-fit rounded-xl bg-stone-950 px-6 py-3 font-medium text-gray-100 transition-all ease-in-out hover:bg-stone-900 active:scale-95"
+            >
+              Get Started Free
+            </a>
+          </div>
+        </div>
+        <div className="flex w-full max-w-sm flex-col space-y-8 justify-self-center rounded-xl bg-lime-400 p-10 text-stone-950 max-lg:max-w-sm">
+          <div className="space-y-4">
+            <span className="block font-bold">Professional</span>
+            <p>
+              <span className="text-5xl font-black">$15</span>
+              <small className="font-black">/month</small>
+            </p>
+            <small className="block font-medium">
+              Ideal for individual creators
+            </small>
+          </div>
+          <ul className="grid gap-4">
+            <li className="flex gap-2">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-1.293 5.953a1 1 0 0 0 -1.32 -.083l-.094 .083l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.403 1.403l.083 .094l2 2l.094 .083a1 1 0 0 0 1.226 0l.094 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z" />
+                </svg>
+              </span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </li>
+            <li className="flex gap-2">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-1.293 5.953a1 1 0 0 0 -1.32 -.083l-.094 .083l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.403 1.403l.083 .094l2 2l.094 .083a1 1 0 0 0 1.226 0l.094 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z" />
+                </svg>
+              </span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </li>
+            <li className="flex gap-2">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-1.293 5.953a1 1 0 0 0 -1.32 -.083l-.094 .083l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.403 1.403l.083 .094l2 2l.094 .083a1 1 0 0 0 1.226 0l.094 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z" />
+                </svg>
+              </span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </li>
+            <li className="flex gap-2">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-1.293 5.953a1 1 0 0 0 -1.32 -.083l-.094 .083l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.403 1.403l.083 .094l2 2l.094 .083a1 1 0 0 0 1.226 0l.094 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z" />
+                </svg>
+              </span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </li>
+          </ul>
+          <div className="flex h-full items-end">
+            <a
+              href="#"
+              className="w-fit rounded-xl bg-stone-950 px-6 py-3 font-medium text-gray-100 transition-all ease-in-out hover:bg-stone-900 active:scale-95"
+            >
+              Get Professional
+            </a>
+          </div>
+        </div>
+        <div className="flex w-full max-w-sm flex-col space-y-8 justify-self-start rounded-xl bg-amber-400 p-10 text-stone-950 max-lg:max-w-sm">
+          <div className="space-y-4">
+            <span className="block font-bold">Team</span>
+            <p>
+              <span className="text-5xl font-black">$25</span>
+              <small className="font-black">/month</small>
+            </p>
+            <small className="block font-medium">
+              Small teams with up to 10 useres.
+            </small>
+          </div>
+          <ul className="grid gap-4">
+            <li className="flex gap-2">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-1.293 5.953a1 1 0 0 0 -1.32 -.083l-.094 .083l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.403 1.403l.083 .094l2 2l.094 .083a1 1 0 0 0 1.226 0l.094 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z" />
+                </svg>
+              </span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </li>
+            <li className="flex gap-2">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-1.293 5.953a1 1 0 0 0 -1.32 -.083l-.094 .083l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.403 1.403l.083 .094l2 2l.094 .083a1 1 0 0 0 1.226 0l.094 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z" />
+                </svg>
+              </span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </li>
+            <li className="flex gap-2">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-1.293 5.953a1 1 0 0 0 -1.32 -.083l-.094 .083l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.403 1.403l.083 .094l2 2l.094 .083a1 1 0 0 0 1.226 0l.094 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z" />
+                </svg>
+              </span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </li>
+            <li className="flex gap-2">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-1.293 5.953a1 1 0 0 0 -1.32 -.083l-.094 .083l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.403 1.403l.083 .094l2 2l.094 .083a1 1 0 0 0 1.226 0l.094 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z" />
+                </svg>
+              </span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </li>
+            <li className="flex gap-2">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-1.293 5.953a1 1 0 0 0 -1.32 -.083l-.094 .083l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.403 1.403l.083 .094l2 2l.094 .083a1 1 0 0 0 1.226 0l.094 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z" />
+                </svg>
+              </span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </li>
+          </ul>
+          <div className="flex h-full items-end">
+            <a
+              href="#"
+              className="w-fit rounded-xl bg-stone-950 px-6 py-3 font-medium text-gray-100 transition-all ease-in-out hover:bg-stone-900 active:scale-95"
+            >
+              Get Team Plan
+            </a>
+          </div>
         </div>
       </div>
 
-      <div role="list" className="relative select-none bg-background">
-        <button className="inline-flex items-center gap-1 rounded-md bg-accent/10 p-2 text-accent-foreground">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M10 5a2 2 0 0 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" />
-            <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
-            <path d="M21 6.727a11.05 11.05 0 0 0 -2.794 -3.727" />
-            <path d="M3 6.727a11.05 11.05 0 0 1 2.792 -3.727" />
-          </svg>
-        </button>
+      <div className="mx-auto mt-12 grid w-full grid-cols-3 rounded-md lg:grid-cols-4 lg:bg-card-background lg:px-10 lg:pb-10">
+        <div className="col-span-3 grid gap-3 lg:col-start-2 lg:grid-cols-3 lg:gap-0">
+          <div className="relative mx-auto h-fit w-full overflow-hidden rounded-2xl bg-card-background py-10 max-lg:max-w-sm max-lg:px-4 lg:h-full lg:rounded-b-none">
+            <div className="relative h-full p-px lg:pb-0">
+              <div className="relative z-10 flex h-full flex-col overflow-hidden rounded-[calc(1rem-1px)] lg:rounded-b-none">
+                <div className="mx-auto flex h-full w-full max-w-[20rem] flex-col px-6 pb-6">
+                  <div className="flex w-full justify-between pt-6">
+                    <h3 className="text-lg font-semibold">Basic</h3>
+                  </div>
+                  <div className="pt-3">
+                    <p className="opacity-90">For small businesses</p>
+                    <p className="mt-3 font-semibold"></p>
+                    <div className="">
+                      <span className="text-5xl font-semibold">$11 </span>
+                      <span className="text-3xl">/mo</span>
+                      <br />
+                      <p className="mt-1 text-sm font-normal opacity-70">
+                        (paid monthly)
+                      </p>
+                    </div>
+                    <div className="hidden">
+                      <span className="text-5xl font-semibold">$9 </span>
+                      <span className="text-3xl">/mo</span>
+                      <br />
+                      <p className="mt-1 text-sm font-normal opacity-70">
+                        (paid yearly)
+                      </p>
+                    </div>
+                  </div>
+                  <ul className="mt-6 flex w-full flex-col gap-2 lg:sr-only">
+                    <li className="flex items-start opacity-90">
+                      <svg
+                        astro-icon="tabler/check"
+                        className="mt-0.5 h-5 w-5 shrink-0 text-primary"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <path d="M0 0h24v24H0z" stroke="none"></path>
+                        <path d="m5 12 5 5L20 7"></path>
+                      </svg>
+                      <span className="ml-2 inline">
+                        Integrations <span></span>
+                      </span>
+                    </li>
+                    <li className="flex items-start opacity-90">
+                      <svg
+                        astro-icon="tabler/check"
+                        className="mt-0.5 h-5 w-5 shrink-0 text-primary"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <path d="M0 0h24v24H0z" stroke="none"></path>
+                        <path d="m5 12 5 5L20 7"></path>
+                      </svg>
+                      <span className="ml-2 inline">
+                        Connect to your database <span></span>
+                      </span>
+                    </li>
+                    <li className="flex items-start opacity-90">
+                      <svg
+                        astro-icon="tabler/check"
+                        className="mt-0.5 h-5 w-5 shrink-0 text-primary"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <path d="M0 0h24v24H0z" stroke="none"></path>
+                        <path d="m5 12 5 5L20 7"></path>
+                      </svg>
+                      <span className="ml-2 inline">
+                        Data Storage
+                        <span>
+                          <span className="-300 text-base-700 ml-1 text-sm">
+                            (Up to 5 GB)
+                          </span>
+                        </span>
+                      </span>
+                    </li>
+                    <li className="flex items-start opacity-90">
+                      <svg
+                        astro-icon="tabler/check"
+                        className="mt-0.5 h-5 w-5 shrink-0 text-primary"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <path d="M0 0h24v24H0z" stroke="none"></path>
+                        <path d="m5 12 5 5L20 7"></path>
+                      </svg>
+                      <span className="ml-2 inline">
+                        Basic reports <span></span>
+                      </span>
+                    </li>
+                    <li className="flex items-start opacity-90">
+                      <svg
+                        astro-icon="tabler/check"
+                        className="mt-0.5 h-5 w-5 shrink-0 text-primary"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <path d="M0 0h24v24H0z" stroke="none"></path>
+                        <path d="m5 12 5 5L20 7"></path>
+                      </svg>
+                      <span className="ml-2 inline">
+                        Email support <span></span>
+                      </span>
+                    </li>
+                  </ul>
+                  <div className="mt-8">
+                    <a
+                      className="block w-full rounded-md bg-primary py-3 text-center font-medium text-primary-foreground"
+                      href="#"
+                    >
+                      Get Started
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <div className="absolute -bottom-0 right-0 top-full z-50 mt-2 flex min-h-fit w-[500px] bg-background max-sm:max-w-[80vw]">
-          <ul className="grid w-full divide-y divide-accent/20 overflow-hidden rounded-md">
-            <li>
-              <a
-                href="#"
-                className="group flex bg-accent/10 transition ease-in-out hover:bg-accent/20"
-              >
-                <div className="flex h-full w-full items-center gap-2 px-6 py-4 transition-transform ease-in-out group-active:scale-[0.98]">
-                  <div className="rounded-full bg-success/20 p-2 text-success ring-1 ring-inset ring-success/50">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="32"
-                      height="32"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M12 19h-6a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v4.5" />
-                      <path d="M3 10h18" />
-                      <path d="M7 15h.01" />
-                      <path d="M11 15h2" />
-                      <path d="M16 19h6" />
-                      <path d="M19 16l-3 3l3 3" />
-                    </svg>
+          <div className="relative mx-auto h-fit w-full overflow-hidden rounded-2xl py-10 text-primary-foreground max-lg:max-w-sm max-lg:bg-gradient-to-br max-lg:from-primary max-lg:to-secondary max-lg:to-80% max-lg:px-4 lg:h-full lg:rounded-b-none lg:bg-primary">
+            <div className="relative h-full p-px lg:pb-0">
+              <div className="-800 relative z-10 flex h-full flex-col overflow-hidden rounded-[calc(1rem-1px)] text-primary-foreground lg:rounded-b-none">
+                <div
+                  className="bg-primary-300/40 -600/20 absolute left-0 top-0 -z-10 mx-auto aspect-square w-[80%] -translate-x-1/2 -translate-y-1/2 rounded-full blur-3xl"
+                  aria-hidden="true"
+                ></div>
+                <div className="mx-auto flex h-full w-full max-w-[20rem] flex-col px-6 pb-6">
+                  <div className="flex w-full justify-between pt-6">
+                    <h3 className="main-text-gradient text-lg font-semibold">
+                      Professional
+                    </h3>
+                    <div className="flex w-full items-center justify-end">
+                      <div className="flex gap-2 rounded-full bg-background px-3 py-1 text-sm text-foreground">
+                        <p className="flex items-center whitespace-nowrap">
+                          Popular
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <div className="space-y-0">
-                    <p className="text-sm">
-                      <span className="font-bold text-success">$100 US</span>{" "}
-                      were received
-                    </p>
-                    <small className="text-xs text-foreground/50">
-                      50 minutes ago
-                    </small>
+                  <div className="pt-3">
+                    <p className="opacity-90">For growing businesses</p>
+                    <p className="mt-3 font-semibold"></p>
+                    <div className="">
+                      <span className="text-5xl font-semibold">$59 </span>
+                      <span className="text-3xl">/mo</span>
+                      <br />
+                      <p className="mt-1 text-sm font-normal opacity-70">
+                        (paid monthly)
+                      </p>
+                    </div>
+                    <div className="hidden">
+                      <span className="text-5xl font-semibold">$49 </span>
+                      <span className="text-3xl">/mo</span>
+                      <br />
+                      <p className="mt-1 text-sm font-normal opacity-70">
+                        (paid yearly)
+                      </p>
+                    </div>
+                  </div>
+                  <ul className="mt-6 flex w-full flex-col gap-2 lg:sr-only">
+                    <li className="flex items-start">
+                      <svg
+                        astro-icon="tabler/check"
+                        className="mt-0.5 h-5 w-5 shrink-0"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <path d="M0 0h24v24H0z" stroke="none"></path>
+                        <path d="m5 12 5 5L20 7"></path>
+                      </svg>
+                      <span className="ml-2 inline">
+                        Integrations <span></span>
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <svg
+                        astro-icon="tabler/check"
+                        className="mt-0.5 h-5 w-5 shrink-0"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <path d="M0 0h24v24H0z" stroke="none"></path>
+                        <path d="m5 12 5 5L20 7"></path>
+                      </svg>
+                      <span className="ml-2 inline">
+                        Connect to your database <span></span>
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <svg
+                        astro-icon="tabler/check"
+                        className="mt-0.5 h-5 w-5 shrink-0"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <path d="M0 0h24v24H0z" stroke="none"></path>
+                        <path d="m5 12 5 5L20 7"></path>
+                      </svg>
+                      <span className="ml-2 inline">
+                        Import and export data <span></span>
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <svg
+                        astro-icon="tabler/check"
+                        className="mt-0.5 h-5 w-5 shrink-0"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <path d="M0 0h24v24H0z" stroke="none"></path>
+                        <path d="m5 12 5 5L20 7"></path>
+                      </svg>
+                      <span className="ml-2 inline">
+                        Team members
+                        <span>
+                          <span className="-300 text-base-700 ml-1 text-sm">
+                            (Up to 5 users)
+                          </span>
+                        </span>
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <svg
+                        astro-icon="tabler/check"
+                        className="mt-0.5 h-5 w-5 shrink-0"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <path d="M0 0h24v24H0z" stroke="none"></path>
+                        <path d="m5 12 5 5L20 7"></path>
+                      </svg>
+                      <span className="ml-2 inline">
+                        Data Storage
+                        <span>
+                          <span className="-300 text-base-700 ml-1 text-sm">
+                            (Up to 50 GB)
+                          </span>
+                        </span>
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <svg
+                        astro-icon="tabler/check"
+                        className="mt-0.5 h-5 w-5 shrink-0"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <path d="M0 0h24v24H0z" stroke="none"></path>
+                        <path d="m5 12 5 5L20 7"></path>
+                      </svg>
+                      <span className="ml-2 inline">
+                        Basic reports <span></span>
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <svg
+                        astro-icon="tabler/check"
+                        className="mt-0.5 h-5 w-5 shrink-0"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <path d="M0 0h24v24H0z" stroke="none"></path>
+                        <path d="m5 12 5 5L20 7"></path>
+                      </svg>
+                      <span className="ml-2 inline">
+                        Advanced analytics <span></span>
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <svg
+                        astro-icon="tabler/check"
+                        className="mt-0.5 h-5 w-5 shrink-0"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <path d="M0 0h24v24H0z" stroke="none"></path>
+                        <path d="m5 12 5 5L20 7"></path>
+                      </svg>{" "}
+                      <span className="ml-2 inline">
+                        Professional reports <span></span>
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <svg
+                        astro-icon="tabler/check"
+                        className="mt-0.5 h-5 w-5 shrink-0"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <path d="M0 0h24v24H0z" stroke="none"></path>
+                        <path d="m5 12 5 5L20 7"></path>
+                      </svg>{" "}
+                      <span className="ml-2 inline">
+                        Email support <span></span>
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <svg
+                        astro-icon="tabler/check"
+                        className="mt-0.5 h-5 w-5 shrink-0"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <path d="M0 0h24v24H0z" stroke="none"></path>
+                        <path d="m5 12 5 5L20 7"></path>
+                      </svg>{" "}
+                      <span className="ml-2 inline">
+                        Priority support <span></span>
+                      </span>
+                    </li>
+                  </ul>
+                  <div className="mt-8 w-full">
+                    <a
+                      className="block w-full rounded-md bg-background py-3 text-center font-medium text-foreground"
+                      href="#"
+                    >
+                      Get Started
+                    </a>
                   </div>
                 </div>
-              </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="relative mx-auto h-fit w-full overflow-hidden rounded-2xl bg-card-background py-10 max-lg:max-w-sm max-lg:px-4 lg:h-full lg:rounded-b-none">
+            <div className="relative h-full p-px lg:pb-0">
+              <div className="relative z-10 flex h-full flex-col overflow-hidden rounded-[calc(1rem-1px)] lg:rounded-b-none">
+                <div className="mx-auto flex h-full w-full max-w-[20rem] flex-col px-6 pb-6">
+                  <div className="flex w-full justify-between pt-6">
+                    <h3 className="text-lg font-semibold">Enterprise</h3>
+                  </div>
+                  <div className="pt-3">
+                    <p className="opacity-90">For next level companies</p>
+                    <p className="mt-3 font-semibold"></p>
+                    <div className="">
+                      <span className="text-5xl font-semibold">$119 </span>
+                      <span className="text-3xl">/mo</span>
+                      <br />
+                      <p className="mt-1 text-sm font-normal opacity-70">
+                        (paid monthly)
+                      </p>
+                    </div>
+                    <div className="hidden">
+                      <span className="text-5xl font-semibold">$99 </span>
+                      <span className="text-3xl">/mo</span>
+                      <br />
+                      <p className="mt-1 text-sm font-normal opacity-70">
+                        (paid yearly)
+                      </p>
+                    </div>
+                  </div>
+                  <ul className="mt-6 flex w-full flex-col gap-2 lg:sr-only">
+                    <li className="flex items-start opacity-90">
+                      <svg
+                        astro-icon="tabler/check"
+                        className="mt-0.5 h-5 w-5 shrink-0 text-primary"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <path d="M0 0h24v24H0z" stroke="none"></path>
+                        <path d="m5 12 5 5L20 7"></path>
+                      </svg>{" "}
+                      <span className="ml-2 inline">
+                        Integrations <span></span>
+                      </span>
+                    </li>
+                    <li className="flex items-start opacity-90">
+                      <svg
+                        astro-icon="tabler/check"
+                        className="mt-0.5 h-5 w-5 shrink-0 text-primary"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <path d="M0 0h24v24H0z" stroke="none"></path>
+                        <path d="m5 12 5 5L20 7"></path>
+                      </svg>{" "}
+                      <span className="ml-2 inline">
+                        Connect to your database <span></span>
+                      </span>
+                    </li>
+                    <li className="flex items-start opacity-90">
+                      <svg
+                        astro-icon="tabler/check"
+                        className="mt-0.5 h-5 w-5 shrink-0 text-primary"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <path d="M0 0h24v24H0z" stroke="none"></path>
+                        <path d="m5 12 5 5L20 7"></path>
+                      </svg>{" "}
+                      <span className="ml-2 inline">
+                        Import and export data <span></span>
+                      </span>
+                    </li>
+                    <li className="flex items-start opacity-90">
+                      <svg
+                        astro-icon="tabler/check"
+                        className="mt-0.5 h-5 w-5 shrink-0 text-primary"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <path d="M0 0h24v24H0z" stroke="none"></path>
+                        <path d="m5 12 5 5L20 7"></path>
+                      </svg>{" "}
+                      <span className="ml-2 inline">
+                        Team members{" "}
+                        <span>
+                          <span className="-300 text-base-700 ml-1 text-sm">
+                            (Up to 20 users)
+                          </span>
+                        </span>
+                      </span>
+                    </li>
+                    <li className="flex items-start opacity-90">
+                      <svg
+                        astro-icon="tabler/check"
+                        className="mt-0.5 h-5 w-5 shrink-0 text-primary"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <path d="M0 0h24v24H0z" stroke="none"></path>
+                        <path d="m5 12 5 5L20 7"></path>
+                      </svg>{" "}
+                      <span className="ml-2 inline">
+                        Data Storage{" "}
+                        <span>
+                          <span className="-300 text-base-700 ml-1 text-sm">
+                            (Unlimited)
+                          </span>
+                        </span>
+                      </span>
+                    </li>
+                    <li className="flex items-start opacity-90">
+                      <svg
+                        astro-icon="tabler/check"
+                        className="mt-0.5 h-5 w-5 shrink-0 text-primary"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <path d="M0 0h24v24H0z" stroke="none"></path>
+                        <path d="m5 12 5 5L20 7"></path>
+                      </svg>{" "}
+                      <span className="ml-2 inline">
+                        Basic reports <span></span>
+                      </span>
+                    </li>
+                    <li className="flex items-start opacity-90">
+                      <svg
+                        astro-icon="tabler/check"
+                        className="mt-0.5 h-5 w-5 shrink-0 text-primary"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <path d="M0 0h24v24H0z" stroke="none"></path>
+                        <path d="m5 12 5 5L20 7"></path>
+                      </svg>{" "}
+                      <span className="ml-2 inline">
+                        Advanced analytics <span></span>
+                      </span>
+                    </li>
+                    <li className="flex items-start opacity-90">
+                      <svg
+                        astro-icon="tabler/check"
+                        className="mt-0.5 h-5 w-5 shrink-0 text-primary"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <path d="M0 0h24v24H0z" stroke="none"></path>
+                        <path d="m5 12 5 5L20 7"></path>
+                      </svg>{" "}
+                      <span className="ml-2 inline">
+                        Professional reports <span></span>
+                      </span>
+                    </li>
+                    <li className="flex items-start opacity-90">
+                      <svg
+                        astro-icon="tabler/check"
+                        className="mt-0.5 h-5 w-5 shrink-0 text-primary"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <path d="M0 0h24v24H0z" stroke="none"></path>
+                        <path d="m5 12 5 5L20 7"></path>
+                      </svg>{" "}
+                      <span className="ml-2 inline">
+                        Custom reports <span></span>
+                      </span>
+                    </li>
+                    <li className="flex items-start opacity-90">
+                      <svg
+                        astro-icon="tabler/check"
+                        className="mt-0.5 h-5 w-5 shrink-0 text-primary"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <path d="M0 0h24v24H0z" stroke="none"></path>
+                        <path d="m5 12 5 5L20 7"></path>
+                      </svg>{" "}
+                      <span className="ml-2 inline">
+                        Email support <span></span>
+                      </span>
+                    </li>
+                    <li className="flex items-start opacity-90">
+                      <svg
+                        astro-icon="tabler/check"
+                        className="mt-0.5 h-5 w-5 shrink-0 text-primary"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <path d="M0 0h24v24H0z" stroke="none"></path>
+                        <path d="m5 12 5 5L20 7"></path>
+                      </svg>{" "}
+                      <span className="ml-2 inline">
+                        Priority support <span></span>
+                      </span>
+                    </li>
+                    <li className="flex items-start opacity-90">
+                      <svg
+                        astro-icon="tabler/check"
+                        className="mt-0.5 h-5 w-5 shrink-0 text-primary"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        aria-hidden="true"
+                      >
+                        <path d="M0 0h24v24H0z" stroke="none"></path>
+                        <path d="m5 12 5 5L20 7"></path>
+                      </svg>{" "}
+                      <span className="ml-2 inline">
+                        White-glove onboarding <span></span>
+                      </span>
+                    </li>
+                  </ul>
+                  <div className="mt-8">
+                    <a
+                      className="block w-full rounded-md bg-primary py-3 text-center font-medium text-primary-foreground"
+                      href="#"
+                    >
+                      Get Started
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div role="table" className="col-span-4 hidden lg:block">
+          <div>
+            <div
+              role="row"
+              className="grid grid-cols-4 border-b border-foreground/5 text-lg"
+            >
+              <p className="pb-2 pt-8 font-semibold">Features</p>
+              <div className=""></div>
+              <div className="bg-primary text-primary-foreground"></div>
+              <div className=""></div>
+            </div>
+
+            <div
+              role="row"
+              className="grid grid-cols-4 border-b border-foreground/5"
+            >
+              <p className="py-2 opacity-90">Integrations</p>
+              <div className="flex items-center justify-center py-2">
+                <svg
+                  astro-icon="tabler/check"
+                  className="opcaity-90 h-5 w-5 shrink-0 text-primary"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </div>
+              <div className="flex items-center justify-center bg-primary py-2 text-primary-foreground">
+                <svg
+                  astro-icon="tabler/check"
+                  className="h-5 w-5 shrink-0 text-primary-foreground"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </div>
+              <div className="flex items-center justify-center py-2">
+                <svg
+                  astro-icon="tabler/check"
+                  className="opcaity-90 h-5 w-5 shrink-0 text-primary"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </div>
+            </div>
+
+            <div
+              role="row"
+              className="grid grid-cols-4 border-b border-foreground/5"
+            >
+              <p className="py-2 opacity-90">Connect to your database</p>
+              <div className="flex items-center justify-center py-2">
+                <svg
+                  astro-icon="tabler/check"
+                  className="opcaity-90 h-5 w-5 shrink-0 text-primary"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </div>
+              <div className="flex items-center justify-center bg-primary py-2 text-primary-foreground">
+                <svg
+                  astro-icon="tabler/check"
+                  className="h-5 w-5 shrink-0 text-primary-foreground"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </div>
+              <div className="flex items-center justify-center py-2">
+                <svg
+                  astro-icon="tabler/check"
+                  className="opcaity-90 h-5 w-5 shrink-0 text-primary"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </div>
+            </div>
+
+            <div
+              role="row"
+              className="grid grid-cols-4 border-b border-foreground/5"
+            >
+              <p className="py-2 opacity-90">Import and export data</p>
+              <div className="flex items-center justify-center py-2">
+                <svg
+                  astro-icon="tabler/minus"
+                  className="h-5 w-5 shrink-0 opacity-90"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="M5 12h14"></path>
+                </svg>
+              </div>
+              <div className="flex items-center justify-center bg-primary py-2 text-primary-foreground">
+                <svg
+                  astro-icon="tabler/check"
+                  className="h-5 w-5 shrink-0 text-primary-foreground"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </div>
+              <div className="flex items-center justify-center py-2">
+                <svg
+                  astro-icon="tabler/check"
+                  className="opcaity-90 h-5 w-5 shrink-0 text-primary"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </div>
+            </div>
+
+            <div
+              role="row"
+              className="grid grid-cols-4 border-b border-foreground/5"
+            >
+              <p className="py-2 opacity-90">Team members</p>
+              <div className="flex items-center justify-center py-2">
+                <svg
+                  astro-icon="tabler/minus"
+                  className="h-5 w-5 shrink-0 opacity-90"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="M5 12h14"></path>
+                </svg>
+              </div>
+              <div className="flex items-center justify-center bg-primary py-2 text-primary-foreground">
+                <span className="">Up to 5 users</span>
+              </div>
+              <div className="flex items-center justify-center py-2">
+                <span className="opacity-90">Up to 20 users</span>
+              </div>
+            </div>
+
+            <div
+              role="row"
+              className="grid grid-cols-4 border-b border-foreground/5"
+            >
+              <p className="py-2 opacity-90">Data Storage</p>
+              <div className="flex items-center justify-center py-2">
+                <span className="opacity-90">Up to 5 GB</span>
+              </div>
+              <div className="flex items-center justify-center bg-primary py-2 text-primary-foreground">
+                <span className="">Up to 50 GB</span>
+              </div>
+              <div className="flex items-center justify-center py-2">
+                <span className="opacity-90">Unlimited</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div
+              role="row"
+              className="grid grid-cols-4 border-b border-foreground/5 text-lg"
+            >
+              <p className="pb-2 pt-8 font-semibold">Reporting</p>
+              <div className=""></div>
+              <div className="bg-primary text-primary-foreground"></div>
+              <div className=""></div>
+            </div>
+            <div
+              role="row"
+              className="grid grid-cols-4 border-b border-foreground/5"
+            >
+              <p className="py-2 opacity-90">Basic reports</p>
+              <div className="flex items-center justify-center py-2">
+                <svg
+                  astro-icon="tabler/check"
+                  className="opcaity-90 h-5 w-5 shrink-0 text-primary"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </div>
+              <div className="flex items-center justify-center bg-primary py-2 text-primary-foreground">
+                <svg
+                  astro-icon="tabler/check"
+                  className="h-5 w-5 shrink-0 text-primary-foreground"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </div>
+              <div className="flex items-center justify-center py-2">
+                <svg
+                  astro-icon="tabler/check"
+                  className="opcaity-90 h-5 w-5 shrink-0 text-primary"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </div>
+            </div>
+            <div
+              role="row"
+              className="grid grid-cols-4 border-b border-foreground/5"
+            >
+              <p className="py-2 opacity-90">Advanced analytics</p>
+              <div className="flex items-center justify-center py-2">
+                <svg
+                  astro-icon="tabler/minus"
+                  className="h-5 w-5 shrink-0 opacity-90"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="M5 12h14"></path>
+                </svg>
+              </div>
+              <div className="flex items-center justify-center bg-primary py-2 text-primary-foreground">
+                <svg
+                  astro-icon="tabler/check"
+                  className="h-5 w-5 shrink-0 text-primary-foreground"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </div>
+              <div className="flex items-center justify-center py-2">
+                <svg
+                  astro-icon="tabler/check"
+                  className="opcaity-90 h-5 w-5 shrink-0 text-primary"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </div>
+            </div>
+            <div
+              role="row"
+              className="grid grid-cols-4 border-b border-foreground/5"
+            >
+              <p className="py-2 opacity-90">Professional reports</p>
+              <div className="flex items-center justify-center py-2">
+                <svg
+                  astro-icon="tabler/minus"
+                  className="h-5 w-5 shrink-0 opacity-90"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="M5 12h14"></path>
+                </svg>
+              </div>
+              <div className="flex items-center justify-center bg-primary py-2 text-primary-foreground">
+                <svg
+                  astro-icon="tabler/check"
+                  className="h-5 w-5 shrink-0 text-primary-foreground"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </div>
+              <div className="flex items-center justify-center py-2">
+                <svg
+                  astro-icon="tabler/check"
+                  className="opcaity-90 h-5 w-5 shrink-0 text-primary"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </div>
+            </div>
+            <div
+              role="row"
+              className="grid grid-cols-4 border-b border-foreground/5"
+            >
+              <p className="py-2 opacity-90">Custom reports</p>
+              <div className="flex items-center justify-center py-2">
+                <svg
+                  astro-icon="tabler/minus"
+                  className="h-5 w-5 shrink-0 opacity-90"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="M5 12h14"></path>
+                </svg>
+              </div>
+              <div className="flex items-center justify-center bg-primary py-2 text-primary-foreground">
+                <svg
+                  astro-icon="tabler/minus"
+                  className="h-5 w-5 shrink-0 opacity-90"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="M5 12h14"></path>
+                </svg>
+              </div>
+              <div className="flex items-center justify-center py-2">
+                <svg
+                  astro-icon="tabler/check"
+                  className="opcaity-90 h-5 w-5 shrink-0 text-primary"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div
+              role="row"
+              className="grid grid-cols-4 border-b border-foreground/5 text-lg"
+            >
+              <p className="pb-2 pt-8 font-semibold">Support</p>
+              <div className=""></div>
+              <div className="bg-primary text-primary-foreground"></div>
+              <div className=""></div>
+            </div>
+            <div
+              role="row"
+              className="grid grid-cols-4 border-b border-foreground/5"
+            >
+              <p className="py-2 opacity-90">Email support</p>
+              <div className="flex items-center justify-center py-2">
+                <svg
+                  astro-icon="tabler/check"
+                  className="opcaity-90 h-5 w-5 shrink-0 text-primary"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </div>
+              <div className="flex items-center justify-center bg-primary py-2 text-primary-foreground">
+                <svg
+                  astro-icon="tabler/check"
+                  className="h-5 w-5 shrink-0 text-primary-foreground"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </div>
+              <div className="flex items-center justify-center py-2">
+                <svg
+                  astro-icon="tabler/check"
+                  className="opcaity-90 h-5 w-5 shrink-0 text-primary"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </div>
+            </div>
+            <div
+              role="row"
+              className="grid grid-cols-4 border-b border-foreground/5"
+            >
+              <p className="py-2 opacity-90">Priority support</p>
+              <div className="flex items-center justify-center py-2">
+                <svg
+                  astro-icon="tabler/minus"
+                  className="h-5 w-5 shrink-0 opacity-90"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="M5 12h14"></path>
+                </svg>
+              </div>
+              <div className="flex items-center justify-center bg-primary py-2 text-primary-foreground">
+                <svg
+                  astro-icon="tabler/check"
+                  className="h-5 w-5 shrink-0 text-primary-foreground"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </div>
+              <div className="flex items-center justify-center py-2">
+                <svg
+                  astro-icon="tabler/check"
+                  className="opcaity-90 h-5 w-5 shrink-0 text-primary"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </div>
+            </div>
+            <div
+              role="row"
+              className="grid grid-cols-4 border-b border-foreground/5"
+            >
+              <p className="py-2 opacity-90">White-glove onboarding</p>
+              <div className="flex items-center justify-center py-2">
+                <svg
+                  astro-icon="tabler/minus"
+                  className="h-5 w-5 shrink-0 opacity-90"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="M5 12h14"></path>
+                </svg>
+              </div>
+              <div className="flex items-center justify-center rounded-b-2xl bg-primary py-2 text-primary-foreground">
+                <svg
+                  astro-icon="tabler/minus"
+                  className="h-5 w-5 shrink-0 opacity-90"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="M5 12h14"></path>
+                </svg>
+              </div>
+              <div className="flex items-center justify-center py-2">
+                <svg
+                  astro-icon="tabler/check"
+                  className="opcaity-90 h-5 w-5 shrink-0 text-primary"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="grid w-fit gap-4 lg:grid-cols-3 lg:gap-10">
+        <div className="flex w-full max-w-sm flex-col space-y-8 justify-self-end border-t-4 border-primary bg-card-background px-6 py-10 max-lg:max-w-sm">
+          <div className="space-y-4">
+            <span className="block font-bold">Basic</span>
+            <p>
+              <span className="text-5xl font-black">Free</span>
+            </p>
+            <small className="block font-medium">Free forever</small>
+          </div>
+          <ul className="grid gap-1.5 leading-relaxed">
+            <li className="flex gap-0.5">
+              <span>
+                <svg
+                  astro-icon="tabler/check"
+                  className="mt-0.5 h-5 w-5 shrink-0 text-primary"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </span>
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </span>
             </li>
-            <li>
-              <a
-                href="#"
-                className="group flex bg-accent/10 transition ease-in-out hover:bg-accent/20"
-              >
-                <div className="flex h-full w-full items-center gap-2 px-6 py-4 transition-transform ease-in-out group-active:scale-[0.98]">
-                  <div className="rounded-full bg-danger/20 p-2 text-danger ring-1 ring-inset ring-danger/50">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="32"
-                      height="32"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M12 19h-6a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v4.5" />
-                      <path d="M3 10h18" />
-                      <path d="M16 19h6" />
-                      <path d="M19 16l3 3l-3 3" />
-                      <path d="M7.005 15h.005" />
-                      <path d="M11 15h2" />
-                    </svg>
-                  </div>
-                  <div className="space-y-0">
-                    <p className="text-sm">
-                      <span className="font-bold text-danger">$20 US</span> were
-                      paid
-                    </p>
-                    <small className="text-xs text-foreground/50">
-                      2 minutes ago
-                    </small>
-                  </div>
-                </div>
-              </a>
+            <li className="flex gap-0.5">
+              <span>
+                <svg
+                  astro-icon="tabler/check"
+                  className="mt-0.5 h-5 w-5 shrink-0 text-primary"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </span>
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </span>
             </li>
-            <li>
-              <a
-                href="#"
-                className="group flex bg-accent/10 transition ease-in-out hover:bg-accent/20"
-              >
-                <div className="flex h-full w-full items-center gap-2 px-6 py-4 transition-transform ease-in-out group-active:scale-[0.98]">
-                  <div className="rounded-full bg-success/20 p-2 text-success ring-1 ring-inset ring-success/50">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="32"
-                      height="32"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M12 19h-6a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v4.5" />
-                      <path d="M3 10h18" />
-                      <path d="M7 15h.01" />
-                      <path d="M11 15h2" />
-                      <path d="M16 19h6" />
-                      <path d="M19 16l-3 3l3 3" />
-                    </svg>
-                  </div>
-                  <div className="space-y-0">
-                    <p className="text-sm">
-                      <span className="font-bold text-success">$10 US</span>{" "}
-                      were received
-                    </p>
-                    <small className="text-xs text-foreground/50">
-                      2 hours ago
-                    </small>
-                  </div>
-                </div>
-              </a>
+            <li className="flex gap-0.5">
+              <span>
+                <svg
+                  astro-icon="tabler/check"
+                  className="mt-0.5 h-5 w-5 shrink-0 text-primary"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </span>
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </span>
+            </li>
+          </ul>
+          <div className="flex h-full items-end">
+            <a
+              href="#"
+              className="w-fit bg-primary px-6 py-3 font-medium text-primary-foreground transition-all ease-in-out hover:brightness-[0.8] active:scale-95"
+            >
+              Get Started Free
+            </a>
+          </div>
+        </div>
+        <div className="flex w-full max-w-sm flex-col space-y-8 justify-self-center border-t-4 border-amber-400 bg-card-background px-6 py-10 max-lg:max-w-sm lg:scale-110">
+          <div className="space-y-4">
+            <span className="block font-bold">Professional</span>
+            <p>
+              <span className="text-5xl font-black">$15</span>
+              <small className="font-black">/month</small>
+            </p>
+            <small className="block font-medium">
+              Ideal for individual creators
+            </small>
+          </div>
+          <ul className="grid gap-1.5 leading-relaxed">
+            <li className="flex gap-0.5 font-bold">
+              {" "}
+              <span>
+                <svg
+                  astro-icon="tabler/check"
+                  className="mt-0.5 h-5 w-5 shrink-0 text-amber-400"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </span>
+              <span>Free Features</span>
+            </li>
+            <li className="flex gap-0.5">
+              <span>
+                <svg
+                  astro-icon="tabler/check"
+                  className="mt-0.5 h-5 w-5 shrink-0 text-amber-400"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </span>
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </span>
+            </li>
+            <li className="flex gap-0.5">
+              <span>
+                <svg
+                  astro-icon="tabler/check"
+                  className="mt-0.5 h-5 w-5 shrink-0 text-amber-400"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </span>
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </span>
+            </li>
+            <li className="flex gap-0.5">
+              <span>
+                <svg
+                  astro-icon="tabler/check"
+                  className="mt-0.5 h-5 w-5 shrink-0 text-amber-400"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </span>
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </span>
+            </li>
+            <li className="flex gap-0.5">
+              <span>
+                <svg
+                  astro-icon="tabler/check"
+                  className="mt-0.5 h-5 w-5 shrink-0 text-amber-400"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </span>
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </span>
+            </li>
+          </ul>
+          <div className="flex h-full items-end">
+            <a
+              href="#"
+              className="w-fit bg-amber-400 px-6 py-3 font-medium text-gray-950 transition-all ease-in-out hover:brightness-[0.8] active:scale-95"
+            >
+              Get Professional
+            </a>
+          </div>
+        </div>
+        <div className="flex w-full max-w-sm flex-col space-y-8 justify-self-start border-t-4 border-primary bg-card-background px-6 py-10 max-lg:max-w-sm">
+          <div className="space-y-4">
+            <span className="block font-bold">Team</span>
+            <p>
+              <span className="text-5xl font-black">$25</span>
+              <small className="font-black">/month</small>
+            </p>
+            <small className="block font-medium">
+              Small teams with up to 10 useres.
+            </small>
+          </div>
+
+          <ul className="grid gap-1.5 leading-relaxed">
+            <li className="flex gap-0.5 font-bold">
+              {" "}
+              <span>
+                <svg
+                  astro-icon="tabler/check"
+                  className="mt-0.5 h-5 w-5 shrink-0 text-primary"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </span>
+              <span>Professional Features</span>
             </li>{" "}
-            <li>
-              <a
-                href="#"
-                className="group flex bg-accent/10 transition ease-in-out hover:bg-accent/20"
-              >
-                <div className="flex h-full w-full items-center gap-2 px-6 py-4 transition-transform ease-in-out group-active:scale-[0.98]">
-                  <div className="rounded-full bg-danger/20 p-2 text-danger ring-1 ring-inset ring-danger/50">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="32"
-                      height="32"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M12 19h-6a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v4.5" />
-                      <path d="M3 10h18" />
-                      <path d="M16 19h6" />
-                      <path d="M19 16l3 3l-3 3" />
-                      <path d="M7.005 15h.005" />
-                      <path d="M11 15h2" />
-                    </svg>
-                  </div>
-                  <div className="space-y-0">
-                    <p className="text-sm">
-                      <span className="font-bold text-danger">$20 US</span> were
-                      paid
-                    </p>
-                    <small className="text-xs text-foreground/50">
-                      2 minutes ago
-                    </small>
-                  </div>
-                </div>
-              </a>
+            <li className="flex gap-0.5">
+              <span>
+                <svg
+                  astro-icon="tabler/check"
+                  className="mt-0.5 h-5 w-5 shrink-0 text-primary"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </span>
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </span>
             </li>
-            <li>
-              <a
-                className="flex h-full w-full place-content-center bg-accent/10 px-6 py-4 font-bold hover:bg-accent/20"
-                href="#"
-              >
-                See All
-              </a>
+            <li className="flex gap-0.5">
+              <span>
+                <svg
+                  astro-icon="tabler/check"
+                  className="mt-0.5 h-5 w-5 shrink-0 text-primary"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </span>
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </span>
+            </li>
+            <li className="flex gap-0.5">
+              <span>
+                <svg
+                  astro-icon="tabler/check"
+                  className="mt-0.5 h-5 w-5 shrink-0 text-primary"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </span>
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </span>
+            </li>
+            <li className="flex gap-0.5">
+              <span>
+                <svg
+                  astro-icon="tabler/check"
+                  className="mt-0.5 h-5 w-5 shrink-0 text-primary"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </span>
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </span>
+            </li>
+            <li className="flex gap-0.5">
+              <span>
+                <svg
+                  astro-icon="tabler/check"
+                  className="mt-0.5 h-5 w-5 shrink-0 text-primary"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </span>
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </span>
             </li>
           </ul>
+
+          <a className="w-fit bg-primary px-6 py-3 font-medium text-primary-foreground transition-all ease-in-out hover:brightness-[0.8] active:scale-95">
+            Get Team Plan
+          </a>
         </div>
       </div>
 
-      <div role="menu" className="relative select-none">
-        <button className="inline-flex items-center gap-1 rounded-full bg-accent/20 p-2 text-accent-foreground ring-1 ring-inset ring-accent/30">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
-            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-          </svg>
-        </button>
-        <div className="absolute right-4 top-full z-40 mt-2 h-4 w-4 rotate-45 bg-background">
-          <div className="h-full w-full bg-accent/10"></div>
-        </div>
-
-        <div className="absolute -bottom-0 right-0 top-full z-50 mt-3 flex min-h-fit w-56 bg-background max-[300px]:max-w-[50vw]">
-          <ul className="grid w-full divide-y divide-accent/20 overflow-hidden">
-            <li className="">
-              <a
-                href="#"
-                className="group flex bg-accent/10 transition ease-in-out hover:bg-accent/20"
-              >
-                <div className="flex items-center gap-1 px-4 py-2">
-                  <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
-                      <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-                    </svg>
-                  </div>
-                  <p>Profile</p>
-                </div>
-              </a>
-              <a
-                href="#"
-                className="group flex bg-accent/10 transition ease-in-out hover:bg-accent/20"
-              >
-                <div className="flex items-center gap-1 px-4 py-2">
-                  <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M20 6v12a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2z" />
-                      <path d="M10 16h6" />
-                      <path d="M13 11m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                      <path d="M4 8h3" />
-                      <path d="M4 12h3" />
-                      <path d="M4 16h3" />
-                    </svg>
-                  </div>
-                  <p>Contacts</p>
-                </div>
-              </a>
-              <a
-                href="#"
-                className="group flex bg-accent/10 transition ease-in-out hover:bg-accent/20"
-              >
-                <div className="flex items-center gap-1 px-4 py-2">
-                  <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M9.5 3h5a1.5 1.5 0 0 1 1.5 1.5a3.5 3.5 0 0 1 -3.5 3.5h-1a3.5 3.5 0 0 1 -3.5 -3.5a1.5 1.5 0 0 1 1.5 -1.5z" />
-                      <path d="M4 17v-1a8 8 0 1 1 16 0v1a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
-                    </svg>
-                  </div>
-                  <p>Balance</p>
-                </div>
-              </a>
-              <a
-                href="#"
-                className="group flex bg-accent/10 transition ease-in-out hover:bg-accent/20"
-              >
-                <div className="flex items-center gap-1 px-4 py-2">
-                  <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" />
-                      <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
-                    </svg>
-                  </div>
-                  <p>Notifications</p>
-                </div>
-              </a>
+      <div className="grid w-fit gap-4 md:grid-cols-2 lg:gap-10">
+        <div className="flex w-full max-w-sm flex-col space-y-8 justify-self-end rounded-2xl bg-card-background px-6 py-10 max-lg:max-w-sm">
+          <div className="space-y-4">
+            <div className="w-fit rounded-full bg-gradient-to-r from-primary/10 to-secondary/10 px-4">
+              <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text font-bold text-transparent">
+                Free Account
+              </span>
+            </div>
+            <p>
+              <span className="text-5xl font-black">$0</span>
+              <small className="font-black">/month</small>
+            </p>
+            <small className="block font-medium">Free forever</small>
+          </div>
+          <ul className="grid gap-1.5 leading-relaxed">
+            <li className="flex gap-0.5">
+              <span>
+                <svg
+                  astro-icon="tabler/check"
+                  className="mt-0.5 h-5 w-5 shrink-0 text-primary"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </span>
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </span>
             </li>
-            <li>
-              <a
-                href="#"
-                className="group flex bg-accent/10 transition ease-in-out hover:bg-accent/20"
-              >
-                <div className="flex items-center gap-1 px-4 py-2">
-                  <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M19.875 6.27a2.225 2.225 0 0 1 1.125 1.948v7.284c0 .809 -.443 1.555 -1.158 1.948l-6.75 4.27a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033z" />
-                      <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-                    </svg>
-                  </div>
-                  <p>Settings</p>
-                </div>
-              </a>
-              <a
-                href="#"
-                className="group flex bg-accent/10 text-danger transition ease-in-out hover:bg-danger/20"
-              >
-                <div className="flex items-center gap-1 px-4 py-2">
-                  <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
-                      <path d="M9 12h12l-3 -3" />
-                      <path d="M18 15l3 -3" />
-                    </svg>
-                  </div>
-                  <p>Log Out</p>
-                </div>
-              </a>
+            <li className="flex gap-0.5">
+              <span>
+                <svg
+                  astro-icon="tabler/check"
+                  className="mt-0.5 h-5 w-5 shrink-0 text-primary"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </span>
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </span>
+            </li>
+            <li className="flex gap-0.5">
+              <span>
+                <svg
+                  astro-icon="tabler/check"
+                  className="mt-0.5 h-5 w-5 shrink-0 text-primary"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </span>
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </span>
+            </li>
+            <li className="flex gap-0.5">
+              <span>
+                <svg
+                  astro-icon="tabler/check"
+                  className="mt-0.5 h-5 w-5 shrink-0 text-primary"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </span>
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </span>
             </li>
           </ul>
+          <div className="flex h-full items-end">
+            <a
+              href="#"
+              className="w-fit rounded-2xl bg-primary px-6 py-3 font-medium text-primary-foreground transition-all ease-in-out hover:brightness-[0.8] active:scale-95"
+            >
+              Get Started Free
+            </a>
+          </div>
+        </div>
+        <div className="flex w-full max-w-sm flex-col space-y-8 justify-self-start rounded-2xl bg-card-background px-6 py-10 max-lg:max-w-sm">
+          <div className="space-y-4">
+            <div className="w-fit rounded-full bg-gradient-to-r from-primary to-secondary px-4">
+              <span className="block font-bold">Premium</span>
+            </div>
+            <p>
+              <span className="text-5xl font-black">$25</span>
+              <small className="font-black">/month</small>
+            </p>
+            <small className="block font-medium">
+              Small teams with up to 10 useres.
+            </small>
+          </div>
+
+          <ul className="grid gap-1.5 leading-relaxed">
+            <li className="flex gap-2">
+              <div className="block h-fit rounded-full bg-gradient-to-r from-primary to-secondary p-1">
+                <svg
+                  className="mt-0.5 h-4 w-4 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </div>
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </span>
+            </li>
+            <li className="flex gap-2">
+              <div className="block h-fit rounded-full bg-gradient-to-r from-primary to-secondary p-1">
+                <svg
+                  className="mt-0.5 h-4 w-4 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </div>
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </span>
+            </li>
+            <li className="flex gap-2">
+              <div className="block h-fit rounded-full bg-gradient-to-r from-primary to-secondary p-1">
+                <svg
+                  className="mt-0.5 h-4 w-4 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </div>
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </span>
+            </li>
+            <li className="flex gap-2">
+              <div className="block h-fit rounded-full bg-gradient-to-r from-primary to-secondary p-1">
+                <svg
+                  className="mt-0.5 h-4 w-4 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0h24v24H0z" stroke="none"></path>
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </div>
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </span>
+            </li>
+          </ul>
+
+          <a
+            href="#"
+            className="w-fit rounded-2xl bg-gradient-to-r from-primary to-secondary px-6 py-3 font-medium transition-all ease-in-out hover:brightness-[0.8] active:scale-95"
+          >
+            Get Team Plan
+          </a>
         </div>
       </div>
     </section>
