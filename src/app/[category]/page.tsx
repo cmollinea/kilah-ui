@@ -1,6 +1,7 @@
 import { Component } from "@/components/component";
 import { defaultConfig } from "@/constants";
-import { categories } from "@/content";
+import { getComponentsData } from "@/lib/utils";
+import { redirect } from "next/navigation";
 
 type Props = {
   params: {
@@ -10,7 +11,11 @@ type Props = {
 
 async function Category({ params }: Props) {
   const category = params.category;
-  const routeComponents = categories.find((item) => item.slug === category);
+  const componentsDataUrl = `http://localhost:3000/components/${category}/index.json`;
+  const routeComponents = await getComponentsData(componentsDataUrl);
+  if (!routeComponents) {
+    redirect("/error");
+  }
   return (
     <>
       <main className="flex w-full animate-translate-up flex-col items-center overflow-x-auto px-4 py-28 opacity-0 transition-opacity duration-300 ease-out">
@@ -22,11 +27,12 @@ async function Category({ params }: Props) {
               config.theme.extend = { ...component.tailwindConfig.theme };
             }
 
-            if (component.tailwindConfig?.plugins && config.plugins) {
-              config.plugins = config.plugins.concat(
-                component.tailwindConfig.plugins,
-              );
-            }
+            //todo fix this bug
+
+            // if (component.tailwindConfig?.plugins && config.plugins) {
+            //   let a = [...config.plugins, component.tailwindConfig.plugins];
+            //   config.plugins = a;
+            // }
 
             return (
               <li

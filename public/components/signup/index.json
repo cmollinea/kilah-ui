@@ -1,0 +1,68 @@
+{
+  "section": "Auth",
+  "title": "Sign Up",
+  "slug": "signup",
+  "container": "50rem",
+  "components": [
+    {
+      "title": "Simple centered card",
+      "fileName": "simple-card",
+      "tailwindConfig": {
+        "theme": {
+          "colors": {
+            "primary": "#3772ff",
+            "primary-foreground": "#0c0a09",
+            "secondary": "#00916e",
+            "secondary-foreground": "#f5f5f4",
+            "input": "#888888",
+            "foreground": "#f5f5f4",
+            "background": "#080708",
+            "card-background": "#0c0a09"
+          }
+        },
+        "plugins": "require('@tailwindcss/forms')"
+      }
+    },
+    {
+      "title": "Auth form on left testimonial on right",
+      "fileName": "with-testimonial",
+      "tailwindConfig": {
+        "theme": {
+          "colors": {
+            "primary": "#3c6e71",
+            "primary-foreground": "#f5f5f4",
+            "secondary": "#284b63",
+            "secondary-foreground": "#f5f5f4",
+            "input": "#888888",
+            "foreground": "#f5f5f4",
+            "background": "#09090b",
+            "accent": "#d4d4d4",
+            "accent-foreground": "#0c0a09"
+          }
+        },
+        "plugins": "require('@tailwindcss/forms')"
+      }
+    },
+    {
+      "title": "Auth form on right, image and features on left",
+      "fileName": "flex-with-features-and-image",
+      "tailwindConfig": {
+        "theme": {
+          "colors": {
+            "primary": "#6930c3",
+            "primary-foreground": "#000000",
+            "secondary": "#56cfe1",
+            "secondary-foreground": "#000000",
+            "input": "#888888",
+            "foreground": "#000000",
+            "background": "#f9f9f9",
+            "card-background": "#3d405b",
+            "accent": "#edf2f4",
+            "accent-foreground": "#2b2d42"
+          }
+        },
+        "plugins": "require('@tailwindcss/forms')"
+      }
+    }
+  ]
+}

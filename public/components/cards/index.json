@@ -1,0 +1,122 @@
+{
+  "section": "application-ui",
+  "title": "Cards",
+  "slug": "cards",
+  "container": "40rem",
+  "components": [
+    {
+      "title": "Grayscale cards with hover effect",
+      "fileName": "grayscale-cards"
+    },
+    {
+      "title": "Colorful cards with hover effect",
+      "fileName": "colorful-cards"
+    },
+    {
+      "title": "Grid with hover effect",
+      "fileName": "air-bnb-card",
+      "tailwindConfig": {
+        "theme": {
+          "colors": {
+            "primary": "#3d68f4",
+            "foreground": "#fafafa",
+            "background": "#111111",
+            "card-background": "#1d1d1d"
+          },
+          "animation": {
+            "bnb-first": "bnb-first 10s ease-in infinite",
+            "bnb-second": "bnb-second 10s ease-in infinite",
+            "bnb-third": "bnb-third 10s ease-in infinite"
+          },
+          "keyframes": {
+            "bnb-first": {
+              "0%": {
+                "opacity": "0"
+              },
+              "2%": {
+                "transform": "scale(1)",
+                "opacity": "0"
+              },
+              "3%": {
+                "transform": "scale(1)",
+                "opacity": "1"
+              },
+              "30%": {
+                "transform": "scale(1.5)",
+                "opacity": "1"
+              },
+              "35%": {
+                "transform": "scale(1.5)",
+                "opacity": "0"
+              }
+            },
+            "bnb-second": {
+              "36%": {
+                "transform": "scale(1)",
+                "opacity": "0"
+              },
+              "40%": {
+                "transform": "scale(1)",
+                "opacity": "1"
+              },
+              "60%": {
+                "transform": "scale(1.5)",
+                "opacity": "1"
+              },
+              "65%": {
+                "transform": "scale(1.5)",
+                "opacity": "0"
+              }
+            },
+            "bnb-third": {
+              "66%": {
+                "transform": "scale(1)",
+                "opacity": "0"
+              },
+              "70%": {
+                "transform": "scale(1)",
+                "opacity": "1"
+              },
+              "95%": {
+                "transform": "scale(1.5)",
+                "opacity": "1"
+              },
+              "100%": {
+                "transform": "scale(1.5)",
+                "opacity": "0"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Grid with hover effect",
+      "fileName": "grid-with-hover-effect",
+      "tailwindConfig": {
+        "theme": {
+          "colors": {
+            "primary": "#3d68f4",
+            "foreground": "#fafafa",
+            "background": "#111111",
+            "card-background": "#1d1d1d"
+          }
+        }
+      }
+    },
+    {
+      "title": "Simple Card",
+      "fileName": "simple-card",
+      "tailwindConfig": {
+        "theme": {
+          "colors": {
+            "primary": "#eb5e28",
+            "foreground": "#fafafa",
+            "background": "#111111",
+            "card-background": "#1d1d1d"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "section": "Application UI",
+  "title": "Testimonials",
+  "slug": "testimonials",
+  "container": "60rem",
+  "components": [
+    {
+      "title": "Testimonial inspired by tailwindCSS website",
+      "fileName": "testimonial-inspired-by-tailwindcss-website",
+      "tailwindConfig": {
+        "theme": {
+          "colors": {
+            "primary": "#e0fbfc",
+            "primary-foreground": "#202020",
+            "secondary": "#907AD6",
+            "foreground": "#d6d6d6",
+            "background": "#000000",
+            "card-background": "#1b1b1e"
+          }
+        }
+      }
+    },
+    {
+      "title": "Testimonial with negative margin",
+      "fileName": "testimonial-with-negative-margin",
+      "tailwindConfig": {
+        "theme": {
+          "colors": {
+            "primary": "#DABFFF",
+            "primary-foreground": "#02010a",
+            "secondary": "#907AD6",
+            "foreground": "#f0fff1",
+            "background": "#2c2a4a",
+            "card-background": "#4F518C"
+          }
+        }
+      }
+    },
+    {
+      "title": "Testimonial with images without background with scale and color on hover",
+      "fileName": "testimonial-with-images-no-background",
+      "tailwindConfig": {
+        "theme": {
+          "colors": {
+            "primary": "#192bc2",
+            "secondary": "#333533",
+            "foreground": "#242423",
+            "background": "#E8EDDF",
+            "card-background": "#CFDBD5"
+          }
+        }
+      }
+    },
+    {
+      "title": "Testimonial with rate",
+      "fileName": "testimonial-with-rate",
+      "tailwindConfig": {
+        "theme": {
+          "colors": {
+            "primary": "#507dbc",
+            "primary-foreground": "#1e1b18",
+            "foreground": "#caf0f8",
+            "background": "#0d1b2a",
+            "card-background": "#1b263b"
+          }
+        }
+      }
+    },
+    {
+      "title": "Testimonial with cta",
+      "fileName": "testimonial-with-cta",
+      "tailwindConfig": {
+        "theme": {
+          "colors": {
+            "primary": "#16a149",
+            "foreground": "#f5f5f4",
+            "background": "#0E0915",
+            "card-background": "#000000"
+          }
+        }
+      }
+    }
+  ]
+}

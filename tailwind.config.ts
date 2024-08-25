@@ -13,7 +13,7 @@ const config: Config = {
         "primary-foreground": "#09090b",
         secondary: "#d62828",
         "secondary-foreground": "#edf6f9",
-        accent: "#e7e5e4",
+        accent: "#f8fafc",
         "accent-foreground": "#ffffff",
         info: "#3b82f6",
         "info-foreground": "#ffffff",

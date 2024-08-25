@@ -1,0 +1,28 @@
+{
+    "section": "application-ui",
+    "title": "Hero Sections",
+    "slug": "hero",
+    "container": "40rem",
+    "components": [
+        {
+            "title": "Text on left with image on right",
+            "fileName": "text-on-left-image-on-right"
+        },
+        {
+            "title": "Centered text with image background",
+            "fileName": "image-bg"
+        },
+        {
+            "title": "Centered with image",
+            "fileName": "centered-with-image"
+        },
+        {
+            "title": "Centered text with gradiant text",
+            "fileName": "centered-with-gradiant-text"
+        },
+        {
+            "title": "Centered text with cta",
+            "fileName": "centered-text-with-cta"
+        }
+    ]
+}

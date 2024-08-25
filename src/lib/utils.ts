@@ -1,6 +1,8 @@
 import { defaultConfig } from "@/constants";
 import { clsx, type ClassValue } from "clsx";
+import { notFound, redirect } from "next/navigation";
 import { twMerge } from "tailwind-merge";
+import { Category } from "../../types";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -71,4 +73,23 @@ export function translateToJsx(html: string) {
   clonedHtml = clonedHtml.replace(/-->/g, "*/}");
 
   return clonedHtml;
+}
+
+export async function getComponentsData(
+  url: string,
+): Promise<Category | undefined> {
+  try {
+    const response = await fetch(url);
+
+    if (response.status === 404) {
+      return notFound();
+    }
+
+    if (response.ok) {
+      const data = await response.json();
+      return data;
+    }
+  } catch {
+    redirect("/error");
+  }
 }

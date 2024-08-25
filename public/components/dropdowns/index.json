@@ -1,0 +1,57 @@
+{
+  "title": "Dropdowns",
+  "slug": "dropdowns",
+  "section": "Application UI",
+  "container": "40rem",
+  "components": [
+    {
+      "title": "Navigation",
+      "fileName": "navigation",
+      "tailwindConfig": {
+        "darkMode": "class",
+        "theme": {
+          "colors": {
+            "primary": "#22c55e",
+            "accent": "#e0e1dd",
+            "background": "#0a0a0a",
+            "foreground": "#f5f5f5"
+          }
+        }
+      }
+    },
+    {
+      "title": "Notifications",
+      "fileName": "notifications",
+      "tailwindConfig": {
+        "darkMode": "class",
+        "theme": {
+          "colors": {
+            "primary": "#06b6d4",
+            "accent": "#a1a1aa",
+            "background": "#f8fafc",
+            "foreground": "#18181b",
+            "success": "#15803d",
+            "danger": "#b91c1c"
+          }
+        }
+      }
+    },
+    {
+      "title": "User Dropdown",
+      "fileName": "user-dropdown",
+      "tailwindConfig": {
+        "darkMode": "class",
+        "theme": {
+          "colors": {
+            "primary": "#415a77",
+            "accent": "#e0e1dd",
+            "background": "#000814",
+            "foreground": "#ffffff",
+            "success": "#15803d",
+            "danger": "#b91c1c"
+          }
+        }
+      }
+    }
+  ]
+}

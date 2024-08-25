@@ -1,0 +1,99 @@
+{
+  "section": "Auth",
+  "title": "Login",
+  "slug": "login",
+  "container": "40rem",
+  "components": [
+    {
+      "title": "Flex with testimonial",
+      "fileName": "flex-with-testimonial",
+      "tailwindConfig": {
+        "theme": {
+          "colors": {
+            "primary": "#5932e6",
+            "primary-foreground": "#fbfaff",
+            "input": "#062726",
+            "foreground": "#062726",
+            "background": "#f0fff1",
+            "card-background": "#f1faee",
+            "accent": "#e9edc9",
+            "accent-foreground": "#03071e"
+          }
+        },
+        "plugins": "require('@tailwindcss/forms')"
+      }
+    },
+    {
+      "title": "Flex with image",
+      "fileName": "flex-with-image",
+      "tailwindConfig": {
+        "theme": {
+          "colors": {
+            "primary": "#84cc16",
+            "primary-foreground": "#f8f9fa",
+            "input": "#ffe8d6",
+            "foreground": "#ffffff",
+            "background": "#0d1b2a",
+            "card-background": "#1b263b",
+            "accent": "#272725",
+            "accent-foreground": "#ffffff"
+          }
+        },
+        "plugins": "require('@tailwindcss/forms')"
+      }
+    },
+    {
+      "title": "Ubuntu Inspired",
+      "fileName": "ubuntu-inspired",
+      "tailwindConfig": {
+        "theme": {
+          "colors": {
+            "primary": "#f07167",
+            "primary-foreground": "#000000",
+            "input": "#ffe8d6",
+            "foreground": "#f8edeb",
+            "background": "#ddbea9",
+            "card-background": "#b7b7a4",
+            "accent": "#fdfcdc"
+          }
+        },
+        "plugins": "require('@tailwindcss/forms')"
+      }
+    },
+    {
+      "title": "Simple with waves",
+      "fileName": "simple-with-waves",
+      "tailwindConfig": {
+        "theme": {
+          "colors": {
+            "primary": "#22c55e",
+            "primary-foreground": "#ffffff",
+            "input": "#E8E8E8",
+            "foreground": "#E5E5E5",
+            "background": "#042f2e",
+            "card-background": "#090909",
+            "accent": "#dee2e6"
+          }
+        },
+        "plugins": "require('@tailwindcss/forms')"
+      }
+    },
+    {
+      "title": "Simple centered Card",
+      "fileName": "simple-centered-card",
+      "tailwindConfig": {
+        "theme": {
+          "colors": {
+            "primary": "#FCA311",
+            "primary-foreground": "#000000",
+            "input": "#E8E8E8",
+            "foreground": "#E5E5E5",
+            "background": "#000000",
+            "card-background": "#090909"
+          }
+        },
+        "plugins": "require('@tailwindcss/forms')"
+      }
+    }
+  ]
+}

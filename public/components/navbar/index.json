@@ -1,0 +1,56 @@
+{
+  "section": "application-ui",
+  "title": "Navbars",
+  "slug": "navbar",
+  "container": "15rem",
+  "components": [
+    {
+      "title": "Centered minimal navbar",
+      "fileName": "centered-minimal-navbar",
+      "tailwindConfig": {
+        "theme": {
+          "colors": {
+            "primary": "#eb5e28",
+            "foreground": "#fafafa"
+          }
+        }
+      }
+    },
+    {
+      "title": "Simple navbar with nav on left",
+      "fileName": "simple-navbar-with-nav-on-left",
+      "tailwindConfig": {
+        "theme": {
+          "colors": {
+            "primary": "#eb5e28",
+            "foreground": "#fafafa"
+          }
+        }
+      }
+    },
+    {
+      "title": "Navbar with external links",
+      "fileName": "navbar-with-external-links",
+      "tailwindConfig": {
+        "theme": {
+          "colors": {
+            "primary": "#eb5e28",
+            "foreground": "#fafafa"
+          }
+        }
+      }
+    },
+    {
+      "title": "Navbar with centered logo",
+      "fileName": "navbar-with-centered-logo",
+      "tailwindConfig": {
+        "theme": {
+          "colors": {
+            "primary": "#eb5e28",
+            "foreground": "#fafafa"
+          }
+        }
+      }
+    }
+  ]
+}

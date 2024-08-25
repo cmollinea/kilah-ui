@@ -1,0 +1,73 @@
+{
+  "section": "application-ui",
+  "title": "Features Section",
+  "slug": "features-section",
+  "container": "40rem",
+  "components": [
+    {
+      "title": "Centered grid",
+      "fileName": "centered-grid",
+      "tailwindConfig": {
+        "theme": {
+          "colors": {
+            "primary": "#eb5e28",
+            "foreground": "#fafafa",
+            "background": "#202020"
+          }
+        }
+      }
+    },
+    {
+      "title": "Basic Centered",
+      "fileName": "basic-centered",
+      "tailwindConfig": {
+        "theme": {
+          "colors": {
+            "primary": "#f9092e",
+            "foreground": "#fafafa",
+            "background": "#0d0d0d"
+          }
+        }
+      }
+    },
+    {
+      "title": "With left indicator and image",
+      "fileName": "with-left-indicator-and-image",
+      "tailwindConfig": {
+        "theme": {
+          "colors": {
+            "primary": "#7C41F5",
+            "foreground": "#fafafa",
+            "background": "#3c3c3c"
+          }
+        }
+      }
+    },
+    {
+      "title": "Check icons on left image to right",
+      "fileName": "check-icons-on-left-image-to-right",
+      "tailwindConfig": {
+        "theme": {
+          "colors": {
+            "primary": "#04C7FD",
+            "foreground": "#fafafa",
+            "background": "#3f3f3f"
+          }
+        }
+      }
+    },
+    {
+      "title": "Grid to the left and image",
+      "fileName": "grid-to-the-left-and-image",
+      "tailwindConfig": {
+        "theme": {
+          "colors": {
+            "primary": "#258164",
+            "foreground": "#fafafa",
+            "background": "#1b1b1b"
+          }
+        }
+      }
+    }
+  ]
+}
