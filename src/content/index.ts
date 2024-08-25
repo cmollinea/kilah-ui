@@ -15,6 +15,84 @@ type Category = {
 };
 
 export const categories: Category[] = [
+  //*--> Pricing
+  {
+    title: "Pricing Section",
+    slug: "pricing",
+    section: "Bussiness",
+    container: "50rem",
+    components: [
+      {
+        title: "Colorful Pricing",
+        fileName: "colorfull",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            colors: {
+              primary: "#415a77",
+              secondary: "#1b263b",
+              background: "#000814",
+              foreground: "#ffffff",
+              "primary-foreground": "#ffffff",
+              "card-background": "#1f2937",
+            },
+          },
+        },
+      },
+      {
+        title: "Pricing with Features",
+        fileName: "pricing-with-features-table",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            colors: {
+              primary: "#0e6ba8",
+              secondary: "#1b263b",
+              background: "#fff1d0",
+              foreground: "#1e1b18",
+              "primary-foreground": "#ffffff",
+              "card-background": "#ccdbdc",
+            },
+          },
+        },
+      },
+      {
+        title: "Pricing with Gradient",
+        fileName: "with-gradient",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            colors: {
+              primary: "#06bcc1",
+              secondary: "#9067c6",
+              background: "#efeff0",
+              foreground: "#1e1b18",
+              "primary-foreground": "#1e1b18",
+              "card-background": "#d0ddd7",
+            },
+          },
+        },
+      },
+      {
+        title: "Pricing with Top Border and Popular",
+        fileName: "with-top-border-and-popular",
+        tailwindConfig: {
+          darkMode: "class",
+          theme: {
+            colors: {
+              primary: "#415a77",
+              secondary: "#1b263b",
+              background: "#000814",
+              foreground: "#ffffff",
+              "primary-foreground": "#ffffff",
+              "card-background": "#1f2937",
+            },
+          },
+        },
+      },
+    ],
+  },
+  //*<-- /Pricing
   //*--> Blog-Cards
   {
     title: "Blog Cards",
@@ -110,6 +188,7 @@ export const categories: Category[] = [
     ],
   },
   //*<-- /Blog-Cards
+
   //*--> Dropdowns
 
   {
