@@ -2,6 +2,10 @@ import { Component } from "@/components/component";
 import { defaultConfig } from "@/constants";
 import { getComponentsData } from "@/lib/utils";
 
+const urlBase = process.env.NEXT_PUBLIC_VERCEL_URL
+  ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
+  : "http://localhost:3000";
+
 type Props = {
   params: {
     category: string;
@@ -10,7 +14,7 @@ type Props = {
 
 async function Category({ params }: Props) {
   const category = params.category;
-  const componentsDataUrl = `http://localhost:3000/components/${category}/index.json`;
+  const componentsDataUrl = `${urlBase}/components/${category}/index.json`;
   const routeComponents = await getComponentsData(componentsDataUrl);
   if (!routeComponents) {
     console.log("Error Getting component Data");
