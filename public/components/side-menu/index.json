@@ -1,0 +1,62 @@
+{
+  "title": "SideMenu",
+  "slug": "side-menu",
+  "section": "Bussiness",
+  "container": "40rem",
+  "components": [
+    {
+      "title": "With animated dropdowns",
+      "fileName": "with-animated-dropdowns",
+      "tailwindConfig": {
+        "darkMode": "class",
+        "theme": {
+          "colors": {
+            "primary": "#415a77",
+            "primary-foreground": "#ffffff",
+            "background": "#0d1b2a",
+            "card-background": "#1b263b",
+            "foreground": "#e0e1dd",
+            "accent": "#f1f5f9",
+            "danger": "#ff4f5a"
+          }
+        }
+      }
+    },
+    {
+      "title": "User and Divided Categories",
+      "fileName": "user-and-divided-categories",
+      "tailwindConfig": {
+        "darkMode": "class",
+        "theme": {
+          "colors": {
+            "primary": "#415a77",
+            "primary-foreground": "#ffffff",
+            "background": "#0d1b2a",
+            "card-background": "#1b263b",
+            "foreground": "#e0e1dd",
+            "accent": "#f1f5f9",
+            "danger": "#ff4f5a"
+          }
+        }
+      }
+    },
+    {
+      "title": "User on Bottom Divided Labeled Categories",
+      "fileName": "user-on-bottom-divided-labeled-categories",
+      "tailwindConfig": {
+        "darkMode": "class",
+        "theme": {
+          "colors": {
+            "primary": "#415a77",
+            "primary-foreground": "#ffffff",
+            "background": "#0d1b2a",
+            "card-background": "#1b263b",
+            "foreground": "#e0e1dd",
+            "accent": "#f1f5f9",
+            "danger": "#ff4f5a"
+          }
+        }
+      }
+    }
+  ]
+}
