@@ -1,6 +1,6 @@
 import { Features } from "@/components/home/features";
 import { Hero } from "@/components/home/hero";
-import { categories } from "@/content";
+import { categories } from "@/constants";
 import Link from "next/link";
 
 export default async function Home() {
