@@ -22,6 +22,11 @@ export const defaultConfig: Partial<Config> = {
 
 export const categories = [
   {
+    title: "Side Menu",
+    slug: "side-menu",
+    section: "Bussiness",
+  },
+  {
     title: "Tables",
     slug: "tables",
     section: "Bussiness",

@@ -1,7 +1,6 @@
 import { Component } from "@/components/component";
 import { defaultConfig } from "@/constants";
 import { getComponentsData } from "@/lib/utils";
-import { redirect } from "next/navigation";
 
 type Props = {
   params: {
@@ -14,7 +13,8 @@ async function Category({ params }: Props) {
   const componentsDataUrl = `http://localhost:3000/components/${category}/index.json`;
   const routeComponents = await getComponentsData(componentsDataUrl);
   if (!routeComponents) {
-    redirect("/error");
+    console.log("Error Getting component Data");
+    return null;
   }
   return (
     <>

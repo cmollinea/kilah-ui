@@ -1,6 +1,6 @@
 import { defaultConfig } from "@/constants";
 import { clsx, type ClassValue } from "clsx";
-import { notFound, redirect } from "next/navigation";
+import { notFound } from "next/navigation";
 import { twMerge } from "tailwind-merge";
 import { Category } from "../../types";
 
@@ -85,11 +85,9 @@ export async function getComponentsData(
       return notFound();
     }
 
-    if (response.ok) {
-      const data = await response.json();
-      return data;
-    }
+    const data = await response.json();
+    return data;
   } catch {
-    redirect("/error");
+    console.log("Somthing went wrong");
   }
 }
