@@ -1,0 +1,117 @@
+{
+  "title": "Stats",
+  "slug": "stats",
+  "section": "Application UI",
+  "container": "40rem",
+  "components": [
+    {
+      "title": "CTA on Left Grid on Right",
+      "fileName": "cta-on-left-grid-on-right",
+      "tailwindConfig": {
+        "darkMode": "class",
+        "theme": {
+          "colors": {
+            "primary": "#415a77",
+            "primary-foreground": "#ffffff",
+            "secondary": "#1b263b",
+            "background": "#09090a",
+            "card-background": "#080808",
+            "foreground": "#ffffff",
+            "accent": "#1b263b",
+            "accent-foreground": "#e0e1dd"
+          }
+        }
+      }
+    },
+    {
+      "title": "Grid Primary BG and Porcentual Bar",
+      "fileName": "grid-primary-bg-and-porcentual-bar",
+      "tailwindConfig": {
+        "darkMode": "class",
+        "theme": {
+          "colors": {
+            "primary": "#065f46",
+            "primary-foreground": "#ffffff",
+            "secondary": "#1b263b",
+            "background": "#09090b",
+            "foreground": "#f1f1f1",
+            "accent": "#1b263b",
+            "accent-foreground": "#e0e1dd"
+          }
+        }
+      }
+    },
+    {
+      "title": "Grid Primary BG",
+      "fileName": "grid-primary-bg",
+      "tailwindConfig": {
+        "darkMode": "class",
+        "theme": {
+          "colors": {
+            "primary": "#415a77",
+            "primary-foreground": "#ffffff",
+            "secondary": "#1b263b",
+            "background": "#000814",
+            "foreground": "#f1f1f1",
+            "accent": "#1b263b",
+            "accent-foreground": "#e0e1dd"
+          }
+        }
+      }
+    },
+    {
+      "title": "Grid to the Left Image to the Right",
+      "fileName": "grid-to-the-left-image-to-the-right",
+      "tailwindConfig": {
+        "darkMode": "class",
+        "theme": {
+          "colors": {
+            "primary": "#1e3a8a",
+            "primary-foreground": "#ffffff",
+            "secondary": "#1b263b",
+            "background": "#0a0a0a",
+            "foreground": "#f1f1f1",
+            "accent": "#525252",
+            "accent-foreground": "#e0e1dd"
+          }
+        }
+      }
+    },
+    {
+      "title": "Grid with Gradient and CTA",
+      "fileName": "grid-with-gradient-and-cta",
+      "tailwindConfig": {
+        "darkMode": "class",
+        "theme": {
+          "colors": {
+            "primary": "#3730a3",
+            "primary-foreground": "#ffffff",
+            "secondary": "#0369a1",
+            "background": "#0c0a09",
+            "foreground": "#f1f1f1",
+            "accent": "#1b263b",
+            "accent-foreground": "#e0e1dd"
+          }
+        }
+      }
+    },
+    {
+      "title": "With Heading and Description",
+      "fileName": "with-heading-and-description",
+      "tailwindConfig": {
+        "darkMode": "class",
+        "theme": {
+          "colors": {
+            "primary": "#4c1d95",
+            "primary-foreground": "#ffffff",
+            "secondary": "#1b263b",
+            "background": "#09090b",
+            "foreground": "#f1f1f1",
+            "accent": "#1b263b",
+            "accent-foreground": "#e0e1dd"
+          }
+        }
+      }
+    }
+  ]
+}

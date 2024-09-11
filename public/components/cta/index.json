@@ -1,0 +1,80 @@
+{
+  "title": "Call to action",
+  "slug": "cta",
+  "section": "Application UI",
+  "container": "40rem",
+  "components": [
+    {
+      "title": "App Download",
+      "fileName": "app-download",
+      "tailwindConfig": {
+        "darkMode": "class",
+        "theme": {
+          "colors": {
+            "primary": "#4d7c0f",
+            "primary-foreground": "#ffffff",
+            "foreground": "#f1f1f1",
+            "secondary": "#1b263b",
+            "background": "#09090b",
+            "accent": "#1b263b",
+            "accent-foreground": "#e0e1dd"
+          }
+        }
+      }
+    },
+    {
+      "title": "Centered CTA",
+      "fileName": "centered-cta",
+      "tailwindConfig": {
+        "darkMode": "class",
+        "theme": {
+          "colors": {
+            "primary": "#415a77",
+            "primary-foreground": "#ffffff",
+            "foreground": "#f1f1f1",
+            "secondary": "#1b263b",
+            "background": "#070707",
+            "card-background": "#09090b",
+            "accent": "#1b263b",
+            "accent-foreground": "#e0e1dd"
+          }
+        }
+      }
+    },
+    {
+      "title": "Centered with Input",
+      "fileName": "centered-with-input",
+      "tailwindConfig": {
+        "darkMode": "class",
+        "theme": {
+          "colors": {
+            "primary": "#1d4ed8",
+            "primary-foreground": "#ffffff",
+            "foreground": "#09090b",
+            "secondary": "#1b263b",
+            "background": "#f3f4f6",
+            "input": "#1b263b"
+          }
+        }
+      }
+    },
+    {
+      "title": "Grid with Gradient",
+      "fileName": "grid-with-gradient",
+      "tailwindConfig": {
+        "darkMode": "class",
+        "theme": {
+          "colors": {
+            "primary": "#4338ca",
+            "primary-foreground": "#ffffff",
+            "foreground": "#f1f1f1",
+            "secondary": "#0284c7",
+            "background": "#0c0a09",
+            "accent": "#1b263b",
+            "accent-foreground": "#e0e1dd"
+          }
+        }
+      }
+    }
+  ]
+}

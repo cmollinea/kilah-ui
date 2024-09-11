@@ -2,11 +2,11 @@ export const Hero = () => {
   return (
     <div className="flex h-[calc(100vh-65px)] flex-col place-content-center items-center space-y-8 px-10 text-center">
       <h1 className="max-w-xl text-3xl font-bold sm:text-5xl">
-        Welcome to Our{" "}
-        <span className="relative text-primary">
-          Innovative {/* You can remove this to delete doodle */}
+        Build your websites{" "}
+        <span className="relative inline-block text-primary">
+          Faster {/* You can remove this to delete doodle */}
           <svg
-            className="absolute left-1 top-4"
+            className="absolute left-1 top-6"
             xmlns="http://www.w3.org/2000/svg"
             version="1.1"
             viewBox="0 0 800 400"
@@ -25,8 +25,8 @@ export const Hero = () => {
               </linearGradient>
             </defs>
           </svg>
-        </span>
-        Platform
+        </span>{" "}
+        than ever
       </h1>
       <p className="max-w-2xl">
         Discover cutting-edge solutions designed to transform your business.
@@ -35,7 +35,7 @@ export const Hero = () => {
       </p>
 
       <div className="flex items-center space-x-2 pt-6">
-        <button className="text-primary-foreground rounded-md bg-primary p-2 px-4 md:px-10">
+        <button className="rounded-md bg-primary p-2 px-4 text-primary-foreground md:px-10">
           Get Started
         </button>
         <button className="rounded-md border border-primary p-2 px-4 text-primary md:px-10">

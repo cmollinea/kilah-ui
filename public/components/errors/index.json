@@ -1,0 +1,56 @@
+{
+  "title": "Not Found",
+  "slug": "errors",
+  "section": "Application UI",
+  "container": "40rem",
+  "components": [
+    {
+      "title": "Centered Error Code and Button",
+      "fileName": "centered-error-code-and-button",
+      "tailwindConfig": {
+        "theme": {
+          "colors": {
+            "primary": "#415a77",
+            "primary-foreground": "#ffffff",
+            "background": "#000814",
+            "foreground": "#f4f4f5",
+            "accent": "#1b263b",
+            "accent-foreground": "#e0e1dd"
+          }
+        }
+      }
+    },
+    {
+      "title": "Image and Text",
+      "fileName": "image-and-text",
+      "tailwindConfig": {
+        "theme": {
+          "colors": {
+            "primary": "#c2410c",
+            "primary-foreground": "#ffffff",
+            "background": "#09090b",
+            "foreground": "#f4f4f5",
+            "accent": "#1b263b",
+            "accent-foreground": "#e0e1dd"
+          }
+        }
+      }
+    },
+    {
+      "title": "Vercel-like 404",
+      "fileName": "vercel-like-404",
+      "tailwindConfig": {
+        "theme": {
+          "colors": {
+            "primary": "#415a77",
+            "primary-foreground": "#ffffff",
+            "background": "#000814",
+            "foreground": "#f3f4f6",
+            "accent": "#1b263b",
+            "accent-foreground": "#e0e1dd"
+          }
+        }
+      }
+    }
+  ]
+}

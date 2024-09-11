@@ -22,7 +22,7 @@ async function Category({ params }: Props) {
   }
   return (
     <>
-      <main className="flex w-full animate-translate-up flex-col items-center overflow-x-auto px-4 py-28 opacity-0 transition-opacity duration-300 ease-out">
+      <main className="flex w-full animate-translate-up flex-col items-center overflow-x-auto px-4 py-28 opacity-0 transition-opacity ease-out">
         <ul className="flex w-full flex-col items-center space-y-10">
           {routeComponents?.components.map((component) => {
             let config = defaultConfig;
@@ -63,3 +63,23 @@ async function Category({ params }: Props) {
   );
 }
 export default Category;
+
+const part = [
+  { name: "Some Name", exercises: 5 },
+  { name: "Some Name2", exercises: 10 },
+  { name: "Some Name3", exercises: 15 },
+];
+
+const SomeFunction = () => {
+  return (
+    <>
+      {part.map((item) => (
+        <div key={item.name}>
+          <p>
+            {item.name}: {item.exercises}
+          </p>
+        </div>
+      ))}
+    </>
+  );
+};
