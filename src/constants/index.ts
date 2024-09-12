@@ -22,6 +22,11 @@ export const defaultConfig: Partial<Config> = {
 
 export const categories = [
   {
+    title: "Product card",
+    slug: "product-card",
+    section: "Bussiness",
+  },
+  {
     title: "Stats",
     slug: "stats",
     section: "Bussiness",
@@ -142,3 +147,5 @@ export const categories = [
     slug: "banners",
   },
 ];
+
+("https://m.media-amazon.com/images/I/51LvmdpMc+L._AC_SX569_.jpg");

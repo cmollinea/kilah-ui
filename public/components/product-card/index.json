@@ -1,0 +1,110 @@
+{
+  "title": "Product Card",
+  "slug": "product-card",
+  "section": "Bussiness",
+  "container": "40rem",
+  "components": [
+    {
+      "title": "Basic Info and Button with Link Style",
+      "fileName": "basic-info-and-button-with-link-style",
+      "tailwindConfig": {
+        "darkMode": "class",
+        "theme": {
+          "colors": {
+            "primary": "#415a77",
+            "primary-foreground": "#ffffff",
+            "secondary": "#1b263b",
+            "background": "#f1f5f9",
+            "card-background": "#cbd5e1",
+            "accent": "#1b263b",
+            "accent-foreground": "#e0e1dd",
+            "success": "#4caf50",
+            "danger": "#f44336"
+          }
+        }
+      }
+    },
+    {
+      "title": "Card with Link to Details Discount and Stock with CTA",
+      "fileName": "card-with-link-to-details-discount-and-stock-with-cta",
+      "tailwindConfig": {
+        "darkMode": "class",
+        "theme": {
+          "colors": {
+            "primary": "#415a77",
+            "primary-foreground": "#ffffff",
+            "secondary": "#1b263b",
+            "background": "#f1f5f9",
+            "card-background": "#e2e8f0",
+            "accent": "#1b263b",
+            "accent-foreground": "#e0e1dd",
+            "success": "#4caf50",
+            "danger": "#f44336"
+          }
+        }
+      }
+    },
+    {
+      "title": "Flex Card with Short Description",
+      "fileName": "flex-card-with-short-description",
+      "tailwindConfig": {
+        "darkMode": "class",
+        "theme": {
+          "colors": {
+            "primary": "#415a77",
+            "primary-foreground": "#ffffff",
+            "secondary": "#1b263b",
+            "background": "#09090b",
+            "foreground": "#fafafa",
+            "card-background": "#18181b",
+            "accent": "#1b263b",
+            "accent-foreground": "#e0e1dd",
+            "success": "#4caf50",
+            "danger": "#f44336"
+          }
+        }
+      }
+    },
+    {
+      "title": "Minimal Link Card with Pricing",
+      "fileName": "minimal-link-card-with-pricing",
+      "tailwindConfig": {
+        "darkMode": "class",
+        "theme": {
+          "colors": {
+            "primary": "#415a77",
+            "primary-foreground": "#ffffff",
+            "secondary": "#1b263b",
+            "foreground": "#fafafa",
+            "background": "#000814",
+            "card-background": "#0f172a",
+            "accent": "#1b263b",
+            "accent-foreground": "#e0e1dd",
+            "success": "#4caf50",
+            "danger": "#f44336"
+          }
+        }
+      }
+    },
+    {
+      "title": "Rating and Add to Bag",
+      "fileName": "rating-and-add-to-bag",
+      "tailwindConfig": {
+        "darkMode": "class",
+        "theme": {
+          "colors": {
+            "primary": "#15803d",
+            "primary-foreground": "#ffffff",
+            "secondary": "#1b263b",
+            "background": "#f4f4f5",
+            "card-background": "#d1d5db",
+            "accent": "#1b263b",
+            "accent-foreground": "#e0e1dd",
+            "success": "#4caf50",
+            "danger": "#f44336"
+          }
+        }
+      }
+    }
+  ]
+}
