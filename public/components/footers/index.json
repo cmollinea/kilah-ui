@@ -1,6 +1,7 @@
 {
   "section": "Application UI",
   "title": "Footers",
+  "description": "Create strong website footers that combine functionality and design. Ideal for contact info, links, and copyright notices.",
   "slug": "footers",
   "container": "35rem",
   "components": [

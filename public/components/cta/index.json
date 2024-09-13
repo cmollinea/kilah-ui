@@ -1,6 +1,8 @@
 {
   "title": "Call to action",
   "slug": "cta",
+  "description": "Engage users with high-conversion call-to-action components. Drive clicks and boost interactions with beautifully designed CTAs.",
+
   "section": "Application UI",
   "container": "40rem",
   "components": [

@@ -1,20 +1,21 @@
 {
-    "section": "application-ui",
-    "title": "Banners",
-    "slug": "banners",
-    "container": "15rem",
-    "components": [
-        {
-            "title": "Top with cta",
-            "fileName": "top-with-cta"
-        },
-        {
-            "title": "Top with centered text",
-            "fileName": "top-centered-text"
-        },
-        {
-            "title": "Bottom with centered text",
-            "fileName": "bottom-centered-text"
-        }
-    ]
+  "section": "application-ui",
+  "title": "Banners",
+  "description": "Elegant banner components to catch your user's attention. Ideal for promotions, announcements, and hero sections with a modern design.",
+  "slug": "banners",
+  "container": "15rem",
+  "components": [
+    {
+      "title": "Top with cta",
+      "fileName": "top-with-cta"
+    },
+    {
+      "title": "Top with centered text",
+      "fileName": "top-centered-text"
+    },
+    {
+      "title": "Bottom with centered text",
+      "fileName": "bottom-centered-text"
+    }
+  ]
 }

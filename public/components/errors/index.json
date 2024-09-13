@@ -1,6 +1,7 @@
 {
   "title": "Not Found",
   "slug": "errors",
+  "description": "Elegant error page templates designed to keep users engaged even when something goes wrong. Perfect for 404, 500, and other error states.",
   "section": "Application UI",
   "container": "40rem",
   "components": [

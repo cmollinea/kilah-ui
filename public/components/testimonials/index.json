@@ -1,5 +1,6 @@
 {
   "section": "Application UI",
+  "description": "Showcase customer feedback with beautifully designed testimonial components. Perfect for building trust and credibility with potential customers.",
   "title": "Testimonials",
   "slug": "testimonials",
   "container": "60rem",

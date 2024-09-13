@@ -1,6 +1,7 @@
 {
   "title": "Stats",
   "slug": "stats",
+  "description": "Display statistics in an eye-catching and organized manner. Ideal for data dashboards, analytics, and performance tracking.",
   "section": "Application UI",
   "container": "40rem",
   "components": [

@@ -1,6 +1,7 @@
 {
   "section": "Auth",
   "title": "Login",
+  "description": "Seamless and secure login forms designed to enhance user experience. Tailored for simplicity and responsive across all devices.",
   "slug": "login",
   "container": "40rem",
   "components": [

@@ -1,6 +1,9 @@
 import { Component } from "@/components/component";
+import { ComponentSkeleton } from "@/components/component-skeleton";
 import { defaultConfig } from "@/constants";
-import { getComponentsData } from "@/lib/utils";
+import { categories } from "@/constants/categories-info";
+import type { Metadata } from "next";
+import { Suspense } from "react";
 
 const urlBase = process.env.NEXT_PUBLIC_VERCEL_URL
   ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
@@ -12,10 +15,21 @@ type Props = {
   };
 };
 
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const category = params.category;
+
+  const pageData = categories.find((item) => item.slug === category);
+  return {
+    title: pageData
+      ? `${pageData.title} | KilahUI | Handcrafted with a lot of cofee`
+      : "Category not found",
+    description: pageData ? pageData.description : "The Category doesn't exist",
+  };
+}
+
 async function Category({ params }: Props) {
   const category = params.category;
-  const componentsDataUrl = `${urlBase}/components/${category}/index.json`;
-  const routeComponents = await getComponentsData(componentsDataUrl);
+  const routeComponents = categories.find((item) => item.slug === category);
   if (!routeComponents) {
     console.log("Error Getting component Data");
     return null;
@@ -26,8 +40,9 @@ async function Category({ params }: Props) {
         <ul className="flex w-full flex-col items-center space-y-10">
           {routeComponents?.components.map((component) => {
             let config = defaultConfig;
-
+            //@ts-expect-error
             if (component.tailwindConfig && config.theme) {
+              //@ts-expect-error
               config.theme.extend = { ...component.tailwindConfig.theme };
             }
 
@@ -47,13 +62,19 @@ async function Category({ params }: Props) {
                 <h3 className="w-fit py-2 text-xl font-black md:pr-20 md:text-4xl">
                   #{component.title}
                 </h3>
-                <Component
-                  fileName={component.fileName}
-                  filePath={routeComponents.slug}
-                  key={component.fileName}
-                  container={routeComponents.container}
-                  tailwindConfig={JSON.stringify(config, null, 4)}
-                />
+                <Suspense
+                  fallback={
+                    <ComponentSkeleton container={routeComponents.container} />
+                  }
+                >
+                  <Component
+                    fileName={component.fileName}
+                    filePath={routeComponents.slug}
+                    key={component.fileName}
+                    container={routeComponents.container}
+                    tailwindConfig={JSON.stringify(config, null, 4)}
+                  />
+                </Suspense>
               </li>
             );
           })}

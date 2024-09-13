@@ -1,6 +1,7 @@
 {
   "title": "Tables",
   "slug": "tables",
+  "description": "Responsive and customizable table templates for displaying data efficiently. Perfect for dashboards, reports, and eCommerce.",
   "section": "Bussiness",
   "container": "25rem",
   "components": [

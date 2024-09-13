@@ -2,6 +2,7 @@
   "section": "application-ui",
   "title": "Cards",
   "slug": "cards",
+  "description": "Versatile card components to display content in an organized and appealing manner. Great for portfolios, product displays, and more.",
   "container": "40rem",
   "components": [
     {

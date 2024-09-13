@@ -1,5 +1,6 @@
 {
   "section": "application-ui",
+  "description": "Showcase the key features of your product or service with eye-catching feature sections. Beautifully designed for clarity and impact.",
   "title": "Features Section",
   "slug": "features-section",
   "container": "40rem",

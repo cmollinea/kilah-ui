@@ -1,6 +1,7 @@
 {
   "title": "Tabs",
   "section": "Application Ui",
+  "description": "Stylish tab components to display information efficiently. Perfect for organizing content and improving user navigation.",
   "slug": "tabs",
   "container": "10rem",
   "components": [

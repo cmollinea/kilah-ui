@@ -1,6 +1,7 @@
 {
   "title": "SideMenu",
   "slug": "side-menu",
+  "description": "Create seamless side menus for better user navigation and compact site design. A stylish solution for mobile and desktop layouts.",
   "section": "Bussiness",
   "container": "40rem",
   "components": [

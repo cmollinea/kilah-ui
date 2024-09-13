@@ -1,5 +1,6 @@
 {
   "section": "application-ui",
+  "description": "Navigation bars that offer easy-to-use menus and a clean design. Perfect for improving user navigation across your site.",
   "title": "Navbars",
   "slug": "navbar",
   "container": "15rem",

@@ -1,6 +1,7 @@
 {
   "title": "Dropdowns",
   "slug": "dropdowns",
+  "description": "Responsive and intuitive dropdown menus for navigation and more. Seamless integration with your site's user experience.",
   "section": "Application UI",
   "container": "40rem",
   "components": [

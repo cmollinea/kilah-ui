@@ -1,6 +1,7 @@
 {
   "section": "Auth",
   "title": "Sign Up",
+  "description": "Effortlessly designed signup forms for user registration. Perfect for creating smooth onboarding experiences on any platform.",
   "slug": "signup",
   "container": "50rem",
   "components": [
