@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#eb5e28",
+        primary: "#ea580c",
         "primary-foreground": "#09090b",
         secondary: "#d62828",
         "secondary-foreground": "#edf6f9",
@@ -24,8 +24,8 @@ const config: Config = {
         warning: "#f59e0b",
         "warning-foreground": "#ffffff",
         foreground: "#efefef",
-        background: "#1a1a1a",
-        "card-background": "#101010",
+        background: "#0b0b0b",
+        "card-background": "#0c0c0c",
         input: "#888888",
       },
       animation: {

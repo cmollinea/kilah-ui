@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { GitHub } from "../icons";
+import { SearchForm } from "./search-form";
 
 export const NavBar = () => {
   const { isTop } = useScroll();
@@ -12,7 +13,7 @@ export const NavBar = () => {
 
   return (
     <header
-      className={`sticky top-0 z-50 flex items-center justify-between px-8 py-4 text-gray-50 lg:px-20 ${!isTop ? "bg-background/80 backdrop-blur-lg" : "bg-transparent"} transition-all ease-in-out`}
+      className={`sticky left-0 right-0 top-0 z-50 flex items-center justify-between border-b px-8 py-4 text-gray-50 lg:px-20 ${!isTop ? "border-accent/5 bg-background/80 backdrop-blur-lg" : "border-transparent bg-transparent"} transition-all ease-in-out`}
     >
       <Link className="flex select-none items-center space-x-2" href="/">
         <Image
@@ -28,30 +29,10 @@ export const NavBar = () => {
         </span>
       </Link>
       <div className="flex items-center space-x-2">
-        <button
-          className={`rounded-xl p-1 hover:text-primary ${pathname !== "/" && "order-2 pl-3"}`}
-        >
+        <SearchForm />
+        <button className="rounded-xl p-1 hover:text-primary">
           <GitHub />
         </button>
-        {pathname === "/" ? (
-          <nav className="flex select-none items-center space-x-4 border-l border-foreground/50 px-4">
-            <Link
-              href="#components"
-              className="rounded-md transition-colors ease-out hover:text-primary/80 md:py-1"
-            >
-              Components
-            </Link>
-          </nav>
-        ) : (
-          <div className="order-1 border-r border-foreground/50 pr-3">
-            {/* <input
-              placeholder="Search components"
-              className="flex items-center rounded-md border border-foreground/50 bg-stone-900 px-2 transition-colors focus:border-foreground focus:outline-none max-md:max-w-[150px] max-md:text-sm max-md:placeholder:text-xs"
-              type="text"
-            /> */}
-            <Link href={"/test"}>Test Component</Link>
-          </div>
-        )}
       </div>
     </header>
   );
