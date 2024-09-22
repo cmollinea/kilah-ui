@@ -11,7 +11,7 @@ export const ResultsCategory = ({
   children,
 }: Props) => {
   return (
-    <div>
+    <div className="animate-fade-in opacity-0">
       <div className="flex items-center justify-between">
         <div className="space-x-1">
           <img

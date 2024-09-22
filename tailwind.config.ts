@@ -24,7 +24,7 @@ const config: Config = {
         warning: "#f59e0b",
         "warning-foreground": "#ffffff",
         foreground: "#efefef",
-        background: "#0b0b0b",
+        background: "#0c0b0b",
         "card-background": "#0c0c0c",
         input: "#888888",
       },

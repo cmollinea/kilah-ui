@@ -1,11 +1,12 @@
 import { categories } from "@/constants/categories-info";
+import { countComponents } from "@/lib/utils";
 import { NextRequest } from "next/server";
 
 export const fetchCache = "force-no-store";
 
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;
-  const query = searchParams.get("q");
+  const query = searchParams.get("q")?.toLowerCase();
 
   console.log(query);
 
@@ -18,10 +19,7 @@ export async function GET(request: NextRequest) {
       return { title, slug, components: sanitizedComponents };
     });
 
-    const totalResults = sanitizedData.reduce(
-      (count, category) => count + category.components.length,
-      0,
-    );
+    const totalResults = countComponents(sanitizedData);
     console.log(totalResults);
 
     const res = {
@@ -37,13 +35,17 @@ export async function GET(request: NextRequest) {
     const filteredCategories = categories
       .filter((category) => {
         return category.components.some((component) =>
-          component.fileName.includes(query),
+          (category.title + component.fileName)
+            .toLocaleLowerCase()
+            .includes(query),
         );
       })
       .map((category) => {
         const filteredComponents = category.components
           .filter((component) =>
-            component.title.toLocaleLowerCase().includes(query),
+            (category.title + component.fileName)
+              .toLocaleLowerCase()
+              .includes(query),
           )
           .map(({ title, fileName }) => {
             return { title, fileName };
@@ -53,10 +55,7 @@ export async function GET(request: NextRequest) {
         return { title, slug, components: filteredComponents };
       });
 
-    const totalResults = filteredCategories.reduce(
-      (count, category) => count + category.components.length,
-      0,
-    );
+    const totalResults = countComponents(filteredCategories);
 
     const res = {
       totalResults,

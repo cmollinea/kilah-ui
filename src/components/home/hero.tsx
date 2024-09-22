@@ -1,12 +1,12 @@
 export const Hero = () => {
   return (
-    <div className="flex h-[calc(100vh-65px)] flex-col place-content-center items-center space-y-8 px-10 text-center">
-      <h1 className="max-w-xl text-3xl font-bold sm:text-5xl">
+    <section className="flex h-[calc(100vh-65px)] flex-col place-content-center items-center space-y-8 px-10 text-center">
+      <h1 className="max-w-7xl text-4xl font-bold md:text-6xl">
         Build your websites{" "}
         <span className="relative inline-block text-primary">
           Faster {/* You can remove this to delete doodle */}
           <svg
-            className="absolute left-1 top-6"
+            className="absolute left-1 top-6 md:top-10"
             xmlns="http://www.w3.org/2000/svg"
             version="1.1"
             viewBox="0 0 800 400"
@@ -28,20 +28,30 @@ export const Hero = () => {
         </span>{" "}
         than ever
       </h1>
-      <p className="max-w-2xl">
-        Discover cutting-edge solutions designed to transform your business.
-        Experience unparalleled efficiency and creativity as we revolutionize
-        the way you work, connect, and grow.
+      <p className="max-w-7xl md:text-lg">
+        KilahUI is a free and open-source collection of fully customizable
+        TailwindCSS components, designed to seamlessly adapt to your unique
+        style. Whether you&apos;re crafting a simple webpage or a complex
+        application, KilahUI offers flexible, pre-built elements that empower
+        your creativity while saving time. Start building smarter, not harder.
       </p>
 
-      <div className="flex items-center space-x-2 pt-6">
-        <button className="rounded-md bg-primary p-2 px-4 text-primary-foreground md:px-10">
+      <div className="flex pt-6 max-sm:flex-col max-sm:space-y-2 sm:items-center sm:space-x-2">
+        <a
+          href="#components"
+          className="rounded-md bg-primary p-2 px-4 text-primary-foreground max-sm:px-20 md:px-10"
+        >
           Get Started
-        </button>
-        <button className="rounded-md border border-primary p-2 px-4 text-primary md:px-10">
+        </a>
+        <a
+          target="_blank"
+          href="https://github.com/cmollinea/kilah-ui"
+          rel="noopener noreferrer"
+          className="rounded-md border border-primary p-2 px-4 text-primary max-sm:px-20 md:px-10"
+        >
           Star Us
-        </button>
+        </a>
       </div>
-    </div>
+    </section>
   );
 };

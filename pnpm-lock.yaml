@@ -29,6 +29,9 @@ importers:
       next-nprogress-bar:
         specifier: ^2.3.12
         version: 2.3.12
+      nodemailer:
+        specifier: ^6.9.15
+        version: 6.9.15
       react:
         specifier: 19.0.0-rc-100dfd7dab-20240701
         version: 19.0.0-rc-100dfd7dab-20240701
@@ -1648,6 +1651,10 @@ packages:
 
   node-releases@2.0.18:
     resolution: {integrity: sha512-d9VeXT4SJ7ZeOqGX6R5EM022wpL+eWPooLI+5UpWn2jCT1aosUQEhQP214x33Wkwx3JQMvIm+tIoVOdodFS40g==}
+
+  nodemailer@6.9.15:
+    resolution: {integrity: sha512-AHf04ySLC6CIfuRtRiEYtGEXgRfa6INgWGluDhnxTZhHSKvrBu7lc1VVchQ0d8nPc4cFaZoPq8vkyNoZr0TpGQ==}
+    engines: {node: '>=6.0.0'}
 
   normalize-path@3.0.0:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
@@ -4345,6 +4352,8 @@ snapshots:
       - babel-plugin-macros
 
   node-releases@2.0.18: {}
+
+  nodemailer@6.9.15: {}
 
   normalize-path@3.0.0: {}
 

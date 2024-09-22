@@ -1,7 +1,7 @@
 export const Features = () => {
   return (
-    <section className="flex w-full place-content-center px-4 py-16">
-      <div className="flex max-w-3xl flex-col items-center space-y-16">
+    <section className="flex w-full place-content-center px-4 pb-32">
+      <div className="flex flex-col items-center space-y-16">
         <div className="relative grid max-w-xl place-items-center space-y-4">
           <span className="rounded-md bg-primary/10 px-2 py-1 font-bold text-primary">
             Start Today
@@ -52,7 +52,7 @@ export const Features = () => {
             </defs>
           </svg>
         </div>
-        <ul className="grid gap-10 md:grid-cols-2 md:text-balance">
+        <ul className="grid w-full gap-10 md:grid-cols-2 md:text-balance xl:grid-cols-3">
           <li className="flex space-x-6 self-center">
             <span className="flex h-fit place-content-center items-center rounded-md bg-primary/10 p-2 text-primary">
               <svg

@@ -12,10 +12,8 @@ export const useClickOut = (
       handleClickOut();
     };
     document.addEventListener("mousedown", handler);
-    document.addEventListener("touchstart", handler);
     return () => {
       document.removeEventListener("mousedown", handler);
-      document.removeEventListener("touchstart", handler);
     };
   }, [ref, handleClickOut]);
 };

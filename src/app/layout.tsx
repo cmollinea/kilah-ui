@@ -1,3 +1,4 @@
+import { Footer } from "@/components/home/footer";
 import { NavBar } from "@/components/home/navbar";
 import { ProgressBarProvider } from "@/components/home/progress-bar";
 import type { Metadata } from "next";
@@ -33,6 +34,7 @@ export default function RootLayout({
           {/* <Banner /> */}
           <NavBar />
           {children}
+          <Footer />
         </ProgressBarProvider>
       </body>
     </html>

@@ -91,3 +91,11 @@ export async function getComponentsData(
     console.log("Somthing went wrong");
   }
 }
+
+export function countComponents(categories: Partial<Category>[]) {
+  const totalResults = categories.reduce(
+    (count, category) => count + (category.components?.length || 0),
+    0,
+  );
+  return totalResults;
+}
