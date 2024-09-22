@@ -1,18 +1,20 @@
 import { useEffect, useState } from "react";
 
 export const useScroll = (scrolled?: number) => {
-  const [isTop, setIsTop] = useState(true);
+  const [scrolledPx, setScrolledPx] = useState(0);
+  const [showNavBar, setShowNavbar] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsTop(window.scrollY <= (scrolled ?? 50));
+      setScrolledPx(window.scrollY);
+      setShowNavbar(window.scrollY < scrolledPx);
     };
     window.addEventListener("scroll", handleScroll);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [scrolled]);
+  }, [scrolledPx]);
 
-  return { isTop };
+  return { showNavBar, scrolledPx };
 };

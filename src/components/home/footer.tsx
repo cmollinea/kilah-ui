@@ -1,69 +1,15 @@
 export const Footer = () => {
   return (
     <footer className="flex w-full flex-col rounded-t-xl border-t border-accent/10 bg-card-background py-16">
-      <div className="flex px-6 max-md:flex-col max-md:space-y-10 md:justify-between md:space-x-20 md:px-20 2xl:px-40">
+      <div className="flex px-6 max-lg:flex-col max-lg:space-y-10 max-md:space-y-10 md:justify-between md:px-20 lg:space-x-20 2xl:px-40">
         <div className="space-y-10 sm:max-w-xs md:space-y-6 lg:max-w-md">
           <a className="select-none space-x-2" href="#">
             <p className="text-2xl">
               Kilah<span className="text-primary">UI</span>
             </p>
           </a>
-          <div className="space-y-2">
-            <h4 className="text-xl text-primary">About Us</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-              vel, ratione libero architecto minus eveniet sint amet explicabo
-              necessitatibus.
-            </p>
-          </div>
-          <div className="space-y-2">
-            <h4 className="text-xl text-primary">Contact Us</h4>
-            <div className="flex flex-col space-y-2">
-              <div className="inline-flex space-x-1">
-                <span className="text-primary">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
-                    <path d="M3 7l9 6l9 -6" />
-                  </svg>
-                </span>
-                <span>procastinatordev@gmail.com</span>
-              </div>
-              <div className="inline-flex space-x-1">
-                <span className="text-primary">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
-                    <path d="M15 9l5 -5" />
-                    <path d="M15 5l0 4l4 0" />
-                  </svg>
-                </span>
-                <span>+1 123 456 789</span>
-              </div>
-            </div>
-          </div>
         </div>
-        <div className="grid flex-1 pt-5 max-xl:gap-20 max-md:gap-10 lg:grid-cols-2 xl:grid-cols-3 xl:justify-items-center">
+        <div className="grid flex-1 max-xl:gap-20 max-md:gap-10 lg:grid-cols-3 xl:justify-items-center">
           <div className="w-fit">
             <h4 className="text-xl text-primary">Information</h4>
             <nav>
@@ -123,19 +69,11 @@ export const Footer = () => {
               </ul>
             </nav>
           </div>
-          <div className="max-xl:col-span-2 max-xl:w-full max-lg:col-span-1">
-            <h4 className="text-xl text-primary">Newsletter</h4>
-            <form
-              action=""
-              className="mt-4 flex flex-col space-y-2 max-xl:w-full"
-            >
-              <div className="inline-flex">
-                <input
-                  type="text"
-                  className="peer w-full max-w-md rounded-r-xl border-2 border-l-0 border-transparent bg-black p-2 px-2 transition focus:border-primary focus:outline-none"
-                  placeholder="procastinatordev@gmail.com"
-                />
-                <div className="order-first flex place-content-center items-center rounded-l-xl border-2 border-r-0 border-transparent bg-black pl-2 text-primary transition peer-focus:border-primary">
+          <div className="w-fit space-y-2">
+            <h4 className="text-xl text-primary">Contact</h4>
+            <div className="flex flex-col space-y-2">
+              <div className="inline-flex space-x-1">
+                <span className="text-primary">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -151,15 +89,10 @@ export const Footer = () => {
                     <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
                     <path d="M3 7l9 6l9 -6" />
                   </svg>
-                </div>
+                </span>
+                <span>procastinatordev@gmail.com</span>
               </div>
-              <button
-                className="w-fit rounded-xl bg-primary px-4 py-2 hover:bg-primary/80"
-                type="submit"
-              >
-                Subscribe
-              </button>
-            </form>
+            </div>
           </div>
         </div>
       </div>
