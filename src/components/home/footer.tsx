@@ -2,12 +2,21 @@ export const Footer = () => {
   return (
     <footer className="flex w-full flex-col rounded-t-xl border-t border-accent/10 bg-card-background py-16">
       <div className="flex px-6 max-lg:flex-col max-lg:space-y-10 max-md:space-y-10 md:justify-between md:px-20 lg:space-x-20 2xl:px-40">
-        <div className="space-y-10 sm:max-w-xs md:space-y-6 lg:max-w-md">
+        <div className="space-y-4 sm:max-w-xs lg:max-w-md">
           <a className="select-none space-x-2" href="#">
             <p className="text-2xl">
               Kilah<span className="text-primary">UI</span>
             </p>
           </a>
+          <p className="text-xs">
+            Icons by{" "}
+            <a
+              className="text-primary underline"
+              href="https://icons8.com/icons"
+            >
+              icons8
+            </a>
+          </p>
         </div>
         <div className="grid flex-1 max-xl:gap-20 max-md:gap-10 lg:grid-cols-3 xl:justify-items-center">
           <div className="w-fit">
@@ -15,28 +24,27 @@ export const Footer = () => {
             <nav>
               <ul className="mt-4 space-y-2">
                 <li>
-                  <a href="#" className="hover:text-primary hover:underline">
-                    About Us
+                  <a
+                    href="/about"
+                    className="hover:text-primary hover:underline"
+                  >
+                    About
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-primary hover:underline">
+                  <a
+                    href="/blog"
+                    className="hover:text-primary hover:underline"
+                  >
                     Blog
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-primary hover:underline">
-                    Events
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-primary hover:underline">
-                    Testimonials
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-primary hover:underline">
-                    More Search
+                  <a
+                    href="/gratitudes"
+                    className="hover:text-primary hover:underline"
+                  >
+                    Gratitudes
                   </a>
                 </li>
               </ul>
@@ -47,23 +55,35 @@ export const Footer = () => {
             <nav>
               <ul className="mt-4 space-y-2">
                 <li>
-                  <a href="#" className="hover:text-primary hover:underline">
-                    Services
+                  <a
+                    href="https://countinkly.vercel.app/wfsZpe6X6W?source=KilahUI"
+                    className="hover:text-primary hover:underline"
+                  >
+                    Portfolio
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-primary hover:underline">
-                    Supports
+                  <a
+                    href="https://countinkly.vercel.app/kkWWjxxLXj?source=KilahUI"
+                    className="hover:text-primary hover:underline"
+                  >
+                    Countinkly
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-primary hover:underline">
-                    Terms & Conditions
+                  <a
+                    href="https://github.com/cmollinea/kilah-ui"
+                    className="hover:text-primary hover:underline"
+                  >
+                    GitHub
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-primary hover:underline">
-                    Privacy Policy
+                  <a
+                    href="https://github.com/cmollinea/kilah-ui/issues/new/choose"
+                    className="hover:text-primary hover:underline"
+                  >
+                    Report a Bug
                   </a>
                 </li>
               </ul>
@@ -106,7 +126,7 @@ export const Footer = () => {
                 target="_blank"
                 rel="noopener noreferer"
                 aria-label="Link to Github"
-                href="#"
+                href="https://github.com/cmollinea/"
               >
                 <svg
                   className="h-5 w-5 fill-foreground transition group-hover:fill-primary sm:h-6 md:w-6"
@@ -126,7 +146,7 @@ export const Footer = () => {
                 target="_blank"
                 rel="noopener noreferer"
                 aria-label="Link to LinkedIn"
-                href="#"
+                href="https://cu.linkedin.com/in/carlos-yoan-mollinea-43206827b"
               >
                 <svg
                   className="h-5 w-5 fill-foreground transition group-hover:fill-primary sm:h-6 md:w-6"
@@ -146,7 +166,7 @@ export const Footer = () => {
                 target="_blank"
                 rel="noopener noreferer"
                 aria-label="Link to X"
-                href="#"
+                href="https://twitter.com/proc4stinator"
               >
                 <svg
                   className="h-5 w-5 fill-foreground transition group-hover:fill-primary sm:h-6 md:w-6"
@@ -165,28 +185,8 @@ export const Footer = () => {
                 target="_blank"
                 className="group p-2"
                 rel="noopener noreferer"
-                aria-label="Link to Product Hunt"
-                href="#"
-              >
-                <svg
-                  role="img"
-                  viewBox="0 0 24 24"
-                  className="h-5 w-5 fill-foreground transition group-hover:fill-primary sm:h-6 md:w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>Product Hunt</title>
-                  <path d="M13.604 8.4h-3.405V12h3.405c.995 0 1.801-.806 1.801-1.801 0-.993-.805-1.799-1.801-1.799zM12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm1.604 14.4h-3.405V18H7.801V6h5.804c2.319 0 4.2 1.88 4.2 4.199 0 2.321-1.881 4.201-4.201 4.201z" />
-                </svg>
-              </a>
-            </li>
-
-            <li>
-              <a
-                target="_blank"
-                className="group p-2"
-                rel="noopener noreferer"
                 aria-label="Link to Telegram"
-                href="#"
+                href="https://t.me/Mouse_Potat0"
               >
                 <svg
                   role="img"
@@ -199,30 +199,13 @@ export const Footer = () => {
                 </svg>
               </a>
             </li>
-
-            <li>
-              <a
-                target="_blank"
-                className="group p-2"
-                rel="noopener noreferer"
-                aria-label="Link to Mastodon"
-                href="#"
-              >
-                <svg
-                  role="img"
-                  viewBox="0 0 24 24"
-                  className="h-5 w-5 fill-foreground transition group-hover:fill-primary sm:h-6 md:w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>Mastodon</title>
-                  <path d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.64 6.412.61 7.837.661 9.143c.074 1.874.088 3.745.26 5.611.118 1.24.325 2.47.62 3.68.55 2.237 2.777 4.098 4.96 4.857 2.336.792 4.849.923 7.256.38.265-.061.527-.132.786-.213.585-.184 1.27-.39 1.774-.753a.057.057 0 0 0 .023-.043v-1.809a.052.052 0 0 0-.02-.041.053.053 0 0 0-.046-.01 20.282 20.282 0 0 1-4.709.545c-2.73 0-3.463-1.284-3.674-1.818a5.593 5.593 0 0 1-.319-1.433.053.053 0 0 1 .066-.054c1.517.363 3.072.546 4.632.546.376 0 .75 0 1.125-.01 1.57-.044 3.224-.124 4.768-.422.038-.008.077-.015.11-.024 2.435-.464 4.753-1.92 4.989-5.604.008-.145.03-1.52.03-1.67.002-.512.167-3.63-.024-5.545zm-3.748 9.195h-2.561V8.29c0-1.309-.55-1.976-1.67-1.976-1.23 0-1.846.79-1.846 2.35v3.403h-2.546V8.663c0-1.56-.617-2.35-1.848-2.35-1.112 0-1.668.668-1.67 1.977v6.218H4.822V8.102c0-1.31.337-2.35 1.011-3.12.696-.77 1.608-1.164 2.74-1.164 1.311 0 2.302.5 2.962 1.498l.638 1.06.638-1.06c.66-.999 1.65-1.498 2.96-1.498 1.13 0 2.043.395 2.74 1.164.675.77 1.012 1.81 1.012 3.12z" />
-                </svg>
-              </a>
-            </li>
           </ul>
         </div>
         <div className="flex flex-1 place-content-center items-center lg:place-content-end">
-          <p className="w-fit">2024 &copy; KilahUi. All rights reserved</p>
+          <p className="w-fit">
+            2024 &copy; Kilah<span className="text-primary">Ui</span> Almost All
+            rights reserved
+          </p>
         </div>
       </div>
     </footer>

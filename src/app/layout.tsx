@@ -1,3 +1,4 @@
+import { Banner } from "@/components/home/banner";
 import { Footer } from "@/components/home/footer";
 import { NavBar } from "@/components/home/navbar";
 import { ProgressBarProvider } from "@/components/home/progress-bar";
@@ -31,7 +32,7 @@ export default function RootLayout({
         }
       >
         <ProgressBarProvider>
-          {/* <Banner /> */}
+          <Banner />
           <NavBar />
           {children}
           <Footer />

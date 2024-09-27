@@ -1,6 +1,6 @@
 <!-- TODO: change name -->
 
-<section class="bg-background">
+<section class="w-full bg-background">
   <div class="grid grid-cols-1 lg:min-h-screen lg:grid-cols-2">
     <div
       class="relative hidden h-full place-content-center items-center lg:flex"
@@ -15,7 +15,7 @@
         class="flex h-full items-center justify-center rounded-md bg-card-background px-4 py-10 sm:px-6 sm:py-16 lg:px-8 lg:py-24"
       >
         <div
-          class="flex h-full w-full max-w-sm flex-col xl:mx-auto 2xl:max-w-md"
+          class="flex h-full w-full max-w-lg flex-col xl:mx-auto 2xl:max-w-xl"
         >
           <div class="flex flex-col items-center space-y-5">
             <a href="#">
@@ -44,7 +44,7 @@
                   placeholder=" "
                 />
                 <label
-                  for="email"
+                  htmlFor="email"
                   class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-foreground duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4"
                 >
                   Email
@@ -59,7 +59,7 @@
                   placeholder=" "
                 />
                 <label
-                  for="password"
+                  htmlFor="password"
                   class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-foreground duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4"
                 >
                   Password
@@ -73,7 +73,9 @@
                     name="remember"
                     id="remember"
                   />
-                  <label class="text-sm" for="remember"> Remember me </label>
+                  <label class="text-sm" htmlFor="remember">
+                    {" "} Remember me{" "}
+                  </label>
                 </div>
                 <a href="#" class="text-sm text-foreground/50 hover:underline">
                   Forgot password?

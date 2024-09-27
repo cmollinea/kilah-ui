@@ -12,7 +12,8 @@
         "theme": {
           "colors": {
             "primary": "#eb5e28",
-            "foreground": "#fafafa"
+            "foreground": "#fafafa",
+            "background": "#09090b"
           }
         }
       }
@@ -24,7 +25,8 @@
         "theme": {
           "colors": {
             "primary": "#eb5e28",
-            "foreground": "#fafafa"
+            "foreground": "#fafafa",
+            "background": "#09090b"
           }
         }
       }
@@ -36,7 +38,8 @@
         "theme": {
           "colors": {
             "primary": "#eb5e28",
-            "foreground": "#fafafa"
+            "foreground": "#fafafa",
+            "background": "#09090b"
           }
         }
       }
@@ -48,7 +51,8 @@
         "theme": {
           "colors": {
             "primary": "#eb5e28",
-            "foreground": "#fafafa"
+            "foreground": "#fafafa",
+            "background": "#09090b"
           }
         }
       }

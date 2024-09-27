@@ -7,15 +7,45 @@
   "components": [
     {
       "title": "Top with cta",
-      "fileName": "top-with-cta"
+      "fileName": "top-with-cta",
+      "tailwindConfig": {
+        "theme": {
+          "colors": {
+            "primary": "#3d68f4",
+            "foreground": "#fafafa",
+            "background": "#111111",
+            "card-background": "#1d1d1d"
+          }
+        }
+      }
     },
     {
       "title": "Top with centered text",
-      "fileName": "top-centered-text"
+      "fileName": "top-centered-text",
+      "tailwindConfig": {
+        "theme": {
+          "colors": {
+            "primary": "#3d68f4",
+            "foreground": "#fafafa",
+            "background": "#111111",
+            "card-background": "#1d1d1d"
+          }
+        }
+      }
     },
     {
       "title": "Bottom with centered text",
-      "fileName": "bottom-centered-text"
+      "fileName": "bottom-centered-text",
+      "tailwindConfig": {
+        "theme": {
+          "colors": {
+            "primary": "#3d68f4",
+            "foreground": "#fafafa",
+            "background": "#111111",
+            "card-background": "#1d1d1d"
+          }
+        }
+      }
     }
   ]
 }
