@@ -40,7 +40,6 @@ async function Category({ params }: Props) {
         <ul className="flex w-full flex-col items-center space-y-10">
           {routeComponents?.components.map((component) => {
             let config = defaultConfig;
-            //@ts-expect-error
             if (component.tailwindConfig && config.theme) {
               //@ts-expect-error
               config.theme.extend = { ...component.tailwindConfig.theme };

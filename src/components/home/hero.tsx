@@ -39,17 +39,49 @@ export const Hero = () => {
       <div className="flex pt-6 max-sm:flex-col max-sm:space-y-2 sm:items-center sm:space-x-2">
         <a
           href="#components"
-          className="rounded-md bg-primary p-2 px-4 text-primary-foreground max-sm:px-20 md:px-10"
+          className="flex items-center gap-0.5 rounded-md bg-primary p-2 px-4 font-medium text-primary-foreground max-sm:px-20 md:px-10"
         >
+          <span className="block">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M16 18a2 2 0 0 1 2 2a2 2 0 0 1 2 -2a2 2 0 0 1 -2 -2a2 2 0 0 1 -2 2zm0 -12a2 2 0 0 1 2 2a2 2 0 0 1 2 -2a2 2 0 0 1 -2 -2a2 2 0 0 1 -2 2zm-7 12a6 6 0 0 1 6 -6a6 6 0 0 1 -6 -6a6 6 0 0 1 -6 6a6 6 0 0 1 6 6z" />
+            </svg>
+          </span>
           Get Started
         </a>
         <a
           target="_blank"
           href="https://github.com/cmollinea/kilah-ui"
           rel="noopener noreferrer"
-          className="rounded-md border border-primary p-2 px-4 text-primary max-sm:px-20 md:px-10"
+          className="flex items-center gap-0.5 rounded-md border border-primary p-2 px-4 text-primary max-sm:px-20 md:px-10"
         >
-          Star Us
+          <span className="block">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+            </svg>
+          </span>
+          Star Kilah
         </a>
       </div>
     </section>

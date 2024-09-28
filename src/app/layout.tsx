@@ -1,7 +1,9 @@
-import { Banner } from "@/components/home/banner";
 import { Footer } from "@/components/home/footer";
 import { NavBar } from "@/components/home/navbar";
-import { ProgressBarProvider } from "@/components/home/progress-bar";
+import { Alert } from "@/components/ui/alert";
+import { Banner } from "@/components/ui/banner";
+import { ProgressBarProvider } from "@/components/ui/progress-bar";
+import { AlertContextProvider } from "@/context/alert-context";
 import type { Metadata } from "next";
 import { Roboto_Condensed } from "next/font/google";
 import "./globals.css";
@@ -34,8 +36,11 @@ export default function RootLayout({
         <ProgressBarProvider>
           <Banner />
           <NavBar />
-          {children}
-          <Footer />
+          <AlertContextProvider>
+            <Alert />
+            {children}
+            <Footer />
+          </AlertContextProvider>
         </ProgressBarProvider>
       </body>
     </html>

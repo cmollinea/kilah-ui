@@ -1,3 +1,5 @@
+import { FooterContact } from "./footer-contact";
+
 export const Footer = () => {
   return (
     <footer className="flex w-full flex-col rounded-t-xl border-t border-accent/10 bg-card-background py-16">
@@ -92,26 +94,7 @@ export const Footer = () => {
           <div className="w-fit space-y-2">
             <h4 className="text-xl text-primary">Contact</h4>
             <div className="flex flex-col space-y-2">
-              <div className="inline-flex space-x-1">
-                <span className="text-primary">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
-                    <path d="M3 7l9 6l9 -6" />
-                  </svg>
-                </span>
-                <span>procastinatordev@gmail.com</span>
-              </div>
+              <FooterContact />
             </div>
           </div>
         </div>

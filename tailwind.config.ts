@@ -32,7 +32,8 @@ const config: Config = {
         "fade-in": "fade-in 0.1s ease-in-out forwards",
         "fade-out": "fade-out 0.1s ease-in-out forwards",
         "translate-up": "translate 0.5s ease-in forwards",
-        "air-bnb": "air-bnb 3s ease-in-out infinite",
+        "open-nav": "open-nav 0.3s ease-in-out forwards",
+        "close-nav": "close-nav 0.3s ease-in-out forwards",
       },
       keyframes: {
         "fade-in": {
@@ -46,6 +47,14 @@ const config: Config = {
         translate: {
           "0%": { translate: "0 15px", opacity: "0" },
           "100%": { translate: "0 0", opacity: "1" },
+        },
+        "open-nav": {
+          "0%": { translate: "500px 0", opacity: "0" },
+          "100%": { translate: "0 0", opacity: "1" },
+        },
+        "close-nav": {
+          "0%": { translate: "0 0", opacity: "1" },
+          "100%": { translate: "500px 0", opacity: "0" },
         },
       },
     },

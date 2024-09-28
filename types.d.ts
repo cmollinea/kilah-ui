@@ -30,3 +30,15 @@ export interface ResultComponent {
   title: string;
   fileName: string;
 }
+
+export interface AlertContext {
+  description: string;
+  setDescription: Dispatch<SetStateAction<string>>;
+  title: string;
+  setTitle: Dispatch<SetStateAction<string>>;
+  type: string;
+  setType: Dispatch<SetStateAction<string>>;
+  showAlert: boolean;
+  setShowAlert: Dispatch<SetStateAction<boolean>>;
+  ref: MutableRefObject<HTMLDivElement | null>;
+}

@@ -33,7 +33,7 @@ export const SearchResultsBox = ({ ref, query }: Props) => {
   return (
     <div
       ref={ref}
-      className="absolute right-0 mt-2 h-80 w-72 animate-fade-in overflow-y-auto rounded-md bg-card-background px-4 pb-6 pt-2 opacity-0 ring-1 ring-inset ring-accent/10"
+      className="absolute right-0 mt-2 h-80 w-80 animate-fade-in overflow-y-auto rounded-md bg-card-background px-4 pb-6 pt-2 opacity-0 ring-1 ring-inset ring-accent/10"
     >
       {loading ? (
         <div className="flex h-full w-full place-content-center items-center">
