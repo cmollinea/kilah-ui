@@ -18,9 +18,9 @@ export const useModal = () => {
 
   const closeMenu = () => {
     if (modalRef.current && navigationRef.current) {
-      modalRef.current.classList.add("animate-fade-out");
       navigationRef.current.classList.remove("animate-open-nav");
       navigationRef.current.classList.add("animate-close-nav");
+      modalRef.current.classList.add("animate-fade-out");
       setTimeout(() => {
         setNavIsOpen(false);
       }, 300);

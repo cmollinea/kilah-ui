@@ -11,7 +11,7 @@ export const Alert = () => {
         <div
           ref={ref}
           role="alert"
-          className="fixed bottom-20 right-10 z-[99] flex w-full max-w-md animate-translate-up duration-200"
+          className="max-w-sm:left-4 max-w-:sm:right-4 fixed bottom-20 z-[99] flex w-full max-w-md animate-translate-up px-4 duration-200 sm:right-10"
         >
           <div className="relative flex w-full gap-4 rounded-xl bg-card-background py-4 pl-4 pr-6 ring-1 ring-inset ring-accent/20">
             <div className="absolute right-2 top-1"></div>

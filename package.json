@@ -19,6 +19,7 @@
     "nodemailer": "^6.9.15",
     "react": "19.0.0-rc-100dfd7dab-20240701",
     "react-dom": "19.0.0-rc-100dfd7dab-20240701",
+    "remark-gfm": "^4.0.0",
     "tailwind-merge": "^2.3.0"
   },
   "devDependencies": {

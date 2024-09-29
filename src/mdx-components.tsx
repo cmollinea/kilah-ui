@@ -6,6 +6,11 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     h2: ({ children }) => <h2 className="text-2xl font-bold">{children}</h2>,
     hr: (props) => <hr {...props} className="bg-primary opacity-5" />,
     ul: ({ children }) => <ul className="grid gap-2">{children}</ul>,
+    code: ({ children }) => (
+      <code className="border border-accent/5 bg-card-background text-sm font-bold text-primary">
+        <span className="bg-accent/5">{children}</span>
+      </code>
+    ),
     img: (props) => <img {...props} className="scale-50 rounded-xl" />,
     a: (props) => (
       <a

@@ -1,3 +1,5 @@
+import { ContributeLink } from "./contribute-link";
+
 type Props = {
   total: {
     categories: number;
@@ -36,14 +38,7 @@ export const Cta = ({ total: { categories, components }, children }: Props) => {
           or share new ideas—we can’t wait to see what you’ll build with
           KilahUI!
         </p>
-        <a
-          target="_blank"
-          href="https://github.com/cmollinea/kilah-ui/issues"
-          rel="noopener noreferrer"
-          className="mt-10 block w-fit rounded-lg bg-primary px-12 py-3 text-xl font-medium"
-        >
-          Contribute
-        </a>
+        <ContributeLink />
       </div>
     </div>
   );

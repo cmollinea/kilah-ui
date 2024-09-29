@@ -3,6 +3,7 @@ import { ComponentSkeleton } from "@/components/component-skeleton";
 import { defaultConfig } from "@/constants";
 import { categories } from "@/constants/categories-info";
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { Suspense } from "react";
 
 const urlBase = process.env.NEXT_PUBLIC_VERCEL_URL
@@ -32,7 +33,7 @@ async function Category({ params }: Props) {
   const routeComponents = categories.find((item) => item.slug === category);
   if (!routeComponents) {
     console.log("Error Getting component Data");
-    return null;
+    return notFound();
   }
   return (
     <>

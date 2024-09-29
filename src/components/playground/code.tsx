@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import { Roboto_Mono } from "next/font/google";
 
 const mono = Roboto_Mono({
@@ -6,12 +7,16 @@ const mono = Roboto_Mono({
 });
 type CodeProps = {
   code: string;
+  className?: string;
 };
 
-export const Code = ({ code }: CodeProps) => {
+export const Code = ({ code, className }: CodeProps) => {
   return (
     <div
-      className={`${mono.className} h-full w-full overflow-x-auto bg-background p-10 text-xs font-bold md:text-base lg:pl-20`}
+      className={cn(
+        `${mono.className} h-full w-full overflow-x-auto bg-background p-10 text-xs font-bold md:text-base lg:pl-20`,
+        className,
+      )}
       dangerouslySetInnerHTML={{ __html: code }}
     />
   );
