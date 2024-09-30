@@ -3,6 +3,8 @@ const NotFound = () => {
     <div className="flex min-h-[calc(100vh-75px)] w-full flex-col place-content-center items-center">
       <div className="flex items-center space-x-4">
         <img
+          height={500}
+          width={500}
           src="/404.svg"
           alt="Not Found, Please go home"
           className="h-full w-full"

@@ -2,7 +2,7 @@ import { StyledLink } from "../ui/styled-link";
 
 export const LinksCollectionContainer = () => {
   return (
-    <div className="space-x-6 font-medium max-[1050px]:hidden">
+    <div className="space-x-6 font-medium max-[1100px]:hidden">
       <LinksColection />
     </div>
   );
@@ -12,10 +12,10 @@ export const LinksColection = ({ linkStyles }: { linkStyles?: string }) => {
   return (
     <>
       <StyledLink
-        className={`${linkStyles ? linkStyles : ""} group lg:hidden`}
+        className={`${linkStyles ? linkStyles : ""} group min-[1100px]:hidden`}
         href="/"
       >
-        <span className="block transition-transform ease-in-out group-hover:scale-110 lg:hidden">
+        <span className="block transition-transform ease-in-out group-hover:scale-110 min-[1100px]:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -39,7 +39,7 @@ export const LinksColection = ({ linkStyles }: { linkStyles?: string }) => {
         className={`${linkStyles ? linkStyles : ""} group`}
         href="/about"
       >
-        <span className="block transition-transform ease-in-out group-hover:scale-110 lg:hidden">
+        <span className="block transition-transform ease-in-out group-hover:scale-110 min-[1100px]:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -57,7 +57,7 @@ export const LinksColection = ({ linkStyles }: { linkStyles?: string }) => {
         className={`${linkStyles ? linkStyles : ""} group`}
         href="/gratitudes"
       >
-        <span className="block transition-transform ease-in-out group-hover:scale-110 lg:hidden">
+        <span className="block transition-transform ease-in-out group-hover:scale-110 min-[1100px]:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -75,7 +75,7 @@ export const LinksColection = ({ linkStyles }: { linkStyles?: string }) => {
         className={`${linkStyles ? linkStyles : ""} group`}
         href="/contribute"
       >
-        <span className="block transition-transform ease-in-out group-hover:scale-110 lg:hidden">
+        <span className="block transition-transform ease-in-out group-hover:scale-110 min-[1100px]:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -104,7 +104,7 @@ export const LinksColection = ({ linkStyles }: { linkStyles?: string }) => {
         rel="noopener noreferrer"
         href={"https://countinkly.vercel.app/wfsZpe6X6W?source=KilahUI"}
       >
-        <span className="block transition-transform ease-in-out group-hover:scale-110 lg:hidden">
+        <span className="block transition-transform ease-in-out group-hover:scale-110 min-[1100px]:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -124,7 +124,7 @@ export const LinksColection = ({ linkStyles }: { linkStyles?: string }) => {
         </span>
         <span className="flex w-full items-center">
           Need a website?
-          <span className="hidden lg:block">
+          <span className="hidden min-[1050px]:block">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"

@@ -9,7 +9,7 @@ export const NavigationMenu = () => {
     useModal();
 
   return (
-    <div className="relative min-[1050px]:hidden">
+    <div className="relative min-[1100px]:hidden">
       <button
         onClick={openMenu}
         className="rounded-md p-1 transition hover:bg-accent/5"

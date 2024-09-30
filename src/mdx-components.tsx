@@ -2,8 +2,11 @@ import type { MDXComponents } from "mdx/types";
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
-    h1: ({ children }) => <h1 className="text-4xl font-bold">{children}</h1>,
+    h1: ({ children }) => (
+      <h1 className="py-10 text-4xl font-bold">{children}</h1>
+    ),
     h2: ({ children }) => <h2 className="text-2xl font-bold">{children}</h2>,
+    h3: ({ children }) => <h3 className="text-xl font-bold">{children}</h3>,
     hr: (props) => <hr {...props} className="bg-primary opacity-5" />,
     ul: ({ children }) => <ul className="grid gap-2">{children}</ul>,
     code: ({ children }) => (

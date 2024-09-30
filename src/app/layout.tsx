@@ -14,9 +14,10 @@ const roboto = Roboto_Condensed({
 });
 
 export const metadata: Metadata = {
-  title: "KilahUI | Build Your Website Faster with Seamless Adaptability",
+  title:
+    "KilahUI | Free & Open Source | Build Your Website Faster with Seamless Adaptability",
   description:
-    "Elevate your web design with KilahUI an open-source library of elegant, pre-built HTML elements styled with TailwindCSS. Fully customizable and ready to use, just copy, paste, and create stunning websites effortlessly.",
+    "Elevate your web design with KilahUI an open-source collection of elegant, pre-built HTML elements styled with TailwindCSS. Fully customizable and ready to use, just copy, paste, and create stunning websites effortlessly.",
 };
 
 export default function RootLayout({
