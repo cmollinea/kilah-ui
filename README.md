@@ -1,6 +1,6 @@
 # KilahUI | Free & Open Source | Build Your Website Faster with Seamless Adaptability
 
-![KilahUI](./public/assets/killahUI.png)
+![KilahUI](./public/assets/kilahUI.png)
 
 
 KilahUI is inspired by **[hyperui.dev](https://hyperui.dev/)**. Since discovering it, I was struck by how brilliant the idea was and embarked on creating my own version.
