@@ -6,11 +6,21 @@ import { SearchResultsBox } from "./search-results";
 
 export const SearchForm = () => {
   const [showResultsBox, setShowResultsBox] = useState(false);
+  const [makeAnimation, setMakeAnimation] = useState(false);
   const [debouncedQuery, setDebouncedQuery] = useState("");
   const [query, setQuery] = useState("");
   const containerRef = useRef(null);
   const inputRef = useRef<null | HTMLInputElement>(null);
-  const boxRef = useRef<null | HTMLDivElement>(null);
+
+  const handleInputFocus = () => {
+    setShowResultsBox(true);
+  };
+
+  const closeBox = () => {
+    setMakeAnimation(true);
+  };
+
+  useClickOut(containerRef, closeBox);
 
   useEffect(() => {
     const handleKeyComb = (e: KeyboardEvent) => {
@@ -39,21 +49,16 @@ export const SearchForm = () => {
     };
   }, [debouncedQuery]);
 
-  const handleInputFocus = () => {
-    setShowResultsBox(true);
-  };
+  useEffect(() => {
+    if (makeAnimation) {
+      const timeout = setTimeout(() => {
+        setShowResultsBox(false);
+        setMakeAnimation(false);
+      }, 300);
 
-  const closeBox = () => {
-    if (boxRef.current) {
-      boxRef.current.classList.remove("animate-fade-in");
-      boxRef.current.classList.add("animate-fade-out");
+      return () => clearTimeout(timeout);
     }
-    setTimeout(() => {
-      setShowResultsBox(false);
-    }, 400);
-  };
-
-  useClickOut(containerRef, closeBox);
+  }, [makeAnimation]);
 
   return (
     <div
@@ -101,7 +106,9 @@ export const SearchForm = () => {
         />
       </form>
 
-      {showResultsBox && <SearchResultsBox ref={boxRef} query={query} />}
+      {showResultsBox && (
+        <SearchResultsBox makeAnimation={makeAnimation} query={query} />
+      )}
     </div>
   );
 };

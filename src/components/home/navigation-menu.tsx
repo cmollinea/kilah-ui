@@ -5,7 +5,7 @@ import { createPortal } from "react-dom";
 import { LinksColection } from "./links-collection";
 
 export const NavigationMenu = () => {
-  const { openMenu, closeMenu, navIsOpen, navigationRef, modalRef } =
+  const { openMenu, closeMenu, navIsOpen, navigationRef, makeAnimation } =
     useModal();
 
   return (
@@ -37,12 +37,11 @@ export const NavigationMenu = () => {
         ? createPortal(
             <div
               role="modal"
-              ref={modalRef}
-              className="fixed bottom-0 left-0 right-0 top-0 z-[999999] flex animate-fade-in flex-col place-items-end bg-card-background/10 opacity-0 backdrop-blur-sm"
+              className={`fixed bottom-0 left-0 right-0 top-0 z-[999999] flex flex-col place-items-end bg-card-background/10 opacity-0 backdrop-blur-sm ${makeAnimation ? "animate-fade-out" : "animate-fade-in"}`}
             >
               <div
                 ref={navigationRef}
-                className="relative z-[99] flex w-72 flex-grow animate-open-nav flex-col space-y-2 rounded-md border-l border-accent/10 bg-card-background p-4 py-20"
+                className={`relative z-[99] flex w-72 flex-grow flex-col space-y-2 rounded-md border-l border-accent/10 bg-card-background p-4 py-20 ${makeAnimation ? "animate-close-nav" : "animate-open-nav"}`}
               >
                 <div className="absolute top-6 flex w-full items-center justify-between pl-4 pr-6">
                   <Link

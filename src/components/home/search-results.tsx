@@ -1,4 +1,4 @@
-import { RefObject, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { SearchResult } from "../../../types";
 import { NoResults } from "./no-results";
 import { ResultComponentLink } from "./result-component";
@@ -6,10 +6,10 @@ import { ResultsCategory } from "./results-category";
 
 type Props = {
   query: string;
-  ref: RefObject<HTMLDivElement>;
+  makeAnimation: boolean;
 };
 
-export const SearchResultsBox = ({ ref, query }: Props) => {
+export const SearchResultsBox = ({ makeAnimation, query }: Props) => {
   const [results, setResults] = useState<null | SearchResult>(null);
   const [loading, setLoading] = useState(false);
   console.log(query);
@@ -32,8 +32,7 @@ export const SearchResultsBox = ({ ref, query }: Props) => {
 
   return (
     <div
-      ref={ref}
-      className="absolute right-0 mt-2 h-80 w-80 animate-fade-in overflow-y-auto rounded-md bg-card-background px-4 pb-6 pt-2 opacity-0 ring-1 ring-inset ring-accent/10"
+      className={`absolute right-0 mt-2 h-80 w-80 overflow-y-auto rounded-md bg-card-background px-4 pb-6 pt-2 opacity-0 ring-1 ring-inset ring-accent/10 ${makeAnimation ? "animate-fade-out" : "animate-fade-in"}`}
     >
       {loading ? (
         <div className="flex h-full w-full place-content-center items-center">
